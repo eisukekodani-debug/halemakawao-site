@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お食事｜ハレ・マカワオ HALE・MAKAWAO</title>
+  <meta name="description" content="ハレ・マカワオのお食事のご案内。特製フルーツ山盛りフレンチトーストのモーニングセット（オプション）や、鳥取和牛・大山どりが楽しめるBBQ手ぶらセット、大山の名店への送迎プランをご提案します。">
+  <link rel="canonical" href="https://www.halemakawao.com/food.html">
+  <link rel="icon" href="./images/logo.webp" type="image/webp">
+  <link rel="alternate" hreflang="ja" href="https://www.halemakawao.com/food.html">
+  <link rel="alternate" hreflang="en" href="https://www.halemakawao.com/en/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://www.halemakawao.com/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://www.halemakawao.com/food.html">
+
+  <meta property="og:title" content="お食事｜ハレ・マカワオ HALE・MAKAWAO">
+  <meta property="og:description" content="特製フルーツ山盛りフレンチトーストのモーニングセットやBBQ手ぶらセット、大山の名店への送迎プランをご案内。">
+  <meta property="og:image" content="https://www.halemakawao.com/images/Breakfast.webp">
+  <meta property="og:url" content="https://www.halemakawao.com/food.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodService",
+    "name": "ハレ・マカワオ お食事サービス",
+    "description": "宿泊ゲスト向けの特製フルーツ山盛りフレンチトーストのモーニングセットやBBQ手ぶらセット、地元名店への送迎プラン。",
+    "url": "https://www.halemakawao.com/food.html",
+    "provider": {
+      "@type": "LodgingBusiness",
+      "name": "ハレ・マカワオ",
+      "url": "https://www.halemakawao.com/"
+    },
+    "hasMenu": {
+      "@type": "Menu",
+      "hasMenuSection": [
+        {
+          "@type": "MenuSection",
+          "name": "朝食オプション",
+          "hasMenuItem": {
+            "@type": "MenuItem",
+            "name": "特製フルーツ山盛りフレンチトーストのモーニングセット",
+            "offers": {
+              "@type": "Offer",
+              "price": "2750",
+              "priceCurrency": "JPY"
+            }
+          }
+        },
+        {
+          "@type": "MenuSection",
+          "name": "ディナープラン",
+          "hasMenuItem": [
+            {
+              "@type": "MenuItem",
+              "name": "BBQ手ぶらセット",
+              "description": "鳥取和牛や大山どり、地産野菜など地元食材を施設側で準備。手ぶらでBBQが楽しめるプラン",
+              "offers": {
+                "@type": "Offer",
+                "price": "6000",
+                "priceCurrency": "JPY",
+                "unitText": "1名様"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "BBQ機材レンタル（食材持ち込み）",
+              "description": "機材一式のみのレンタル。食材はお客様ご自身でご用意",
+              "offers": {
+                "@type": "Offer",
+                "price": "3500",
+                "priceCurrency": "JPY",
+                "unitText": "1台"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+            serif: ['"Noto Serif JP"', 'serif'],
+            en: ['"Cormorant Garamond"', 'serif'],
+          },
+          colors: {
+            brand: {
+              black: '#1A1A1A', 
+              gray: '#F9F8F6', 
+              dark: '#1F2421', 
+              accent: '#9A8060', 
+              subtle: '#E2E0DB', 
+              line: '#D4D4D4',
+            }
+          },
+          letterSpacing: {
+            widest: '.2em',
+            super: '.3em',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      color: #1A1A1A;
+      background-color: #F9F8F6;
+      -webkit-font-smoothing: antialiased;
+      font-feature-settings: "palt"; 
+    }
+    
+    h1, h2, h3, h4 {
+      font-feature-settings: "palt";
+      letter-spacing: 0.15em;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1), transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Hero Background */
+    .page-header-bg {
+      background-image: url("./images/Breakfast.webp");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .nav-link {
+      position: relative;
+      display: inline-block;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      width: 0;
+      height: 1px;
+      background-color: #1A1A1A;
+      transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1), left 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .nav-link:hover::after {
+      width: 100%;
+      left: 0;
+    }
+    
+    .hover-zoom {
+      overflow: hidden;
+    }
+    .hover-zoom img {
+      transition: transform 1.8s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: transform;
+    }
+    .hover-zoom:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="font-sans bg-brand-gray selection:bg-brand-accent selection:text-white">
+
+  <!-- Header -->
+  <header class="fixed w-full z-50 transition-all duration-700 ease-elegant border-b border-transparent bg-white/90 backdrop-blur-md shadow-sm py-4" id="header">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center">
+      <h1 class="font-serif text-2xl md:text-3xl tracking-widest text-brand-black z-50 relative">
+        <a href="index.html" class="block hover:opacity-60 transition duration-500">
+          <img src="./images/logo.webp" alt="ハレ・マカワオ" class="h-6 md:h-8 w-auto">
+        </a>
+      </h1>
+
+      <!-- PC Nav -->
+      <nav class="hidden md:flex space-x-12 items-center font-serif text-xs tracking-relaxed text-gray-600">
+        <a href="index.html#concept" class="nav-link hover:text-brand-black transition duration-300">コンセプト</a>
+        <a href="stay.html" class="nav-link hover:text-brand-black transition duration-300">客室・設備</a>
+        <a href="food.html" class="nav-link text-brand-black">お食事</a>
+        <a href="access.html" class="nav-link hover:text-brand-black transition duration-300">アクセス</a>
+        
+        <a href="https://www.airbnb.jp/rooms/1628763154330235389" target="_blank" class="group relative overflow-hidden bg-brand-black text-white px-12 py-4 rounded-sm shadow-md transition-all duration-500 hover:shadow-xl hover:scale-105">
+          <span class="relative z-10 flex items-center gap-3 text-sm tracking-widest font-medium">
+            空室検索・予約
+            <svg class="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </span>
+          <div class="absolute inset-0 bg-gray-700 transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden z-50 focus:outline-none p-2 group" id="menu-btn" aria-label="Menu">
+        <div class="space-y-1.5 w-6">
+          <span class="block w-full h-px bg-brand-black transition-all duration-500 origin-center group-hover:w-4 ml-auto"></span>
+          <span class="block w-full h-px bg-brand-black transition-all duration-500"></span>
+          <span class="block w-full h-px bg-brand-black transition-all duration-500 origin-center group-hover:w-4 ml-auto"></span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="fixed inset-0 bg-brand-gray z-40 transform translate-x-full transition-transform duration-700 ease-elegant flex flex-col justify-center items-center space-y-8" id="mobile-menu">
+      <a href="index.html#concept" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">コンセプト</a>
+      <a href="stay.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">客室・設備</a>
+      <a href="food.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">お食事</a>
+      <a href="access.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">アクセス</a>
+      <a href="news.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">お知らせ</a>
+      
+      <a href="https://www.airbnb.jp/rooms/1628763154330235389" target="_blank" class="mt-8 font-serif text-sm tracking-widest text-white bg-brand-black px-12 py-5 rounded-sm hover:bg-gray-800 transition shadow-lg w-72 text-center">空室検索・予約</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="relative h-[60vh] md:h-[65vh] overflow-hidden">
+    <div class="absolute inset-0 page-header-bg bg-cover bg-center"></div>
+    <div class="absolute inset-0 bg-black/10"></div>
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white z-10 pt-20">
+      <span class="font-en text-base md:text-xl italic tracking-widest mb-4 opacity-80 fade-in">Dining Experience</span>
+      <h2 class="font-serif text-4xl md:text-6xl tracking-[0.2em] mb-6 md:mb-8 fade-in">お食事</h2>
+      <div class="w-px h-12 md:h-16 bg-white/60 fade-in"></div>
+    </div>
+  </div>
+
+  <!-- Intro Section -->
+  <!-- スマホ時は py-16, md:py-32 で縦の余白を最適化 -->
+  <section class="py-16 md:py-32 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center fade-in">
+      <h3 class="font-serif text-2xl md:text-3xl text-brand-black tracking-widest mb-8 md:mb-10 leading-relaxed md:leading-relaxed italic">
+        大山の恵みを、<br class="md:hidden">思いのままに。
+      </h3>
+      <!-- スマホ時は leading-8 で引き締め、PC時は leading-[2.6] で優雅に -->
+      <p class="font-sans text-sm md:text-base text-gray-600 leading-8 md:leading-[2.6] tracking-wide text-justify md:text-center">
+        目覚めの朝を彩る、特製フルーツ山盛りフレンチトーストのモーニングセット（オプション）。<br class="hidden md:block">
+        夜は、大山の豊かな恵みを味わい尽くす多彩なスタイルをご提案します。<br class="hidden md:block">
+        プライベートガーデンで火を囲む自由な持ち込みBBQや、<br class="hidden md:block">
+        地元の名店への優雅な送迎ディナー。<br class="hidden md:block">
+        「自分の家」のように、思いのままの食体験をお楽しみください。
+      </p>
+    </div>
+  </section>
+
+  <!-- Morning Section -->
+  <section class="py-16 md:py-28 bg-brand-gray border-t border-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+        <div class="w-full lg:w-7/12 relative group fade-in">
+          <div class="hover-zoom rounded-sm overflow-hidden shadow-2xl aspect-[4/3] md:aspect-auto">
+            <img src="./images/Breakfast.webp" alt="特製フルーツ山盛りフレンチトーストのモーニングセット" class="w-full h-full object-cover md:h-auto">
+          </div>
+          <div class="hidden lg:block absolute -right-6 -bottom-6 w-32 h-32 bg-white -z-10"></div>
+        </div>
+        <div class="w-full lg:w-5/12 fade-in" style="transition-delay: 0.1s;">
+          <span class="font-en text-3xl md:text-4xl text-brand-accent block mb-3 md:mb-4 italic">Morning</span>
+          <h4 class="font-serif text-2xl md:text-3xl tracking-widest mb-6 md:mb-8 text-brand-black flex items-center gap-3">
+            特製フルーツ山盛り<br class="md:hidden">フレンチトーストの<br class="md:hidden">モーニングセット
+            <span class="text-[9px] md:text-[10px] bg-brand-black text-white px-2.5 py-1 tracking-widest uppercase font-sans mt-1">Option</span>
+          </h4>
+          <div class="font-sans text-sm text-gray-600 leading-7 md:leading-loose tracking-wide space-y-4 md:space-y-6 text-justify md:text-left">
+            <p>
+              ハレ・マカワオの朝の顔、それは一晩かけて卵液にじっくりと漬け込み、時間をかけて焼き上げる極上のフレンチトースト。口に含めば、とろけるようなふわふわの食感と、優しい甘さが広がります。
+            </p>
+            <p>
+              オーナー自ら地元大山の市場や農家へ足を運び、その時々で最も輝いている旬のフルーツを添えてご提供いたします。
+            </p>
+            <p>
+              淹れたてのコーヒーと、森の清々しい空気。この瞬間のためにここへ来る。そんな特別な朝を約束する、こだわりの朝食オプションです。（ご予約時に追加いただけます）
+            </p>
+            <p class="font-medium text-brand-black">
+              ・料金：2,750円（お一人様）
+            </p>
+          </div>
+          <div class="mt-8 md:mt-10 inline-block border border-brand-accent/30 bg-white px-6 py-3 rounded-sm w-full md:w-auto text-center md:text-left">
+            <p class="font-sans text-[11px] text-brand-black tracking-widest uppercase">
+              <span class="text-brand-accent mr-2 font-bold">Free Drink</span> Coffee & Tea (Self Service)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dinner Section -->
+  <section class="py-20 md:py-32 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16 md:mb-24 fade-in">
+        <span class="font-en text-lg md:text-xl italic text-brand-accent block mb-2 md:mb-3">Dinner Experience</span>
+        <h3 class="font-serif text-2xl md:text-3xl text-brand-black tracking-widest uppercase">Dinner Plans</h3>
+        <div class="w-px h-8 md:h-10 bg-brand-line mx-auto mt-6 md:mt-8"></div>
+      </div>
+
+      <!-- BBQ手ぶらセット -->
+      <div class="flex flex-col md:flex-row gap-8 md:gap-16 mb-24 md:mb-40 items-center fade-in">
+        <div class="w-full md:w-1/2">
+          <div class="hover-zoom rounded-sm overflow-hidden shadow-md aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974&auto=format&fit=crop" alt="プライベートテラスでのBBQ" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 text-left">
+          <div class="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+            <span class="text-[9px] md:text-[10px] bg-brand-accent text-white px-3 md:px-4 py-1.5 tracking-[0.2em] uppercase font-medium">Recommended</span>
+            <h4 class="font-serif text-xl md:text-2xl tracking-widest text-brand-black leading-snug">BBQ手ぶらセット</h4>
+          </div>
+          <p class="font-sans text-sm text-gray-600 leading-7 md:leading-loose mb-6 md:mb-8 text-justify tracking-wide">
+            鳥取和牛や大山どり、地産野菜など、地元の厳選食材を施設側であらかじめご用意しております。<br>
+            機材の準備から後片付けまですべてお任せいただけるので、手ぶらでお越しいただくだけ。プライベートテラスで、大山の自然に囲まれながら本格BBQをお楽しみください。
+          </p>
+          <div class="bg-brand-gray p-5 md:p-6 rounded-sm border-l-2 border-brand-accent">
+            <p class="font-sans text-xs text-gray-500 leading-relaxed font-medium space-y-2">
+              <span class="block text-brand-black">・料金：6,000円（お一人様）</span>
+              <span class="block">・内容：鳥取和牛・大山どり・地産野菜等の厳選食材、BBQコンロ、炭、薪、網、トング、食器類、後片付け</span>
+            </p>
+          </div>
+
+          <div class="mt-6 md:mt-8">
+            <div class="flex items-center gap-3 md:gap-4 mb-4">
+              <span class="text-[9px] md:text-[10px] bg-brand-black text-white px-3 md:px-4 py-1.5 tracking-[0.2em] uppercase font-medium">Standard</span>
+              <h4 class="font-serif text-lg md:text-xl tracking-widest text-brand-black leading-snug">機材のみレンタル<span class="text-sm text-gray-500">（食材持ち込み）</span></h4>
+            </div>
+            <p class="font-sans text-sm text-gray-600 leading-7 mb-4 text-justify tracking-wide">
+              お好きな食材や飲み物を自由に持ち込んで、プライベートBBQをお楽しみいただけます。機材の準備・後片付けは当宿にお任せください。
+            </p>
+            <div class="bg-brand-gray p-5 md:p-6 rounded-sm border-l-2 border-brand-line">
+              <p class="font-sans text-xs text-gray-500 leading-relaxed font-medium space-y-2">
+                <span class="block text-brand-black">・料金：3,500円（1台）</span>
+                <span class="block">・設備：BBQコンロ、炭（着火済）、薪、網、トング、食器類</span>
+                <span class="block text-[10px] md:text-[11px] text-brand-accent mt-2">※食材・調味料・お飲み物はお客様ご自身でご用意ください。</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beer Plan -->
+      <div class="flex flex-col md:flex-row-reverse gap-8 md:gap-16 mb-24 md:mb-40 items-center fade-in">
+        <div class="w-full md:w-1/2">
+          <div class="hover-zoom rounded-sm overflow-hidden shadow-md aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1575037614876-c38a4d44f5b8?q=80&w=2070&auto=format&fit=crop" alt="大山Gビール" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 text-left">
+          <div class="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+            <span class="text-[9px] md:text-[10px] bg-brand-accent text-white px-3 md:px-4 py-1.5 tracking-[0.2em] uppercase font-medium">Service</span>
+            <h4 class="font-serif text-xl md:text-2xl tracking-widest text-brand-black">地ビール送迎プラン</h4>
+          </div>
+          <p class="font-sans text-sm text-gray-600 leading-7 md:leading-loose mb-6 md:mb-8 text-justify tracking-wide">
+            「ワールド・ビア・アワード」で世界一に輝いた名酒『ヴァイツェン』を生み出す、「大山Gビール」の醸造所直営レストランへご案内します。<br>
+            天井高のある開放的なビアホールで、工場直送の鮮烈な一杯を。人気の「大山どりのロースト」やクリスピーな特製ピッツァなど、ビールを引き立てる料理も絶品です。<br>
+            送迎付きプランなら、ハンドルキーパーの心配なく、グループ全員が最高の状態で世界一の喉越しを愉しめます。
+          </p>
+          <div class="bg-brand-gray p-5 md:p-6 rounded-sm border-l-2 border-brand-accent">
+            <p class="font-sans text-xs text-gray-500 leading-relaxed font-medium space-y-1">
+              <span class="block">・行先：ビアホフ ガンバリウス</span>
+              <span class="block">・特典：往復送迎付き（＋1,000円）</span>
+              <span class="block text-[10px] md:text-[11px] opacity-70 italic mt-1">※飲み放題メニューも現地にて選択可能です。</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sushi Plan -->
+      <div class="flex flex-col md:flex-row gap-8 md:gap-16 mb-16 md:mb-24 items-center fade-in">
+        <div class="w-full md:w-1/2">
+          <div class="hover-zoom rounded-sm overflow-hidden shadow-md aspect-[4/3]">
+            <img src="./images/Sushi_tamura.webp" alt="郷の鮨たむら" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 text-left">
+          <div class="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+            <span class="text-[9px] md:text-[10px] bg-brand-accent text-white px-3 md:px-4 py-1.5 tracking-[0.2em] uppercase font-medium">Service</span>
+            <h4 class="font-serif text-xl md:text-2xl tracking-widest text-brand-black">鮨のたむら送迎プラン</h4>
+          </div>
+          <p class="font-sans text-sm text-gray-600 leading-7 md:leading-loose mb-6 md:mb-8 text-justify tracking-wide">
+            地元大山で「本当に旨い魚」を知る人々が足繁く通う、隠れた名店『郷の鮨たむら』。<br>
+            シャリが完全に見えなくなるほどの巨大なネタが特徴の「デカネタ寿司」は圧巻。境港や地元・御来屋漁港から直送される鮮度抜群の地魚を、驚くほどリーズナブルな価格で、お腹いっぱい楽しめます。<br>
+            飾らない活気あふれる店内で、鳥取の海の豊かさを実感する夜を。宿から心を込めて送迎いたします。
+          </p>
+          <div class="bg-brand-gray p-5 md:p-6 rounded-sm border-l-2 border-brand-accent">
+            <p class="font-sans text-xs text-gray-500 leading-relaxed font-medium space-y-1">
+              <span class="block">・行先：郷の鮨たむら（大山ガーデンプレイス内）</span>
+              <span class="block">・特典：往復送迎付き（＋1,000円）</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Supermarket & Market (Updated: 大山望・木村鮮魚店追加) -->
+      <div class="mt-24 md:mt-40 bg-brand-gray p-6 md:p-16 rounded-sm border border-brand-line/50 fade-in text-center">
+        <div class="mb-10 md:mb-16">
+          <span class="font-en text-base md:text-lg text-brand-accent block mb-2 uppercase tracking-widest">Living with Food</span>
+          <h4 class="font-serif text-xl md:text-2xl tracking-widest text-brand-black mb-4 md:mb-6">大山の食材を、自ら選ぶ愉しみ</h4>
+          <p class="font-sans text-sm text-gray-600 leading-7 md:leading-[2.6] max-w-2xl mx-auto text-justify md:text-center">
+            館内には、自由にお使いいただけるミニキッチン（冷蔵庫・電子レンジ）を備えております。<br>
+            BBQの買い出しや、「今日は宿でゆっくり過ごしたい」そんな夜に立ち寄りたい、地元ならではの特選食材が手に入るおすすめの場所をご紹介します。
+          </p>
+        </div>
+
+        <!-- UPDATE: 4要素が綺麗に並ぶように md:grid-cols-2 に変更 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 text-left">
+          <!-- 大山望 -->
+          <div class="bg-white p-6 md:p-8 rounded-sm shadow-sm transition hover:shadow-md border-t-2 border-transparent hover:border-brand-accent">
+            <h5 class="font-bold text-[11px] md:text-xs text-brand-black mb-3 md:mb-4 tracking-widest flex items-center gap-2">
+              <span class="w-1 h-3 bg-brand-accent"></span>
+              鳥取和牛と地元野菜の拠点
+            </h5>
+            <p class="font-bold text-sm text-gray-700 mb-2 md:mb-3">大山望（だいせんぼう）</p>
+            <p class="font-sans text-xs text-gray-500 leading-relaxed md:leading-loose mb-4 md:mb-6 text-justify">
+              BBQのお肉を調達するならここ。鳥取が誇る黒毛和牛「鳥取和牛」をはじめ、地元産の新鮮な肉類や、朝採れの高原野菜が豊富に揃うファーマーズマーケットです。
+            </p>
+            <div class="text-[10px] text-gray-400 border-t border-gray-100 pt-3 md:pt-4 leading-relaxed">
+              住所：鳥取県西伯郡伯耆町金屋谷1801<br>
+              営業：9:00 ～ 17:00（火曜定休）
+            </div>
+          </div>
+
+          <!-- 木村鮮魚店 -->
+          <div class="bg-white p-6 md:p-8 rounded-sm shadow-sm transition hover:shadow-md border-t-2 border-transparent hover:border-brand-accent">
+            <h5 class="font-bold text-[11px] md:text-xs text-brand-black mb-3 md:mb-4 tracking-widest flex items-center gap-2">
+              <span class="w-1 h-3 bg-brand-accent"></span>
+              日本海の絶品地魚を仕入れる
+            </h5>
+            <p class="font-bold text-sm text-gray-700 mb-2 md:mb-3">木村鮮魚店</p>
+            <p class="font-sans text-xs text-gray-500 leading-relaxed md:leading-loose mb-4 md:mb-6 text-justify">
+              境港や地元漁港から水揚げされたばかりの新鮮な魚介類が並ぶ、地元で愛される鮮魚店。BBQで海鮮焼きを楽しみたい方や、お刺身で日本海の恵みを堪能したい方に強くおすすめします。
+            </p>
+            <div class="text-[10px] text-gray-400 border-t border-gray-100 pt-3 md:pt-4 leading-relaxed">
+              住所：鳥取県米子市淀江町西原1123<br>
+              営業：9:00 ～ 18:00（日曜定休）
+            </div>
+          </div>
+
+          <!-- あすぱる (復活) -->
+          <div class="bg-white p-6 md:p-8 rounded-sm shadow-sm transition hover:shadow-md border-t-2 border-transparent hover:border-brand-accent">
+            <h5 class="font-bold text-[11px] md:text-xs text-brand-black mb-3 md:mb-4 tracking-widest flex items-center gap-2">
+              <span class="w-1 h-3 bg-brand-accent"></span>
+              鳥取の食のテーマパーク
+            </h5>
+            <p class="font-bold text-sm text-gray-700 mb-2 md:mb-3">ファーマーズマーケットふれあい村 あすぱる</p>
+            <p class="font-sans text-xs text-gray-500 leading-relaxed md:leading-loose mb-4 md:mb-6 text-justify">
+              鳥取に来たら、必ず立ち寄るべき食材の聖地。県内最大級の直売所には、生産者の名前が入った新鮮な朝採れ野菜や果物が山のように並びます。精肉コーナーの「鳥取和牛」も一級品。食材を選ぶ楽しさに、心躍るはずです。
+            </p>
+            <div class="text-[10px] text-gray-400 border-t border-gray-100 pt-3 md:pt-4 leading-relaxed">
+              住所：鳥取県西伯郡日吉津村日吉津1450（車で約20分）<br>
+              営業：8:30 ～ 17:00（第3火曜定休）
+            </div>
+          </div>
+
+          <!-- エムマート -->
+          <div class="bg-white p-6 md:p-8 rounded-sm shadow-sm transition hover:shadow-md border-t-2 border-transparent hover:border-brand-accent">
+            <h5 class="font-bold text-[11px] md:text-xs text-brand-black mb-3 md:mb-4 tracking-widest flex items-center gap-2">
+              <span class="w-1 h-3 bg-brand-accent"></span>
+              宿から一番近いローカルスーパー
+            </h5>
+            <p class="font-bold text-sm text-gray-700 mb-2 md:mb-3">エムマート 大山店</p>
+            <p class="font-sans text-xs text-gray-500 leading-relaxed md:leading-loose mb-4 md:mb-6 text-justify">
+              大山町の中心部にある地域密着型スーパー。宿からは信号がなく、車で一直線（約10分）。ちょっとした追加の飲み物や、BBQ用の調味料などをサッと探すのに便利で安心な最寄り店です。
+            </p>
+            <div class="text-[10px] text-gray-400 border-t border-gray-100 pt-3 md:pt-4 leading-relaxed">
+              住所：鳥取県西伯郡大山町所子266-4<br>
+              営業：8:30 ～ 20:00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- スマホ時は py-16, md:py-32 -->
+  <footer class="bg-brand-black text-white py-16 md:py-32 border-t border-white/5 text-left">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-20">
+      <div class="col-span-1 md:col-span-2 text-center md:text-left">
+        <h2 class="font-serif text-xl md:text-2xl tracking-widest mb-6 md:mb-10">ハレ・マカワオ HALE・MAKAWAO</h2>
+        <p class="font-sans text-xs text-gray-400 leading-loose mb-8 md:mb-12 tracking-widest max-w-sm mx-auto md:mx-0">
+          鳥取県大山の一棟貸し別荘<br>
+          1日1組限定のプライベートな時間を。
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 col-span-1 md:col-span-2 gap-8 md:gap-12">
+        <div>
+          <h4 class="font-serif text-[10px] mb-6 md:mb-10 text-gray-500 tracking-widest uppercase font-bold">Menu</h4>
+          <ul class="space-y-4 md:space-y-6 font-sans text-[11px] text-gray-400 tracking-widest">
+            <li><a href="stay.html" class="hover:text-white transition">STAY</a></li>
+            <li><a href="food.html" class="text-white">DINING</a></li>
+            <li><a href="access.html" class="hover:text-white transition">ACCESS</a></li>
+            <li><a href="news.html" class="hover:text-white transition">お知らせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif text-[10px] mb-6 md:mb-10 text-gray-500 tracking-widest uppercase font-bold">Global</h4>
+          <ul class="space-y-4 md:space-y-6 font-sans text-[11px] text-gray-400 tracking-widest">
+            <li><a href="en/index.html" class="hover:text-white transition uppercase">English</a></li>
+            <li><a href="zh/index.html" class="hover:text-white transition uppercase">繁體中文</a></li>
+            <li class="pt-4 md:pt-8 flex flex-col gap-3 md:gap-4">
+              <a href="https://www.airbnb.jp/rooms/1628763154330235389" class="border border-white/10 px-4 md:px-6 py-2.5 hover:bg-white hover:text-black transition text-[9px] text-center tracking-widest uppercase">Airbnb</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 mt-16 md:mt-32 pt-8 md:pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center font-sans text-[9px] text-gray-500 tracking-widest uppercase pb-16 md:pb-0">
+      <span>&copy; 2026 HALE・MAKAWAO All Rights Reserved.</span>
+    </div>
+  </footer>
+
+  <!-- Mobile Fixed Booking Button -->
+  <div class="fixed bottom-0 left-0 w-full bg-white/98 backdrop-blur-md border-t border-gray-100 md:hidden z-40 flex shadow-[0_-5px_30px_-5px_rgba(0,0,0,0.1)]">
+    <a href="https://www.airbnb.jp/rooms/1628763154330235389" target="_blank" class="flex-1 bg-brand-black text-white text-center py-4 md:py-5 font-serif text-[11px] tracking-[0.3em] flex items-center justify-center gap-3">
+      <span>空室検索・予約</span>
+    </a>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const header = document.getElementById('header');
+    let isMenuOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+      const spans = menuBtn.querySelectorAll('span');
+      if(isMenuOpen) {
+        mobileMenu.classList.remove('translate-x-full');
+        spans[0].style.transform = 'rotate(45deg) translate(6px, 7px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(6px, -7px)';
+        document.body.style.overflow = 'hidden';
+      } else {
+        mobileMenu.classList.add('translate-x-full');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        header.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+        header.classList.remove('py-4');
+      } else {
+        header.classList.remove('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+        header.classList.add('py-4');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HALE MAKAWAO | 鳥取大山・森林中的私人包棟別墅</title>
+  <meta name="description" content="HALE MAKAWAO 是一日限定一組的包棟私人別墅，位於鳥取縣大山的森林中。享受招牌水果滿載法式吐司早餐套餐、鳥取和牛BBQ全包式套餐，以及在地人氣壽司與精釀啤酒的接送服務。">
+  <link rel="canonical" href="https://www.halemakawao.com/zh/">
+  <link rel="icon" href="../images/logo.webp" type="image/webp">
+  <link rel="alternate" hreflang="ja" href="https://www.halemakawao.com/">
+  <link rel="alternate" hreflang="en" href="https://www.halemakawao.com/en/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://www.halemakawao.com/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://www.halemakawao.com/">
+
+  <meta property="og:title" content="HALE MAKAWAO | 鳥取大山・森林中的私人包棟別墅">
+  <meta property="og:description" content="一日限定一組的包棟私人別墅，位於鳥取縣大山的森林中。">
+  <meta property="og:image" content="https://www.halemakawao.com/images/Exterior.webp">
+  <meta property="og:url" content="https://www.halemakawao.com/zh/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "HALE MAKAWAO",
+    "alternateName": "ハレ・マカワオ",
+    "image": [
+      "https://www.halemakawao.com/images/Exterior.webp",
+      "https://www.halemakawao.com/images/LivingRoom.webp",
+      "https://www.halemakawao.com/images/Breakfast.webp"
+    ],
+    "description": "位於鳥取縣大山森林中、一日限定一組的私人包棟別墅。提供招牌水果滿載法式吐司早餐套餐、鳥取和牛BBQ全包式套餐，以及在地名店接送服務。",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "鈑戶1542-91",
+      "addressLocality": "大山町",
+      "addressRegion": "鳥取縣",
+      "postalCode": "689-3317",
+      "addressCountry": "JP"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.3833,
+      "longitude": 133.5333
+    },
+    "priceRange": "¥40,000-¥60,000",
+    "checkinTime": "15:00",
+    "checkoutTime": "10:00",
+    "url": "https://www.halemakawao.com/zh/",
+    "sameAs": [
+      "https://www.airbnb.jp/rooms/1628763154330235389"
+    ],
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "免費Wi-Fi", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "免費停車場", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "廚房", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "BBQ區", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "洗衣機", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "冷氣空調", "value": true}
+    ],
+    "numberOfRooms": 4,
+    "petsAllowed": false
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans TC"', 'sans-serif'],
+            serif: ['"Noto Serif TC"', 'serif'],
+            en: ['"Cormorant Garamond"', 'serif'],
+          },
+          colors: {
+            brand: {
+              black: '#1A1A1A', 
+              gray: '#F9F8F6', 
+              dark: '#1F2421', 
+              accent: '#9A8060', 
+              subtle: '#E2E0DB', 
+              line: '#D4D4D4',
+            }
+          },
+          letterSpacing: {
+            widest: '.2em',
+            super: '.3em',
+          },
+          animation: {
+            'ken-burns': 'kenBurns 30s ease-out infinite alternate',
+            'scroll-line': 'scrollLine 2.2s cubic-bezier(0.77, 0, 0.175, 1) infinite',
+          },
+          keyframes: {
+            kenBurns: {
+              '0%': { transform: 'scale(1)' },
+              '100%': { transform: 'scale(1.15)' },
+            },
+            scrollLine: {
+              '0%': { transform: 'translateY(-100%)' },
+              '100%': { transform: 'translateY(100%)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      color: #1A1A1A;
+      background-color: #F9F8F6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1), transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-container {
+      overflow: hidden;
+      position: absolute;
+      inset: 0;
+    }
+    .hero-bg {
+      background-image: url("../images/Exterior.webp");
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      transform-origin: center center;
+      animation: kenBurns 30s ease-out infinite alternate;
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 60px;
+      background: rgba(255,255,255,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    .scroll-line::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #FFF;
+      animation: scrollLine 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+    }
+
+    .hover-zoom {
+      overflow: hidden;
+    }
+    .hover-zoom img {
+      transition: transform 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: transform;
+    }
+    .hover-zoom:hover img {
+      transform: scale(1.06);
+    }
+
+    .nav-link {
+      position: relative;
+      display: inline-block;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      width: 0;
+      height: 1px;
+      background-color: #2C2C2C;
+      transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1), left 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .nav-link:hover::after {
+      width: 100%;
+      left: 0;
+    }
+
+    .shadow-soft {
+      box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in { transition: none; opacity: 1; transform: none; }
+      .hero-bg { animation: none; }
+      .scroll-line::after { animation: none; }
+      .hover-zoom img { transition: none; }
+      * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body class="font-sans bg-brand-gray selection:bg-brand-accent selection:text-white">
+
+  <!-- Skip Navigation -->
+  <a href="#concept" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-brand-black focus:text-white focus:px-6 focus:py-3 focus:text-sm focus:tracking-widest">跳至內容</a>
+
+  <!-- Header -->
+  <header class="fixed w-full z-50 transition-all duration-700 ease-elegant border-b border-transparent" id="header">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
+      <h1 class="font-serif text-2xl md:text-3xl tracking-widest text-brand-black z-50 relative">
+        <a href="#" class="block hover:opacity-60 transition duration-500">
+          <img src="../images/logo.webp" alt="HALE MAKAWAO" id="header-logo" class="h-6 md:h-8 w-auto opacity-0 transition-opacity duration-700">
+        </a>
+      </h1>
+
+      <nav class="hidden md:flex space-x-10 items-center font-sans text-xs tracking-widest text-gray-600">
+        <a href="#concept" class="nav-link hover:text-brand-black transition duration-300">品牌理念</a>
+        <a href="#stay" class="nav-link hover:text-brand-black transition duration-300">客房與設施</a>
+        <a href="#dining" class="nav-link hover:text-brand-black transition duration-300">餐飲體驗</a>
+        <a href="#access" class="nav-link hover:text-brand-black transition duration-300">交通指南</a>
+
+        <div class="flex items-center gap-3 text-[10px] text-gray-400 border-l border-gray-200 pl-8 ml-2">
+          <a href="../index.html" class="hover:text-brand-black transition duration-300" lang="ja">JP</a>
+          <span class="text-gray-300">|</span>
+          <a href="../en/index.html" class="hover:text-brand-black transition duration-300">EN</a>
+        </div>
+
+        <a href="https://www.airbnb.com.tw/rooms/1628763154330235389" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden bg-brand-black text-white px-8 py-4 rounded-sm shadow-md transition-all duration-500 hover:shadow-xl hover:scale-105">
+          <span class="relative z-10 flex items-center gap-3 font-medium tracking-widest">
+            在 AIRBNB 預訂
+            <svg class="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </span>
+          <div class="absolute inset-0 bg-gray-700 transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+      </nav>
+
+      <button class="md:hidden z-50 focus:outline-none p-2 group" id="menu-btn" aria-label="開啟選單" aria-expanded="false" aria-controls="mobile-menu">
+        <div class="space-y-1.5 w-6">
+          <span class="block w-full h-px bg-brand-black transition-all duration-500 origin-center group-hover:w-4 ml-auto"></span>
+          <span class="block w-full h-px bg-brand-black transition-all duration-500"></span>
+          <span class="block w-full h-px bg-brand-black transition-all duration-500 origin-center group-hover:w-4 ml-auto"></span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="fixed inset-0 bg-brand-gray z-40 transform translate-x-full transition-transform duration-700 ease-elegant flex flex-col justify-center items-center space-y-8" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="導覽選單">
+      <a href="#concept" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">品牌理念</a>
+      <a href="#stay" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">客房與設施</a>
+      <a href="#dining" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">餐飲體驗</a>
+      <a href="#access" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">交通指南</a>
+      
+      <a href="https://www.airbnb.com.tw/rooms/1628763154330235389" target="_blank" rel="noopener noreferrer" class="mt-8 font-sans text-sm tracking-widest text-white bg-brand-black px-12 py-5 rounded-sm hover:bg-gray-800 transition shadow-lg w-72 text-center">在 Airbnb 預訂</a>
+      
+      <div class="pt-12 flex flex-col items-center space-y-6 text-[10px] text-gray-400 font-sans tracking-widest uppercase">
+        <div class="w-8 h-px bg-gray-300"></div>
+        <div class="flex space-x-6">
+          <a href="../index.html" class="hover:text-brand-black transition" lang="ja">日本語</a>
+          <span>/</span>
+          <a href="../en/index.html" class="hover:text-brand-black transition">English</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen w-full overflow-hidden">
+    <div class="hero-container">
+      <div class="hero-bg"></div>
+      <div class="absolute inset-0 bg-black/10"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/20"></div>
+    </div>
+
+    <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 pt-12">
+      <div class="fade-in mb-8">
+        <img src="../images/logo.webp" alt="HALE MAKAWAO" class="w-48 md:w-80 h-auto drop-shadow-2xl opacity-95">
+      </div>
+      <p class="fade-in text-white/90 font-serif text-lg md:text-2xl tracking-[0.2em] mt-4 shadow-black drop-shadow-md" style="transition-delay: 0.3s;">
+        大山中的私人森林別墅
+      </p>
+    </div>
+    
+    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex flex-col items-center pb-12 fade-in" style="transition-delay: 1.2s;">
+      <span class="text-[10px] tracking-[0.3em] mb-4 text-white/80 font-sans uppercase">Scroll</span>
+      <div class="scroll-line bg-white/40"></div>
+    </div>
+  </section>
+
+  <!-- Concept Section -->
+  <section id="concept" class="py-20 md:py-40 bg-white relative overflow-hidden">
+    <div class="absolute top-10 left-0 text-[6rem] md:text-[14rem] font-en text-brand-subtle opacity-30 select-none pointer-events-none z-0 leading-none" style="font-family: 'Times New Roman', serif;">
+      Retreat
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20">
+        
+        <div class="w-full md:w-6/12 order-2 md:order-1">
+          <div class="hover-zoom rounded-sm overflow-hidden shadow-soft mb-8 md:mb-12 fade-in">
+            <img loading="lazy" src="../images/Forest.webp" alt="鳥取大山的森林美景" class="w-full h-auto object-cover">
+          </div>
+        </div>
+
+        <div class="w-full md:w-5/12 order-1 md:order-2 text-center md:text-left fade-in" style="transition-delay: 0.2s;">
+          <span class="font-en text-[11px] tracking-[0.4em] text-brand-accent uppercase block mb-4">Concept</span>
+          <h3 class="font-serif text-2xl md:text-3xl text-brand-black tracking-widest leading-relaxed mb-8">
+            時光靜止的森林秘境
+          </h3>
+          
+          <div class="font-sans text-sm md:text-base text-gray-600 leading-relaxed md:leading-[2.2] tracking-wide space-y-6 text-justify md:text-left">
+            <p>
+              位於鳥取縣大山山麓，HALE MAKAWAO 是一棟隱身於寂靜樹林中、一日僅限一組客人的專屬包棟別墅。
+            </p>
+            <p>
+              這裡沒有奢華的裝飾或嘈雜的娛樂設施，只有一整面如畫般的森林美景和清脆的鳥鳴。
+            </p>
+            <p>
+              因為是完全包棟，即使帶小孩也能安心放鬆，完全不用擔心打擾鄰居。在這裡，您可以放下手錶，忘卻行程，細細品味「什麼都不做」的奢華時光。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Stay Section -->
+  <section id="stay" class="py-20 md:py-32 bg-brand-gray border-t border-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="mb-16 md:mb-20 text-center fade-in">
+        <span class="font-en text-[11px] tracking-[0.4em] text-brand-accent uppercase block mb-3 md:mb-4">Accommodation</span>
+        <h3 class="font-serif text-2xl md:text-3xl text-brand-black tracking-widest">專屬您的私人空間</h3>
+        <div class="w-px h-8 md:h-10 bg-gray-300 mx-auto mt-6 md:mt-8"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center mb-20 md:mb-32">
+        <div class="fade-in">
+          <div class="hover-zoom rounded-sm overflow-hidden shadow-soft">
+            <img loading="lazy" src="../images/LivingRoom.webp" alt="寬敞舒適的客廳" class="w-full h-auto md:h-[450px] object-cover">
+          </div>
+        </div>
+        
+        <div class="fade-in" style="transition-delay: 0.2s;">
+          <div class="inline-block border border-gray-300 px-4 py-1.5 mb-6 rounded-full text-[10px] tracking-widest text-gray-500 font-sans">
+            整棟出租 · 最多可容納 6 名旅客
+          </div>
+          <h4 class="font-serif text-2xl md:text-3xl mb-6 leading-relaxed text-brand-black tracking-widest">寬敞且舒適的客廳</h4>
+          <p class="font-sans text-sm md:text-base text-gray-600 leading-relaxed md:leading-[2.2] mb-8 text-justify md:text-left">
+            一樓擁有挑高且開放感十足的客廳與餐廳，大面窗戶如畫框般將美麗的森林景致盡收眼底。<br><br>
+            館內配備齊全的迷你廚房（附冰箱、微波爐），讓您能像在自己家一樣，依照自己的步調料理在地的新鮮食材。
+          </p>
+          
+          <div class="flex flex-wrap gap-x-6 md:gap-x-8 gap-y-3 md:gap-y-4 font-sans text-xs text-gray-500 tracking-widest">
+            <span>免費 Wi-Fi</span>
+            <span>免費停車場</span>
+            <span>自助入住</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in">
+        <div class="flex items-center gap-3 md:gap-4 mb-6 md:mb-8 justify-center md:justify-start">
+          <span class="w-8 h-px bg-brand-accent hidden md:block"></span>
+          <h5 class="font-serif text-xl md:text-2xl text-brand-black tracking-widest">二樓：私人客房與景觀浴室</h5>
+        </div>
+        <p class="font-sans text-sm md:text-base text-gray-600 mb-8 md:mb-12 leading-relaxed text-center md:text-left max-w-3xl tracking-wide">
+          二樓為安靜的休息區，設有日式榻榻米房與西式客房（雙人房與雙床房）。在專屬的景觀浴室中，您可以一邊泡澡，一邊眺望窗外蓊鬱的森林，徹底放鬆身心。
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div class="group relative rounded-sm overflow-hidden shadow-soft">
+            <div class="hover-zoom h-full">
+              <img loading="lazy" src="../images/Japanese-styleRoom1.webp" alt="日式榻榻米房" class="w-full h-40 md:h-56 object-cover">
+            </div>
+            <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+              <span class="text-white text-xs font-sans tracking-widest">日式榻榻米房</span>
+            </div>
+          </div>
+          <div class="group relative rounded-sm overflow-hidden shadow-soft">
+            <div class="hover-zoom h-full">
+              <img loading="lazy" src="../images/Bedroom1_Double Room.webp" alt="西式雙人房" class="w-full h-40 md:h-56 object-cover">
+            </div>
+            <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+              <span class="text-white text-xs font-sans tracking-widest">西式雙人房</span>
+            </div>
+          </div>
+          <div class="group relative rounded-sm overflow-hidden shadow-soft">
+            <div class="hover-zoom h-full">
+              <img loading="lazy" src="../images/Bedroom2_TwinBeds.webp" alt="西式雙床房" class="w-full h-40 md:h-56 object-cover">
+            </div>
+            <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+              <span class="text-white text-xs font-sans tracking-widest">西式雙床房</span>
+            </div>
+          </div>
+          <div class="group relative rounded-sm overflow-hidden shadow-soft">
+            <div class="hover-zoom h-full">
+              <img loading="lazy" src="../images/Bathroom.webp" alt="森林景觀浴室" class="w-full h-40 md:h-56 object-cover">
+            </div>
+            <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+              <span class="text-white text-xs font-sans tracking-widest">森林景觀浴室</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dining Section -->
+  <section id="dining" class="py-20 md:py-32 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <div class="mb-16 md:mb-24 fade-in text-center">
+        <span class="font-en text-[11px] tracking-[0.4em] text-brand-accent uppercase block mb-3 md:mb-4">Gastronomy</span>
+        <h3 class="font-serif text-2xl md:text-3xl text-brand-black tracking-widest">餐飲體驗</h3>
+        <div class="w-px h-8 md:h-10 bg-gray-300 mx-auto mt-6 md:mt-8"></div>
+        <p class="font-sans text-sm md:text-base text-gray-600 leading-relaxed mt-8 max-w-2xl mx-auto tracking-wide">
+          我們提供多種選擇，讓您細細品味大山的豐富美食。從招牌水果滿載法式吐司早餐套餐到鳥取和牛BBQ全包式套餐及在地特色晚餐，盡享不受打擾的自由食光。
+        </p>
+      </div>
+
+      <!-- Breakfast -->
+      <div class="mb-20 md:mb-32 fade-in relative group max-w-5xl mx-auto text-left">
+        <div class="w-full h-[350px] md:h-[500px] overflow-hidden rounded-sm shadow-soft">
+          <img loading="lazy" src="../images/Breakfast.webp" alt="招牌水果滿載法式吐司早餐套餐" class="w-full h-full object-cover transition duration-[1.5s] group-hover:scale-105">
+        </div>
+        <div class="absolute top-6 md:top-10 left-6 md:left-10 bg-white/95 p-6 md:p-8 max-w-[280px] md:max-w-[340px] shadow-xl border-t-2 border-brand-accent">
+          <span class="font-en text-[10px] tracking-[0.3em] text-gray-400 block mb-2 uppercase">Morning</span>
+          <h4 class="font-serif text-lg md:text-xl mb-2 tracking-widest text-brand-black flex flex-col gap-2">
+            招牌水果滿載法式吐司<br>早餐套餐
+            <span class="text-[10px] bg-brand-black text-white px-2 py-0.5 tracking-widest font-sans w-fit">加購選項</span>
+          </h4>
+          <p class="font-sans text-xs md:text-sm text-gray-600 leading-relaxed mt-3 tracking-wide">
+            經過一整晚蛋液浸泡、精心烘烤的極致法式吐司，搭配民宿主人親自挑選的當季完熟水果。<br><span class="font-medium text-brand-black mt-2 block">（2,750 日圓 / 人）</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Dinner Options -->
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 fade-in text-left">
+        
+        <!-- BBQ -->
+        <div class="bg-brand-gray p-8 rounded-sm shadow-sm border-t-2 border-transparent hover:border-brand-accent transition">
+          <span class="text-[10px] bg-brand-black text-white px-3 py-1 tracking-widest font-sans mb-4 inline-block">人氣推薦</span>
+          <h4 class="font-serif text-lg md:text-xl text-brand-black mb-3 tracking-widest">私人庭院烤肉 <br><span class="text-xs text-gray-500 font-sans tracking-wide mt-1 block">全包式 或 自備食材</span></h4>
+          <p class="font-sans text-sm text-gray-600 leading-relaxed mb-4 tracking-wide">
+            全包式套餐包含鳥取和牛、大山地雞、在地蔬菜等嚴選食材，由設施準備好一切。您只需空手前來，即可在私人露台享受正宗BBQ。也可選擇僅租借設備、自備食材。
+          </p>
+          <span class="font-sans text-xs font-medium text-brand-black tracking-widest">3,500 日圓 / 組（僅設備）· 6,000 日圓 / 人（全包式）</span>
+        </div>
+
+        <!-- Craft Beer -->
+        <div class="bg-brand-gray p-8 rounded-sm shadow-sm border-t-2 border-transparent hover:border-brand-accent transition">
+          <span class="text-[10px] bg-brand-accent text-white px-3 py-1 tracking-widest font-sans mb-4 inline-block">含專車接送</span>
+          <h4 class="font-serif text-lg md:text-xl text-brand-black mb-3 tracking-widest">在地精釀啤酒 <br><span class="text-xs text-gray-500 font-sans tracking-wide mt-1 block">大山 G 啤酒餐廳</span></h4>
+          <p class="font-sans text-sm text-gray-600 leading-relaxed mb-4 tracking-wide">
+            提供當地釀酒廠附設餐廳的來回接送服務（+1,000 日圓）。無需擔心酒駕，全家或三五好友盡情享受榮獲世界第一的精釀啤酒與美味烤雞。
+          </p>
+        </div>
+
+        <!-- Sushi -->
+        <div class="bg-brand-gray p-8 rounded-sm shadow-sm border-t-2 border-transparent hover:border-brand-accent transition">
+          <span class="text-[10px] bg-brand-accent text-white px-3 py-1 tracking-widest font-sans mb-4 inline-block">含專車接送</span>
+          <h4 class="font-serif text-lg md:text-xl text-brand-black mb-3 tracking-widest">在地人氣壽司 <br><span class="text-xs text-gray-500 font-sans tracking-wide mt-1 block">鄉之鮨 田村</span></h4>
+          <p class="font-sans text-sm text-gray-600 leading-relaxed mb-4 tracking-wide">
+            提供在地人最愛隱藏版名店的來回接送服務（+1,000 日圓）。以驚人的實惠價格，品嚐來自日本海、份量十足且極致新鮮的海鮮壽司。
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Supermarkets -->
+      <div class="mt-20 md:mt-32 max-w-4xl mx-auto border border-brand-line/50 p-8 md:p-12 text-left rounded-sm bg-white">
+        <h4 class="font-serif text-xl text-brand-black mb-6 text-center md:text-left border-b border-gray-100 pb-4 tracking-widest">周邊食材採買指南</h4>
+        <ul class="space-y-6 font-sans text-sm text-gray-600 tracking-wide">
+          <li class="flex flex-col md:flex-row gap-2 md:gap-4">
+            <strong class="text-brand-black min-w-[140px] text-base">大山望：</strong>
+            <div class="flex-1">
+              <p class="mb-2">購買頂級「鳥取和牛」與新鮮在地蔬菜的最佳去處。</p>
+              <div class="text-xs text-gray-500 leading-relaxed">
+                地址：鳥取縣西伯郡伯耆町金屋谷 1801<br>
+                營業時間：9:00 - 17:00 (週二公休)
+              </div>
+            </div>
+          </li>
+          <li class="flex flex-col md:flex-row gap-2 md:gap-4 border-t border-gray-50 pt-6">
+            <strong class="text-brand-black min-w-[140px] text-base">木村鮮魚店：</strong>
+            <div class="flex-1">
+              <p class="mb-2">在地人喜愛的魚市場，提供附近漁港直送的最新鮮海產，非常適合買回民宿烤肉。</p>
+              <div class="text-xs text-gray-500 leading-relaxed">
+                地址：鳥取縣米子市淀江町西原 1123<br>
+                營業時間：9:00 - 18:00 (週日公休)
+              </div>
+            </div>
+          </li>
+          <li class="flex flex-col md:flex-row gap-2 md:gap-4 border-t border-gray-50 pt-6">
+            <strong class="text-brand-black min-w-[140px] text-base">蘆八瑠 (Aspal)：</strong>
+            <div class="flex-1">
+              <p class="mb-2">鳥取縣最大規模的農產品直銷中心（美食主題樂園）。</p>
+              <div class="text-xs text-gray-500 leading-relaxed">
+                地址：鳥取縣西伯郡日吉津村日吉津 1450（車程約 20 分鐘）<br>
+                營業時間：8:30 - 17:00 (每月第三個週二公休)
+              </div>
+            </div>
+          </li>
+          <li class="flex flex-col md:flex-row gap-2 md:gap-4 border-t border-gray-50 pt-6">
+            <strong class="text-brand-black min-w-[140px] text-base">M-Mart 大山店：</strong>
+            <div class="flex-1">
+              <p class="mb-2">距離民宿最近的在地綜合超市（車程約 10 分鐘）。</p>
+              <div class="text-xs text-gray-500 leading-relaxed">
+                地址：鳥取縣西伯郡大山町所子 266-4<br>
+                營業時間：8:30 - 20:00
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Access Section -->
+  <section id="access" class="py-20 md:py-40 relative text-white">
+    <div class="absolute inset-0 z-0">
+      <img src="../images/Exterior.webp" alt="HALE MAKAWAO 外觀" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-brand-dark/85 mix-blend-multiply"></div>
+    </div>
+
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-12 md:gap-24 relative z-10 items-center">
+      <div class="w-full lg:w-5/12 fade-in text-center md:text-left">
+        <span class="text-3xl md:text-5xl block mb-6 md:mb-8 text-white/30 italic font-en">Location</span>
+        <h3 class="font-serif text-2xl md:text-3xl tracking-widest mb-6 md:mb-10 text-white/95 leading-relaxed">
+          抵達森林深處的寧靜
+        </h3>
+        <p class="font-sans text-sm md:text-base text-gray-300 leading-relaxed mb-10 md:mb-12 font-light tracking-wide">
+          日本鳥取縣西伯郡大山町鈑戶 1542-91 <br>(郵遞區號 689-3317)<br><br>
+          距離 米子鬼太郎機場 約 50 分鐘車程<br>
+          距離 JR 米子站 約 30 分鐘車程
+        </p>
+        
+        <div class="mb-10 md:mb-12 inline-flex items-center gap-6 border border-white/10 px-6 py-4 rounded-sm bg-white/5 backdrop-blur-md text-left">
+          <span class="text-3xl font-light text-white/70 font-en">P</span>
+          <div class="w-px h-10 bg-white/20"></div>
+          <span class="text-[11px] md:text-xs tracking-widest text-gray-300 font-sans">備有免費停車場 <br><span class="text-[10px] text-gray-400">最多可停 10 輛車</span></span>
+        </div>
+
+        <div>
+          <a href="https://maps.google.com/maps?q=Hale+Makawao+Tottori" target="_blank" rel="noopener noreferrer" class="group relative inline-block border border-white/40 bg-transparent text-white px-10 py-4 text-xs tracking-widest hover:text-brand-dark transition duration-500 font-sans">
+            <span class="relative z-10">在 Google 地圖中開啟</span>
+            <div class="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="w-full lg:w-7/12 h-[350px] md:h-[450px] rounded-sm overflow-hidden fade-in relative shadow-2xl border border-white/10 mt-8 lg:mt-0">
+        <iframe
+          src="https://maps.google.com/maps?q=Hale+Makawao+Tottori&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          title="HALE MAKAWAO 地圖位置"
+          width="100%" height="100%" style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-black text-white py-16 md:py-24 border-t border-white/5 text-center md:text-left">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-20">
+      <div class="col-span-1 md:col-span-2">
+        <h2 class="font-serif text-xl md:text-2xl tracking-widest mb-6 md:mb-8">HALE MAKAWAO</h2>
+        <p class="font-sans text-xs md:text-sm text-gray-400 leading-relaxed mb-8 md:mb-12 max-w-sm mx-auto md:mx-0 tracking-wide">
+          位於鳥取大山的私人森林別墅。<br>
+          一日限定一組，專屬您的寧靜時光。
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 col-span-1 md:col-span-2 gap-8 md:gap-12">
+        <div>
+          <h4 class="font-sans text-[11px] mb-6 md:mb-8 text-gray-500 tracking-widest font-bold">網站導覽</h4>
+          <ul class="space-y-4 md:space-y-5 font-sans text-xs text-gray-400 tracking-widest">
+            <li><a href="#concept" class="hover:text-white transition">品牌理念</a></li>
+            <li><a href="#stay" class="hover:text-white transition">客房與設施</a></li>
+            <li><a href="#dining" class="hover:text-white transition">餐飲體驗</a></li>
+            <li><a href="#access" class="hover:text-white transition">交通指南</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-sans text-[11px] mb-6 md:mb-8 text-gray-500 tracking-widest font-bold">語言選擇</h4>
+          <ul class="space-y-4 md:space-y-5 font-sans text-xs text-gray-400 tracking-widest">
+            <li><a href="../index.html" class="hover:text-white transition" lang="ja">日本語</a></li>
+            <li><a href="../en/index.html" class="hover:text-white transition en">English</a></li>
+            <li class="pt-6 md:pt-8">
+              <a href="https://www.airbnb.com.tw/rooms/1628763154330235389" class="block border border-white/20 px-4 py-3 hover:bg-white hover:text-black transition text-xs text-center tracking-widest font-medium">在 AIRBNB 預訂</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12 mt-16 md:mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-center md:justify-between items-center font-sans text-[10px] text-gray-500 tracking-wider uppercase pb-16 md:pb-0">
+      <span>&copy; 2026 HALE MAKAWAO All Rights Reserved.</span>
+    </div>
+  </footer>
+
+  <!-- Mobile Fixed Booking Button -->
+  <div class="fixed bottom-0 left-0 w-full bg-white/98 backdrop-blur-md border-t border-gray-100 md:hidden z-40 flex shadow-[0_-5px_30px_-5px_rgba(0,0,0,0.1)]">
+    <a href="https://www.airbnb.com.tw/rooms/1628763154330235389" target="_blank" rel="noopener noreferrer" class="flex-1 bg-brand-black text-white text-center py-4 font-sans font-medium text-xs tracking-widest flex items-center justify-center gap-3">
+      <span>在 Airbnb 預訂</span>
+    </a>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const header = document.getElementById('header');
+    const headerLogo = document.getElementById('header-logo');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    let isMenuOpen = false;
+
+    function openMenu() {
+      isMenuOpen = true;
+      const spans = menuBtn.querySelectorAll('span');
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      menuBtn.setAttribute('aria-expanded', 'true');
+      spans[0].style.transform = 'rotate(45deg) translate(6px, 7px)';
+      spans[1].style.opacity = '0';
+      spans[2].style.transform = 'rotate(-45deg) translate(6px, -7px)';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      isMenuOpen = false;
+      const spans = menuBtn.querySelectorAll('span');
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      spans[0].style.transform = 'none';
+      spans[1].style.opacity = '1';
+      spans[2].style.transform = 'none';
+      document.body.style.overflow = '';
+    }
+
+    menuBtn.addEventListener('click', () => {
+      isMenuOpen ? closeMenu() : openMenu();
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => closeMenu());
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        header.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+        header.classList.remove('py-4');
+        headerLogo.classList.remove('opacity-0');
+        headerLogo.classList.add('opacity-100');
+      } else {
+        header.classList.remove('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+        header.classList.add('py-4');
+        headerLogo.classList.remove('opacity-100');
+        headerLogo.classList.add('opacity-0');
+      }
+    });
+  </script>
+</body>
+</html>
