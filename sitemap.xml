@@ -63,4 +63,99 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- 周辺観光ガイド記事（3言語×3記事） -->
+
+  <url>
+    <loc>https://halemakawao.com/guides/daisen-hiking.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://halemakawao.com/guides/daisen-hiking.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://halemakawao.com/en/guides/daisen-hiking.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/guides/daisen-hiking.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://halemakawao.com/guides/daisen-hiking.html" />
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/guides/sakaiminato-day-trip.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://halemakawao.com/guides/sakaiminato-day-trip.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://halemakawao.com/en/guides/sakaiminato-day-trip.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/guides/sakaiminato-day-trip.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://halemakawao.com/guides/sakaiminato-day-trip.html" />
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/guides/daisen-ski-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://halemakawao.com/guides/daisen-ski-2026.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://halemakawao.com/en/guides/daisen-ski-2026.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/guides/daisen-ski-2026.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://halemakawao.com/guides/daisen-ski-2026.html" />
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/en/guides/daisen-hiking.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://halemakawao.com/guides/daisen-hiking.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://halemakawao.com/en/guides/daisen-hiking.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/guides/daisen-hiking.html" />
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/en/guides/sakaiminato-day-trip.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://halemakawao.com/guides/sakaiminato-day-trip.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://halemakawao.com/en/guides/sakaiminato-day-trip.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/guides/sakaiminato-day-trip.html" />
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/en/guides/daisen-ski-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://halemakawao.com/guides/daisen-ski-2026.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://halemakawao.com/en/guides/daisen-ski-2026.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/guides/daisen-ski-2026.html" />
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/zh/guides/daisen-hiking.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://halemakawao.com/guides/daisen-hiking.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://halemakawao.com/en/guides/daisen-hiking.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/guides/daisen-hiking.html" />
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/zh/guides/sakaiminato-day-trip.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://halemakawao.com/guides/sakaiminato-day-trip.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://halemakawao.com/en/guides/sakaiminato-day-trip.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/guides/sakaiminato-day-trip.html" />
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/zh/guides/daisen-ski-2026.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://halemakawao.com/guides/daisen-ski-2026.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://halemakawao.com/en/guides/daisen-ski-2026.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/guides/daisen-ski-2026.html" />
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
