@@ -387,7 +387,7 @@ document.addEventListener('DOMContentLoaded', function(){
     </div>
 
     <!-- Mobile Menu -->
-    <div class="fixed inset-0 bg-brand-gray z-40 transform translate-x-full transition-transform duration-700 ease-elegant flex flex-col justify-center items-center space-y-8" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="導覽選單">
+    <div class="fixed inset-0 bg-brand-gray z-[55] transform translate-x-full transition-transform duration-700 ease-elegant flex flex-col justify-start items-center pt-24 pb-16 px-6 space-y-6 overflow-y-auto" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="導覽選單">
       <a href="#concept" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">品牌理念</a>
       <a href="#stay" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">客房與設施</a>
       <a href="#dining" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">餐飲體驗</a>
@@ -399,9 +399,9 @@ document.addEventListener('DOMContentLoaded', function(){
       <div class="pt-12 flex flex-col items-center space-y-6 text-[10px] text-gray-400 font-sans tracking-widest uppercase">
         <div class="w-8 h-px bg-gray-300"></div>
         <div class="flex space-x-6">
-          <a href="../index.html" class="hover:text-brand-black transition" lang="ja">日本語</a>
+          <a href="/" class="hover:text-brand-black transition" lang="ja">日本語</a>
           <span>/</span>
-          <a href="../en/index.html" class="hover:text-brand-black transition">English</a>
+          <a href="/en/" class="hover:text-brand-black transition">English</a>
         </div>
       </div>
     </div>
@@ -912,7 +912,7 @@ document.addEventListener('DOMContentLoaded', function(){
   </footer>
 
   <!-- Mobile Fixed Booking Button -->
-  <div class="fixed bottom-0 left-0 w-full bg-white/98 backdrop-blur-md border-t border-gray-100 md:hidden z-40 flex shadow-[0_-5px_30px_-5px_rgba(0,0,0,0.1)]">
+  <div id="mobile-bottom-cta" class="fixed bottom-0 left-0 w-full bg-white/98 backdrop-blur-md border-t border-gray-100 md:hidden z-40 flex shadow-[0_-5px_30px_-5px_rgba(0,0,0,0.1)]">
     <a href="https://www.airbnb.com.tw/rooms/1628763154330235389" target="_blank" rel="noopener noreferrer" class="flex-1 bg-brand-black text-white text-center py-4 font-sans font-medium text-xs tracking-widest flex items-center justify-center gap-3">
       <span>在 Airbnb 預訂</span>
     </a>

@@ -487,7 +487,7 @@ document.addEventListener('DOMContentLoaded', function(){
       </button>
     </div>
 
-    <div class="fixed inset-0 bg-brand-gray z-40 transform translate-x-full transition-transform duration-700 ease-elegant flex flex-col justify-center items-center space-y-8" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="ナビゲーションメニュー">
+    <div class="fixed inset-0 bg-brand-gray z-[55] transform translate-x-full transition-transform duration-700 ease-elegant flex flex-col justify-start items-center pt-24 pb-16 px-6 space-y-6 overflow-y-auto" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="ナビゲーションメニュー">
       <a href="#concept" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">コンセプト</a>
       <a href="stay.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">客室・設備</a>
       <a href="food.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">お食事</a>
@@ -499,9 +499,9 @@ document.addEventListener('DOMContentLoaded', function(){
       <div class="pt-12 flex flex-col items-center space-y-6 text-[10px] text-gray-400 font-serif tracking-widest uppercase">
         <div class="w-8 h-px bg-gray-300"></div>
         <div class="flex space-x-6">
-          <a href="en/index.html" class="hover:text-brand-black transition">English</a>
+          <a href="/en/" class="hover:text-brand-black transition">English</a>
           <span>/</span>
-          <a href="zh/index.html" class="hover:text-brand-black transition">繁體中文</a>
+          <a href="/zh/" class="hover:text-brand-black transition">繁體中文</a>
         </div>
       </div>
     </div>
@@ -880,7 +880,7 @@ document.addEventListener('DOMContentLoaded', function(){
   </footer>
 
   <!-- Mobile Fixed Booking Button -->
-  <div class="fixed bottom-0 left-0 w-full bg-white/98 backdrop-blur-md border-t border-gray-100 md:hidden z-40 flex shadow-[0_-5px_30px_-5px_rgba(0,0,0,0.1)]">
+  <div id="mobile-bottom-cta" class="fixed bottom-0 left-0 w-full bg-white/98 backdrop-blur-md border-t border-gray-100 md:hidden z-40 flex shadow-[0_-5px_30px_-5px_rgba(0,0,0,0.1)]">
     <a href="https://www.airbnb.jp/rooms/1628763154330235389" target="_blank" rel="noopener noreferrer" class="flex-1 bg-brand-black text-white text-center py-4 md:py-5 font-serif text-[11px] tracking-[0.3em] flex items-center justify-center gap-3">
       <span>空室検索・予約</span>
     </a>
@@ -904,6 +904,8 @@ document.addEventListener('DOMContentLoaded', function(){
       spans[1].style.opacity = '0';
       spans[2].style.transform = 'rotate(-45deg) translate(6px, -7px)';
       document.body.style.overflow = 'hidden';
+      const cta = document.getElementById('mobile-bottom-cta');
+      if (cta) cta.style.display = 'none';
     }
 
     function closeMenu() {
@@ -916,6 +918,8 @@ document.addEventListener('DOMContentLoaded', function(){
       spans[1].style.opacity = '1';
       spans[2].style.transform = 'none';
       document.body.style.overflow = '';
+      const cta = document.getElementById('mobile-bottom-cta');
+      if (cta) cta.style.display = '';
     }
 
     menuBtn.addEventListener('click', () => {
