@@ -204,6 +204,96 @@
       * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
     }
   </style>
+<!-- ===== HM Analytics START =====
+  GA4 (G-VHB73F7LHR) + Consent Mode v2 (default denied for GDPR) + Cookie Banner (ja/en/zh) + CV Trackers
+  Maintained via inject_ga4.py — do not edit by hand inside this block.
+-->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500
+  });
+  try {
+    if (localStorage.getItem('hm_consent') === 'granted') {
+      gtag('consent', 'update', { 'analytics_storage': 'granted' });
+    }
+  } catch(e){}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VHB73F7LHR"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-VHB73F7LHR', {
+    'anonymize_ip': true,
+    'allow_google_signals': false,
+    'page_language': document.documentElement.lang || 'ja'
+  });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  // Cookie consent banner (ja/en/zh)
+  (function(){
+    try { if (localStorage.getItem('hm_consent')) return; } catch(e){}
+    var lang = (document.documentElement.lang || 'ja').slice(0,2);
+    var msgs = {
+      ja: { text: 'このサイトはGoogle Analyticsを使用してサイトの利用状況を測定します。', privacy: 'プライバシーポリシー', accept: '同意する', decline: '拒否' },
+      en: { text: 'This site uses Google Analytics to measure site usage.', privacy: 'Privacy Policy', accept: 'Accept', decline: 'Decline' },
+      zh: { text: '本網站使用 Google Analytics 來測量網站使用情況。', privacy: '隱私政策', accept: '同意', decline: '拒絕' }
+    };
+    var m = msgs[lang] || msgs.ja;
+    var prefix = (lang === 'ja') ? '' : '/' + lang;
+    var wrap = document.createElement('div');
+    wrap.id = 'hm-cookie-banner';
+    wrap.setAttribute('role', 'dialog');
+    wrap.setAttribute('aria-label', 'Cookie consent');
+    wrap.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:rgba(26,26,26,0.96);color:#fff;padding:18px 24px;z-index:99999;font-size:14px;line-height:1.6;box-shadow:0 -4px 20px rgba(0,0,0,0.3);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Sans",sans-serif;';
+    wrap.innerHTML = '<div style="max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;"><div style="flex:1 1 60%;">' + m.text + ' <a href="' + prefix + '/privacy.html" style="color:#c8b88a;text-decoration:underline;">' + m.privacy + '</a></div><div style="flex:0 0 auto;display:flex;gap:8px;"><button id="hm-accept" style="padding:10px 22px;border:none;cursor:pointer;font-size:14px;font-weight:500;border-radius:4px;background:#c8b88a;color:#1a1a1a;">' + m.accept + '</button><button id="hm-decline" style="padding:10px 22px;border:1px solid rgba(255,255,255,0.4);cursor:pointer;font-size:14px;font-weight:500;border-radius:4px;background:transparent;color:#fff;">' + m.decline + '</button></div></div>';
+    document.body.appendChild(wrap);
+    document.getElementById('hm-accept').onclick = function(){
+      try { localStorage.setItem('hm_consent', 'granted'); } catch(e){}
+      if (typeof gtag === 'function') gtag('consent', 'update', { 'analytics_storage': 'granted' });
+      var b = document.getElementById('hm-cookie-banner'); if (b) b.remove();
+    };
+    document.getElementById('hm-decline').onclick = function(){
+      try { localStorage.setItem('hm_consent', 'denied'); } catch(e){}
+      var b = document.getElementById('hm-cookie-banner'); if (b) b.remove();
+    };
+  })();
+  // Conversion trackers
+  (function(){
+    if (typeof gtag !== 'function') return;
+    var bookingPatterns = ['airbnb', 'booking.com', 'rakuten.travel', 'jalan.net', 'ikyu.com', 'expedia', 'agoda', 'hotels.com', 'tripadvisor', 'vrbo'];
+    document.addEventListener('click', function(e){
+      var a = e.target.closest && e.target.closest('a');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (bookingPatterns.some(function(p){ return href.indexOf(p) > -1; })) {
+        gtag('event', 'click_outbound_booking', {
+          'destination_url': href,
+          'destination_text': (a.textContent || '').trim().slice(0, 80),
+          'page_language': document.documentElement.lang || 'ja'
+        });
+      }
+      if (href.indexOf('tel:') === 0) {
+        gtag('event', 'click_phone', { 'phone': href.replace('tel:', '') });
+      }
+      if (href.indexOf('mailto:') === 0) {
+        gtag('event', 'click_email', { 'email_domain': (href.split('@')[1] || '').replace(/[?#].*/, '') });
+      }
+    });
+    document.addEventListener('submit', function(e){
+      var f = e.target;
+      if (!(f && f.tagName === 'FORM')) return;
+      gtag('event', 'form_submit', { 'form_id': f.id || 'unknown' });
+    });
+  })();
+});
+</script>
+<!-- ===== HM Analytics END ===== -->
 </head>
 <body class="font-sans bg-brand-gray selection:bg-brand-accent selection:text-white">
 
