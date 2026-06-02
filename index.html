@@ -469,7 +469,8 @@ document.addEventListener('DOMContentLoaded', function(){
         <a href="stay.html" class="nav-link hover:text-brand-black transition duration-300">客室・設備</a>
         <a href="food.html" class="nav-link hover:text-brand-black transition duration-300">お食事</a>
         <a href="access.html" class="nav-link hover:text-brand-black transition duration-300">アクセス</a>
-        
+        <a href="#guides" class="nav-link hover:text-brand-black transition duration-300">観光ガイド</a>
+
         <a href="https://www.airbnb.jp/rooms/1628763154330235389" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden bg-brand-black text-white px-12 py-4 md:py-5 rounded-sm shadow-md transition-all duration-500 hover:shadow-xl hover:scale-105">
           <span class="relative z-10 flex items-center gap-3 text-sm tracking-widest font-medium">
             空室検索・予約
@@ -493,6 +494,7 @@ document.addEventListener('DOMContentLoaded', function(){
       <a href="stay.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">客室・設備</a>
       <a href="food.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">お食事</a>
       <a href="access.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">アクセス</a>
+      <a href="#guides" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">観光ガイド</a>
       <a href="news.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">お知らせ</a>
       
       <a href="https://www.airbnb.jp/rooms/1628763154330235389" target="_blank" rel="noopener noreferrer" class="mt-8 font-serif text-sm tracking-widest text-white bg-brand-black px-12 py-5 rounded-sm hover:bg-gray-800 transition shadow-lg w-72 text-center">空室検索・予約</a>
@@ -772,6 +774,90 @@ document.addEventListener('DOMContentLoaded', function(){
     </div>
   </section>
 
+  <!-- Area Guides -- 周辺観光ガイド（3記事への内部導線） -->
+  <section id="guides" class="py-20 md:py-32 bg-brand-gray border-t border-white">
+    <div class="max-w-6xl mx-auto px-6 lg:px-12">
+      <div class="text-center mb-12 md:mb-20 fade-in">
+        <span class="font-en italic text-sm md:text-base text-brand-accent block mb-3">Area Guides</span>
+        <h2 class="font-serif text-2xl md:text-4xl tracking-widest text-brand-dark mb-6">周辺観光ガイド</h2>
+        <div class="w-12 h-px bg-brand-accent mx-auto mb-6"></div>
+        <p class="font-sans text-xs md:text-sm text-gray-500 leading-loose tracking-wider max-w-2xl mx-auto">
+          大山の登山・スキーから、出雲大社・鳥取砂丘・水木しげるロードまで。<br class="hidden md:block">
+          ハレ・マカワオを拠点にした、山陰の楽しみ方をご紹介します。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+
+        <!-- Guide 01: 大山登山 -->
+        <a href="guides/daisen-hiking.html" class="group block bg-white rounded-sm shadow-sm overflow-hidden hover:shadow-xl transition-all duration-500 fade-in">
+          <div class="h-52 md:h-56 bg-brand-gray flex items-center justify-center"><span class="font-en text-xs tracking-widest text-gray-400">写真準備中</span></div>
+          <div class="p-6 md:p-8 text-left">
+            <span class="font-en text-[10px] tracking-widest text-brand-accent uppercase block mb-3">Hiking</span>
+            <h3 class="font-serif text-base md:text-lg tracking-wide text-brand-black mb-3 leading-relaxed">大山登山</h3>
+            <p class="font-sans text-xs text-gray-500 leading-loose mb-5">中国地方最高峰・大山。登山口まで車約15分。下山後は豪円湯院、夜は鮨たむら——登山を満喫する1日の過ごし方をご紹介。</p>
+            <span class="font-sans text-[11px] tracking-widest text-brand-black inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">ガイドを読む
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Guide 02: 大山スキー -->
+        <a href="guides/daisen-ski-2026.html" class="group block bg-white rounded-sm shadow-sm overflow-hidden hover:shadow-xl transition-all duration-500 fade-in">
+          <div class="h-52 md:h-56 bg-brand-gray flex items-center justify-center"><span class="font-en text-xs tracking-widest text-gray-400">写真準備中</span></div>
+          <div class="p-6 md:p-8 text-left">
+            <span class="font-en text-[10px] tracking-widest text-brand-accent uppercase block mb-3">Ski &amp; Snow</span>
+            <h3 class="font-serif text-base md:text-lg tracking-wide text-brand-black mb-3 leading-relaxed">大山スキー場</h3>
+            <p class="font-sans text-xs text-gray-500 leading-loose mb-5">ゲレンデまで車約5分。2026年シーズンは運営体制が変わる予定で、詳細は順次更新します。冬の大山滞在の拠点に。</p>
+            <span class="font-sans text-[11px] tracking-widest text-brand-black inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">ガイドを読む
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Guide 03: 出雲大社 -->
+        <a href="guides/izumo-taisha.html" class="group block bg-white rounded-sm shadow-sm overflow-hidden hover:shadow-xl transition-all duration-500 fade-in">
+          <div class="h-52 md:h-56 bg-brand-gray flex items-center justify-center"><span class="font-en text-xs tracking-widest text-gray-400">写真準備中</span></div>
+          <div class="p-6 md:p-8 text-left">
+            <span class="font-en text-[10px] tracking-widest text-brand-accent uppercase block mb-3">Power Spot</span>
+            <h3 class="font-serif text-base md:text-lg tracking-wide text-brand-black mb-3 leading-relaxed">出雲大社</h3>
+            <p class="font-sans text-xs text-gray-500 leading-loose mb-5">縁結びの古社へ。大山の拠点から車約1時間で日帰り参拝。参拝作法と見どころ、神門通りの食べ歩きも。</p>
+            <span class="font-sans text-[11px] tracking-widest text-brand-black inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">ガイドを読む
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Guide 04: 鳥取砂丘 -->
+        <a href="guides/tottori-sakyu.html" class="group block bg-white rounded-sm shadow-sm overflow-hidden hover:shadow-xl transition-all duration-500 fade-in">
+          <div class="h-52 md:h-56 bg-brand-gray flex items-center justify-center"><span class="font-en text-xs tracking-widest text-gray-400">写真準備中</span></div>
+          <div class="p-6 md:p-8 text-left">
+            <span class="font-en text-[10px] tracking-widest text-brand-accent uppercase block mb-3">Sand Dunes</span>
+            <h3 class="font-serif text-base md:text-lg tracking-wide text-brand-black mb-3 leading-relaxed">鳥取砂丘</h3>
+            <p class="font-sans text-xs text-gray-500 leading-loose mb-5">日本最大級の海岸砂丘へ車約1時間半。馬の背・砂の美術館・らくだ体験など、子連れでも楽しめるスポット。</p>
+            <span class="font-sans text-[11px] tracking-widest text-brand-black inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">ガイドを読む
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Guide 05: 水木しげるロード -->
+        <a href="guides/sakaiminato-day-trip.html" class="group block bg-white rounded-sm shadow-sm overflow-hidden hover:shadow-xl transition-all duration-500 fade-in">
+          <div class="h-52 md:h-56 bg-brand-gray flex items-center justify-center"><span class="font-en text-xs tracking-widest text-gray-400">写真準備中</span></div>
+          <div class="p-6 md:p-8 text-left">
+            <span class="font-en text-[10px] tracking-widest text-brand-accent uppercase block mb-3">Day Trip</span>
+            <h3 class="font-serif text-base md:text-lg tracking-wide text-brand-black mb-3 leading-relaxed">水木しげるロード</h3>
+            <p class="font-sans text-xs text-gray-500 leading-loose mb-5">車約40分、鬼太郎の世界へ。177体の妖怪ブロンズ像と海産物グルメを楽しむ境港の日帰り旅。</p>
+            <span class="font-sans text-[11px] tracking-widest text-brand-black inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">ガイドを読む
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ -- 全展開ミニマル番号付き2カラムQ&A型 -->
   <section id="faq" class="bg-white py-24 md:py-40 border-t border-brand-line">
     <div class="max-w-5xl mx-auto px-6 lg:px-12">
@@ -892,6 +978,7 @@ document.addEventListener('DOMContentLoaded', function(){
           <li><a href="stay.html" class="hover:text-white transition">STAY</a></li>
           <li><a href="food.html" class="hover:text-white transition">DINING</a></li>
           <li><a href="access.html" class="hover:text-white transition">ACCESS</a></li>
+          <li><a href="#guides" class="hover:text-white transition">GUIDES</a></li>
           <li><a href="news.html" class="hover:text-white transition">お知らせ</a></li>
         </ul>
       </div>

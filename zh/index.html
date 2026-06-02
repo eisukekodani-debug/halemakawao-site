@@ -369,6 +369,7 @@ document.addEventListener('DOMContentLoaded', function(){
         <a href="#dining" class="nav-link hover:text-brand-black transition duration-300">餐飲體驗</a>
         <a href="#sightseeing" class="nav-link hover:text-brand-black transition duration-300">周邊景點</a>
         <a href="#access" class="nav-link hover:text-brand-black transition duration-300">交通指南</a>
+        <a href="#guides" class="nav-link hover:text-brand-black transition duration-300">觀光指南</a>
 
         <div class="flex items-center gap-3 text-[10px] text-gray-400 border-l border-gray-200 pl-8 ml-2">
           <a href="../index.html" class="hover:text-brand-black transition duration-300" lang="ja">JP</a>
@@ -401,7 +402,8 @@ document.addEventListener('DOMContentLoaded', function(){
       <a href="#dining" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">餐飲體驗</a>
       <a href="#sightseeing" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">周邊景點</a>
       <a href="#access" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">交通指南</a>
-      
+      <a href="#guides" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">觀光指南</a>
+
       <a href="https://www.airbnb.com.tw/rooms/1628763154330235389" target="_blank" rel="noopener noreferrer" class="mt-8 font-sans text-sm tracking-widest text-white bg-brand-black px-12 py-5 rounded-sm hover:bg-gray-800 transition shadow-lg w-72 text-center">在 Airbnb 預訂</a>
       
       <div class="pt-12 flex flex-col items-center space-y-6 text-[10px] text-gray-400 font-sans tracking-widest uppercase">
@@ -767,6 +769,70 @@ document.addEventListener('DOMContentLoaded', function(){
     </div>
   </section>
 
+  <!-- 周邊觀光指南 Area Guides -->
+  <section id="guides" class="py-20 md:py-32 bg-brand-gray border-t border-white">
+    <div class="max-w-6xl mx-auto px-6 lg:px-12">
+      <div class="text-center mb-12 md:mb-20 fade-in">
+        <span class="font-en italic text-sm md:text-base text-brand-accent block mb-3">Area Guides</span>
+        <h2 class="font-serif text-2xl md:text-4xl tracking-widest text-brand-dark mb-6">周邊觀光指南</h2>
+        <div class="w-12 h-px bg-brand-accent mx-auto mb-6"></div>
+        <p class="font-sans text-xs md:text-sm text-gray-500 leading-loose tracking-wider max-w-2xl mx-auto">
+          大山登山健行、滑雪，或前往境港的一日小旅行。<br class="hidden md:block">
+          以 HALE MAKAWAO 為據點，依季節探索周邊的精彩行程。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+
+        <!-- Guide 01: Hiking -->
+        <a href="guides/daisen-hiking.html" class="group block bg-white rounded-sm shadow-sm overflow-hidden hover:shadow-xl transition-all duration-500 fade-in">
+          <div class="h-52 md:h-56 overflow-hidden">
+            <img src="../images/Forest.webp" alt="大山登山健行指南" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-6 md:p-8 text-left">
+            <span class="font-en text-[10px] tracking-widest text-brand-accent uppercase block mb-3">Hiking</span>
+            <h3 class="font-serif text-base md:text-lg tracking-wide text-brand-black mb-3 leading-relaxed">大山登山・健行</h3>
+            <p class="font-sans text-xs text-gray-500 leading-loose mb-5">中國地方最高峰・大山，登山口距別墅車程約15分鐘。從親子入門路線到正式登山路線，依程度分別介紹。</p>
+            <span class="font-sans text-[11px] tracking-widest text-brand-black inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">閱讀指南
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Guide 02: Ski -->
+        <a href="guides/daisen-ski-2026.html" class="group block bg-white rounded-sm shadow-sm overflow-hidden hover:shadow-xl transition-all duration-500 fade-in">
+          <div class="h-52 md:h-56 overflow-hidden">
+            <img src="../images/Exterior.webp" alt="大山滑雪場 2026 攻略" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-6 md:p-8 text-left">
+            <span class="font-en text-[10px] tracking-widest text-brand-accent uppercase block mb-3">Ski &amp; Snow</span>
+            <h3 class="font-serif text-base md:text-lg tracking-wide text-brand-black mb-3 leading-relaxed">大山滑雪場 2026</h3>
+            <p class="font-sans text-xs text-gray-500 leading-loose mb-5">西日本最大規模的滑雪場，距別墅僅車程5分鐘。雪季資訊、纜車、親子初學者雪道一次解說。</p>
+            <span class="font-sans text-[11px] tracking-widest text-brand-black inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">閱讀指南
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Guide 03: Sakaiminato -->
+        <a href="guides/sakaiminato-day-trip.html" class="group block bg-white rounded-sm shadow-sm overflow-hidden hover:shadow-xl transition-all duration-500 fade-in">
+          <div class="h-52 md:h-56 overflow-hidden">
+            <img src="../images/Sushi_tamura.webp" alt="境港・水木茂之路一日遊指南" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-6 md:p-8 text-left">
+            <span class="font-en text-[10px] tracking-widest text-brand-accent uppercase block mb-3">Day Trip</span>
+            <h3 class="font-serif text-base md:text-lg tracking-wide text-brand-black mb-3 leading-relaxed">境港・水木茂之路</h3>
+            <p class="font-sans text-xs text-gray-500 leading-loose mb-5">車程約40分鐘，前往以《鬼太郎》聞名的境港。新鮮海鮮美食與水木茂之路妖怪商店街的完整一日遊行程。</p>
+            <span class="font-sans text-[11px] tracking-widest text-brand-black inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">閱讀指南
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ Section — 常見問題 -->
   <section id="faq" class="py-20 md:py-32 bg-white border-t border-gray-100">
     <div class="max-w-3xl mx-auto px-6">
@@ -900,6 +966,7 @@ document.addEventListener('DOMContentLoaded', function(){
             <li><a href="#sightseeing" class="hover:text-white transition">周邊景點</a></li>
             <li><a href="#faq" class="hover:text-white transition">常見問題</a></li>
             <li><a href="#access" class="hover:text-white transition">交通指南</a></li>
+            <li><a href="#guides" class="hover:text-white transition">觀光指南</a></li>
           </ul>
         </div>
         <div>

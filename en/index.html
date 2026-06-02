@@ -404,6 +404,7 @@ document.addEventListener('DOMContentLoaded', function(){
         <a href="#stay" class="nav-link hover:text-brand-black transition duration-300">Stay</a>
         <a href="#dining" class="nav-link hover:text-brand-black transition duration-300">Dining</a>
         <a href="#access" class="nav-link hover:text-brand-black transition duration-300">Access</a>
+        <a href="#guides" class="nav-link hover:text-brand-black transition duration-300">Guides</a>
 
         <div class="flex items-center gap-3 text-[10px] text-gray-400 border-l border-gray-200 pl-8 ml-2">
           <a href="../index.html" class="hover:text-brand-black transition duration-300" lang="ja">JP</a>
@@ -435,7 +436,8 @@ document.addEventListener('DOMContentLoaded', function(){
       <a href="#stay" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link uppercase">Stay</a>
       <a href="#dining" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link uppercase">Dining</a>
       <a href="#access" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link uppercase">Access</a>
-      
+      <a href="#guides" class="font-sans text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link uppercase">Guides</a>
+
       <a href="https://www.airbnb.com/rooms/1628763154330235389" target="_blank" rel="noopener noreferrer" class="mt-8 font-sans text-xs tracking-widest text-white bg-brand-black px-12 py-5 rounded-sm hover:bg-gray-800 transition shadow-lg w-72 text-center uppercase">Book on Airbnb</a>
       
       <div class="pt-12 flex flex-col items-center space-y-6 text-[10px] text-gray-400 font-sans tracking-widest uppercase">
@@ -817,6 +819,70 @@ document.addEventListener('DOMContentLoaded', function(){
     </div>
   </section>
 
+  <!-- Area Guides Section -->
+  <section id="guides" class="py-20 md:py-32 bg-brand-gray border-t border-white">
+    <div class="max-w-6xl mx-auto px-6 lg:px-12">
+      <div class="text-center mb-12 md:mb-20 fade-in">
+        <span class="font-serif italic text-sm md:text-base text-brand-accent block mb-3">Area Guides</span>
+        <h2 class="font-serif text-2xl md:text-4xl tracking-widest text-brand-dark mb-6">Things to Do Nearby</h2>
+        <div class="w-12 h-px bg-brand-accent mx-auto mb-6"></div>
+        <p class="font-sans text-xs md:text-sm text-gray-500 leading-loose tracking-wider max-w-2xl mx-auto">
+          Hiking Mt. Daisen, skiing at the resort just 5 minutes away, or a day trip to Sakaiminato.<br class="hidden md:block">
+          Discover how to spend your time around HALE MAKAWAO, season by season.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+
+        <!-- Guide 01: Hiking -->
+        <a href="guides/daisen-hiking.html" class="group block bg-white rounded-sm shadow-sm overflow-hidden hover:shadow-xl transition-all duration-500 fade-in">
+          <div class="h-52 md:h-56 overflow-hidden">
+            <img src="../images/Forest.webp" alt="Mt. Daisen Hiking Guide" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-6 md:p-8 text-left">
+            <span class="font-sans text-[10px] tracking-widest text-brand-accent uppercase block mb-3">Hiking</span>
+            <h3 class="font-serif text-base md:text-lg tracking-wide text-brand-black mb-3 leading-relaxed">Mt. Daisen Hiking</h3>
+            <p class="font-sans text-xs text-gray-500 leading-loose mb-5">The highest peak in western Japan, just 15 min from the villa. Routes for every level — families, casual walkers, and serious climbers alike.</p>
+            <span class="font-sans text-[11px] tracking-widest text-brand-black inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">Read Guide
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Guide 02: Ski -->
+        <a href="guides/daisen-ski-2026.html" class="group block bg-white rounded-sm shadow-sm overflow-hidden hover:shadow-xl transition-all duration-500 fade-in">
+          <div class="h-52 md:h-56 overflow-hidden">
+            <img src="../images/Exterior.webp" alt="Daisen Ski Resort 2026 Guide" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-6 md:p-8 text-left">
+            <span class="font-sans text-[10px] tracking-widest text-brand-accent uppercase block mb-3">Ski &amp; Snow</span>
+            <h3 class="font-serif text-base md:text-lg tracking-wide text-brand-black mb-3 leading-relaxed">Daisen Ski Resort 2026</h3>
+            <p class="font-sans text-xs text-gray-500 leading-loose mb-5">Western Japan's largest ski resort, only 5 minutes by car. Season info, lifts, and family-friendly runs — everything you need to plan your ski trip.</p>
+            <span class="font-sans text-[11px] tracking-widest text-brand-black inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">Read Guide
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Guide 03: Sakaiminato -->
+        <a href="guides/sakaiminato-day-trip.html" class="group block bg-white rounded-sm shadow-sm overflow-hidden hover:shadow-xl transition-all duration-500 fade-in">
+          <div class="h-52 md:h-56 overflow-hidden">
+            <img src="../images/Sushi_tamura.webp" alt="Sakaiminato Mizuki Shigeru Road Day Trip Guide" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+          <div class="p-6 md:p-8 text-left">
+            <span class="font-sans text-[10px] tracking-widest text-brand-accent uppercase block mb-3">Day Trip</span>
+            <h3 class="font-serif text-base md:text-lg tracking-wide text-brand-black mb-3 leading-relaxed">Sakaiminato – Mizuki Shigeru Road</h3>
+            <p class="font-sans text-xs text-gray-500 leading-loose mb-5">About 40 minutes by car. Fresh seafood and the famous yokai shopping street — your complete day-trip plan from HALE MAKAWAO.</p>
+            <span class="font-sans text-[11px] tracking-widest text-brand-black inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">Read Guide
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ Section -->
   <section class="py-20 md:py-32 bg-brand-gray border-t border-white">
     <div class="max-w-3xl mx-auto px-6">
@@ -885,6 +951,7 @@ document.addEventListener('DOMContentLoaded', function(){
             <li><a href="#stay" class="hover:text-white transition">Stay</a></li>
             <li><a href="#dining" class="hover:text-white transition">Dining</a></li>
             <li><a href="#access" class="hover:text-white transition">Access</a></li>
+            <li><a href="#guides" class="hover:text-white transition">Guides</a></li>
           </ul>
         </div>
         <div>
