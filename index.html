@@ -323,6 +323,10 @@
       position: relative;
       display: inline-block;
     }
+    /* 最上部の透明ヘッダーでも、明るい背景画像の上でnavを読みやすくする白グラデ */
+    #header:not(.bg-white\/90) {
+      background: linear-gradient(to bottom, rgba(249,248,246,0.94) 0%, rgba(249,248,246,0.55) 55%, rgba(249,248,246,0) 100%);
+    }
     .nav-link::after {
       content: '';
       position: absolute;
@@ -464,7 +468,7 @@ document.addEventListener('DOMContentLoaded', function(){
         </a>
       </h1>
 
-      <nav class="hidden md:flex space-x-12 items-center font-serif text-xs tracking-relaxed text-gray-600">
+      <nav class="hidden md:flex space-x-12 items-center font-serif text-xs tracking-relaxed text-gray-800">
         <a href="#concept" class="nav-link hover:text-brand-black transition duration-300">コンセプト</a>
         <a href="stay.html" class="nav-link hover:text-brand-black transition duration-300">客室・設備</a>
         <a href="food.html" class="nav-link hover:text-brand-black transition duration-300">お食事</a>
