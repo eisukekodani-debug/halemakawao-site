@@ -7,6 +7,7 @@
   <meta name="description" content="鳥取県・大山あけまの森にある1日1組限定の一棟貸し別荘「ハレ・マカワオ（HALE MAKAWAO）」。家族・グループ向け、最大12名、全4室。大山スキー場まで車で約5分、米子鬼太郎空港から車で約40分、台北直行便も就航。特製フルーツ山盛りフレンチトーストのモーニングセット、鳥取和牛BBQ手ぶらセット、大山名店への送迎プランが人気のコテージ・貸別荘。">
   <link rel="canonical" href="https://halemakawao.com/">
   <link rel="icon" href="./images/logo.webp" type="image/webp">
+  <link rel="preload" as="image" href="./images/Exterior.webp" fetchpriority="high">
   <link rel="alternate" hreflang="ja" href="https://halemakawao.com/">
   <link rel="alternate" hreflang="en" href="https://halemakawao.com/en/">
   <link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/">
@@ -323,10 +324,12 @@
       position: relative;
       display: inline-block;
     }
-    /* 最上部の透明ヘッダーでも、明るい背景画像の上でnavを読みやすくする白グラデ */
-    #header:not(.bg-white\/90) {
-      background: linear-gradient(to bottom, rgba(249,248,246,0.94) 0%, rgba(249,248,246,0.55) 55%, rgba(249,248,246,0) 100%);
-    }
+    /* 最上部の透明ヘッダー: nav文字は白＋影で写真の上でも読みやすく（背景は敷かない＝かすみ防止） */
+    #header:not(.bg-white\/90) .nav-link { color: #ffffff; text-shadow: 0 1px 4px rgba(0,0,0,0.55); }
+    /* スクロール後の白背景ヘッダー: 濃い文字に戻す */
+    #header.bg-white\/90 .nav-link { color: #2C2C2C; text-shadow: none; }
+    /* 透明ヘッダー時はホバー下線も白に（写真の上で見えるよう） */
+    #header:not(.bg-white\/90) .nav-link::after { background-color: #ffffff; }
     .nav-link::after {
       content: '';
       position: absolute;
@@ -344,6 +347,11 @@
 
     .shadow-soft {
       box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.08);
+    }
+
+    /* モバイルではヒーローのケンバーンズ（ゆっくりズーム）を止め、固定CTAバーとのズレ・もたつきを解消 */
+    @media (max-width: 768px) {
+      .hero-bg { animation: none; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -519,7 +527,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <div class="hero-container">
       <div class="hero-bg"></div>
       <div class="absolute inset-0 bg-black/5"></div>
-      <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/10"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/45 via-transparent to-black/15"></div>
     </div>
 
     <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 pt-12">
@@ -725,7 +733,7 @@ document.addEventListener('DOMContentLoaded', function(){
             <img src="./images/Sushi_tamura.webp" alt="郷の鮨たむら" class="w-full h-full md:h-56 object-cover" loading="lazy">
           </div>
           <div class="hover-zoom rounded-sm overflow-hidden shadow-soft aspect-[4/3] md:aspect-auto">
-            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974&auto=format&fit=crop" alt="BBQ" class="w-full h-full md:h-56 object-cover">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974&auto=format&fit=crop" alt="BBQ" class="w-full h-full md:h-56 object-cover" loading="lazy">
           </div>
         </div>
       </div>
