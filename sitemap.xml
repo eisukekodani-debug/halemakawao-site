@@ -8,7 +8,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://halemakawao.com/en/" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://halemakawao.com/" />
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -220,4 +220,28 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- 観光ガイド（2026-06 追加・日本語のみ。en/zh版は後日付与） -->
+
+  <url>
+    <loc>https://halemakawao.com/guides/matsue-castle.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/guides/kaisendon.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/guides/onsen.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
