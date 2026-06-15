@@ -54,7 +54,8 @@
         "priceRange": "¥40,000-¥60,000",
         "checkinTime": "15:00",
         "checkoutTime": "10:00",
-        "numberOfRooms": 4,
+        "numberOfRooms": 5,
+        "numberOfBedrooms": 3,
         "petsAllowed": false,
         "smokingAllowed": false,
         "occupancy": {
@@ -98,12 +99,12 @@
           {
             "@type": "Question",
             "name": "What are the check-in and check-out times? Is early check-in available?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Check-in is from 3:00 PM and check-out is by 10:00 AM. Early check-in from 2:00 PM may be available depending on availability — please request in advance via Airbnb message or booking notes. For late arrivals after 6:00 PM, prior notification is required. We host one group per day."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Check-in is from 3:00 PM and check-out is by 10:00 AM. Early check-in from 2:00 PM may be available depending on availability — please request in advance via Airbnb message or booking notes. For late arrivals after 6:00 PM, prior notification is required. We host one group per day, and the owner-hosts greet you in person at check-in."}
           },
           {
             "@type": "Question",
             "name": "How many guests can stay? How many bedrooms are there?",
-            "acceptedAnswer": {"@type": "Answer", "text": "HALE MAKAWAO accommodates up to 12 guests in 4 bedrooms, ideal for family trips, multi-generational visits, and small group travel. The entire house is reserved exclusively for your group — perfect for multi-family stays or private retreats near Mt. Daisen."}
+            "acceptedAnswer": {"@type": "Answer", "text": "HALE MAKAWAO accommodates up to 12 guests in five guest rooms: three Western-style bedrooms (two doubles and one twin) and two Japanese-style tatami rooms. Ideal for family trips, multi-generational visits, and small group travel — the entire house is reserved exclusively for your group, perfect for multi-family stays or private retreats near Mt. Daisen."}
           },
           {
             "@type": "Question",
@@ -133,12 +134,17 @@
           {
             "@type": "Question",
             "name": "How far is it to the Daisen ski resort?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Daisen White Resort is approximately 5 minutes by car from HALE MAKAWAO, making this entire-house villa one of the closest accommodations to the ski lifts. The ski season typically runs December through March. After skiing, you can return to the villa within minutes — a major advantage for ski trips."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Daisen White Resort is approximately 5 minutes by car from HALE MAKAWAO, making this entire-house villa one of the closest accommodations to the ski lifts. The ski season typically runs December through March. After skiing, you can return to the villa within minutes — a major advantage for ski trips. Please note that the ski resort is expected to operate under new management beginning with the 2026–27 ski season, so its name and services may change accordingly."}
           },
           {
             "@type": "Question",
             "name": "What meal options are available?",
             "acceptedAnswer": {"@type": "Answer", "text": "Three meal options: ① Signature French toast morning set with seasonal fresh fruits (advance reservation). ② Tottori Wagyu BBQ hands-free set — all ingredients and equipment provided. ③ Local restaurant shuttle plan to renowned dining spots near Mt. Daisen. All options must be booked at the time of reservation or at least 3 days before check-in."}
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer self check-in, or will someone meet me?",
+            "acceptedAnswer": {"@type": "Answer", "text": "The owner-hosts live on-site and personally welcome every group at check-in. You will have complete privacy throughout your stay, while help is always close at hand if needed — particularly reassuring for first-time visitors to the Mt. Daisen area."}
           }
         ]
       }
@@ -547,7 +553,7 @@ document.addEventListener('DOMContentLoaded', function(){
         
         <div class="fade-in" style="transition-delay: 0.2s;">
           <div class="inline-block border border-gray-300 px-4 py-1.5 mb-6 rounded-full text-[10px] tracking-widest text-gray-500 uppercase font-sans">
-            Entire Home &middot; Up to 6 Guests &middot; 1 Group Per Night
+            Entire Home &middot; Up to 12 Guests &middot; 1 Group Per Night
           </div>
           <h3 class="font-serif text-2xl md:text-3xl mb-6 leading-relaxed text-brand-black">Spacious Entire-House Rental in Mt. Daisen</h3>
           <p class="font-sans text-sm md:text-base text-gray-600 leading-relaxed md:leading-[2.2] mb-8 text-justify md:text-left">
@@ -558,7 +564,7 @@ document.addEventListener('DOMContentLoaded', function(){
           <div class="flex flex-wrap gap-x-6 md:gap-x-8 gap-y-3 md:gap-y-4 font-sans text-xs text-gray-500 tracking-wider uppercase">
             <span>Free Wi-Fi</span>
             <span>Free Parking</span>
-            <span>Self Check-in</span>
+            <span>On-site Hosts</span>
           </div>
         </div>
       </div>
@@ -928,14 +934,14 @@ document.addEventListener('DOMContentLoaded', function(){
         <div class="bg-white p-8 rounded-sm shadow-sm">
           <h3 class="font-serif text-lg text-brand-black mb-3">How many guests can stay at once?</h3>
           <p class="font-sans text-sm text-gray-600 leading-relaxed">
-            Up to 12 guests. HALE MAKAWAO accommodates families and groups of all sizes. The entire house is yours — bedrooms include a Japanese tatami room, a double room, and a twin room.
+            Up to 12 guests. HALE MAKAWAO has five rooms — two double rooms, one twin room, and two Japanese tatami rooms — comfortable for families and groups. The whole house is reserved for one group per day, with no other guests.
           </p>
         </div>
 
         <div class="bg-white p-8 rounded-sm shadow-sm">
           <h3 class="font-serif text-lg text-brand-black mb-3">Is this a good base for skiing at Mt. Daisen?</h3>
           <p class="font-sans text-sm text-gray-600 leading-relaxed">
-            Yes. The Mt. Daisen ski resort is approximately 5 minutes from the villa by car, making HALE MAKAWAO one of the closest private lodging options for skiers. The ski season typically runs from December through March.
+            Yes. The Mt. Daisen ski resort is approximately 5 minutes from the villa by car, making HALE MAKAWAO one of the closest private lodging options for skiers. The ski season typically runs from December through March. Please note the resort is expected to operate under new management beginning with the 2026–27 season.
           </p>
         </div>
 
@@ -950,6 +956,13 @@ document.addEventListener('DOMContentLoaded', function(){
           <h3 class="font-serif text-lg text-brand-black mb-3">Are pets allowed?</h3>
           <p class="font-sans text-sm text-gray-600 leading-relaxed">
             We are sorry, but pets are not permitted at HALE MAKAWAO.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-sm shadow-sm">
+          <h3 class="font-serif text-lg text-brand-black mb-3">Do you offer self check-in, or will someone meet me?</h3>
+          <p class="font-sans text-sm text-gray-600 leading-relaxed">
+            The owner-hosts live on-site and personally welcome every group at check-in. You will have complete privacy throughout your stay, while help is always close at hand if needed — particularly reassuring for first-time visitors to Mt. Daisen.
           </p>
         </div>
 
