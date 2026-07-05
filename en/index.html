@@ -60,7 +60,7 @@
         "smokingAllowed": false,
         "occupancy": {
           "@type": "QuantitativeValue",
-          "maxValue": 12,
+          "value": 12, "maxValue": 12,
           "unitText": "guests"
         },
         "amenityFeature": [
@@ -73,6 +73,7 @@
           {"@type": "LocationFeatureSpecification", "name": "One group per day", "value": true},
           {"@type": "LocationFeatureSpecification", "name": "Family-friendly", "value": true}
         ],
+        "identifier": {"@type": "PropertyValue", "propertyID": "Airbnb", "value": "1628763154330235389"},
         "knowsLanguage": ["en", "ja", "zh-Hant"],
         "sameAs": [
           "https://www.airbnb.jp/rooms/1628763154330235389"
@@ -81,7 +82,7 @@
           "@type": "Accommodation",
           "name": "Private villa HALE MAKAWAO",
           "additionalType": "https://schema.org/House",
-          "occupancy": {"@type": "QuantitativeValue", "maxValue": 12}
+          "occupancy": {"@type": "QuantitativeValue", "value": 12, "maxValue": 12}
         }
       },
       {
@@ -399,11 +400,11 @@ document.addEventListener('DOMContentLoaded', function(){
   <!-- Header -->
   <header class="fixed w-full z-50 transition-all duration-700 ease-elegant border-b border-transparent" id="header">
     <div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
-      <h1 class="font-serif text-2xl md:text-3xl tracking-widest text-brand-black z-50 relative">
+      <div class="font-serif text-2xl md:text-3xl tracking-widest text-brand-black z-50 relative">
         <a href="#" class="block hover:opacity-60 transition duration-500">
           <img src="../images/logo.webp" alt="HALE MAKAWAO" id="header-logo" class="h-6 md:h-8 w-auto opacity-0 transition-opacity duration-700">
         </a>
-      </h1>
+      </div>
 
       <nav class="hidden md:flex space-x-10 items-center font-sans text-[11px] tracking-widest text-gray-600 uppercase">
         <a href="#concept" class="nav-link hover:text-brand-black transition duration-300">Concept</a>
@@ -469,6 +470,7 @@ document.addEventListener('DOMContentLoaded', function(){
       <div class="fade-in mb-8">
         <img src="../images/logo.webp" alt="HALE MAKAWAO" class="w-48 md:w-80 h-auto drop-shadow-2xl opacity-95">
       </div>
+      <h1 class="sr-only">HALE MAKAWAO — Private villa near Mt. Daisen, Tottori | Entire house rental, up to 12 guests, one group per day</h1>
       <p class="fade-in text-white/90 font-serif text-lg md:text-2xl tracking-[0.2em] italic mt-4 shadow-black drop-shadow-md" style="transition-delay: 0.3s;">
         Private Villa in Tottori Japan – Mt. Daisen
       </p>
