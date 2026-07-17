@@ -95,6 +95,24 @@
     .badge-accent{background:#c8b88a;color:#1a1a1a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
     .info-box{background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:18px 20px;margin:24px 0;}
     .info-box h3{margin-top:0;margin-bottom:12px;}
+    /* 拠点宿カード（P3-1: 観光ガイド→宿泊への導線） */
+    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-left:3px solid #c8b88a;border-radius:4px;padding:16px 18px;margin:28px 0;}
+    .stay-card img{width:104px;height:78px;object-fit:cover;border-radius:3px;flex-shrink:0;}
+    .stay-card-body{flex:1;min-width:0;}
+    .stay-card-label{font-size:11px;color:#9a8a7a;letter-spacing:.08em;margin-bottom:3px;}
+    .stay-card-name{font-size:15px;font-weight:500;color:#1A1A1A;margin-bottom:4px;line-height:1.5;}
+    .stay-card-name a{color:#1A1A1A;text-decoration:none;border-bottom:1px solid #c8b88a;}
+    .stay-card-name a:hover{color:#9A8060;}
+    .stay-card-meta{font-size:12px;color:#6a6a6a;line-height:1.7;}
+    .stay-card-cta{flex-shrink:0;}
+    .stay-card-cta a{display:inline-block;background:#1a1a1a;color:#fff;text-decoration:none;padding:9px 18px;font-size:13px;border-radius:2px;white-space:nowrap;}
+    .stay-card-cta a:hover{background:#3a3a3a;}
+    @media(max-width:600px){
+      .stay-card{flex-wrap:wrap;gap:12px;}
+      .stay-card img{width:72px;height:56px;}
+      .stay-card-cta{width:100%;}
+      .stay-card-cta a{display:block;text-align:center;}
+    }
     .cta-box{background:#1a1a1a;color:#fff;padding:32px 28px;margin-top:56px;border-radius:4px;text-align:center;}
     .cta-box p{color:#ccc;margin-bottom:20px;font-size:15px;}
     .cta-btn{display:inline-block;background:#c8b88a;color:#1a1a1a;text-decoration:none;padding:12px 32px;font-size:15px;letter-spacing:.05em;border-radius:2px;font-weight:500;}
@@ -131,6 +149,17 @@
 
     <div class="lead">
       <strong>ハレ・マカワオ</strong>から車で約50分（山陰道経由・目安）、島根県松江市には<strong>国宝の現存天守「松江城」</strong>があります。2025年度後期の朝ドラ「ばけばけ」の舞台として注目を集める城下町で、堀川をめぐる遊覧船、明治の文豪・小泉八雲ゆかりの旧居、武家屋敷が連なる塩見縄手など、半日でもたっぷり楽しめる見どころが集まっています。大山での一泊とあわせて、日帰りの松江観光もおすすめです。
+    </div>
+
+    <!-- 拠点宿カード（上部） -->
+    <div class="stay-card" data-stay-card="top">
+      <img src="../images/Exterior.webp" alt="森のなかに建つハレ・マカワオの外観" loading="lazy">
+      <div class="stay-card-body">
+        <div class="stay-card-label">この記事の拠点宿</div>
+        <div class="stay-card-name"><a href="/villa.html">ハレ・マカワオ｜大山の一棟貸し・貸別荘</a></div>
+        <div class="stay-card-meta">1日1組・最大12名・全5室　／　松江城まで車で約50分<br>松江からの帰り道に、大山の森で過ごす一夜を。</div>
+      </div>
+      <div class="stay-card-cta"><a href="https://www.airbnb.jp/rooms/1628763154330235389" target="_blank" rel="noopener">空室を見る</a></div>
     </div>
 
     <h2>松江城 ― 国宝の現存天守</h2>
@@ -219,9 +248,10 @@
       </ul>
     </div>
 
-    <div class="cta-box">
+    <div class="cta-box" data-stay-card="bottom">
       <p>松江観光の拠点に、大山の一棟貸しを。<br>ハレ・マカワオから松江市街まで車で約50分。1日1組貸切の宿で、大山と松江、山陰の二つの表情を楽しむ旅へ。</p>
       <a class="cta-btn" href="https://www.airbnb.jp/rooms/1628763154330235389" target="_blank" rel="noopener">宿泊を予約する</a>
+      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html" style="color:#c8b88a;">一棟貸し（貸別荘）について詳しく見る</a></p>
     </div>
 
     <a class="home-link" href="/">&#8592; トップページへ戻る</a>
@@ -230,7 +260,7 @@
   <footer>
     <div>
       <a href="/">ホーム</a>
-      <a href="/stay.html">大山の一棟貸し別荘</a>
+      <a href="/villa.html">大山の一棟貸し別荘</a>
       <a href="/access.html">アクセス</a>
       <a href="/privacy.html">プライバシーポリシー</a>
     </div>
@@ -337,5 +367,19 @@ document.addEventListener('DOMContentLoaded', function(){
 </script>
 <!-- ===== HM Analytics END ===== -->
 
+
+<script>
+  // 宿カードのクリック計測（click_stay_card）。OTA送客の click_outbound_booking とは別イベント。
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('[data-stay-card] a');
+    if (!a || typeof gtag !== 'function') return;
+    var card = a.closest('[data-stay-card]');
+    gtag('event', 'click_stay_card', {
+      'article': (location.pathname.split('/').pop() || '').replace('.html',''),
+      'position': card.getAttribute('data-stay-card'),
+      'link_type': (a.getAttribute('href') || '').indexOf('airbnb') > -1 ? 'booking' : 'villa'
+    });
+  });
+</script>
 </body>
 </html>

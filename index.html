@@ -39,7 +39,7 @@
         ],
         "description": "鳥取県・大山町あけまの森にある1日1組限定の一棟貸し別荘。最大12名・全5室（洋室3室・和室2室）・家族・グループ向け。大山スキー場まで車で約5分、米子鬼太郎空港から車で約45分、台北からの直行便も就航。特製フルーツ山盛りフレンチトーストのモーニング、鳥取和牛のBBQ手ぶらセット、大山名店への送迎プランが人気。",
         "url": "https://halemakawao.com/",
-        "telephone": "+81-859-00-0000",
+        "telephone": "+81-859-48-5175",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "鈑戸１５４２−９１",
@@ -75,7 +75,7 @@
           {"@type": "LocationFeatureSpecification", "name": "1日1組限定", "value": true},
           {"@type": "LocationFeatureSpecification", "name": "ファミリー向け", "value": true}
         ],
-        "identifier": {"@type": "PropertyValue", "propertyID": "Airbnb", "value": "1628763154330235389"},
+        "identifier": "1628763154330235389",
         "knowsLanguage": ["ja", "en", "zh-Hant"],
         "sameAs": [
           "https://www.airbnb.jp/rooms/1628763154330235389"
@@ -151,7 +151,7 @@
             "name": "駐車場はありますか？料金は？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "無料の専用駐車場を完備しています。普通車3〜4台分のスペースをご用意しています。大山観光や周辺スポットへのドライブ旅行にも最適です。大型SUV・バンでお越しの際は事前にお問い合わせください。"
+              "text": "無料の専用駐車場を完備しています。普通車6台分のスペースをご用意しています。大山観光や周辺スポットへのドライブ旅行にも最適です。大型SUV・バンでお越しの際は事前にお問い合わせください。"
             }
           },
           {
@@ -503,6 +503,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
       <nav class="hidden md:flex space-x-12 items-center font-serif text-xs tracking-relaxed text-gray-800">
         <a href="#concept" class="nav-link hover:text-brand-black transition duration-300">コンセプト</a>
+        <a href="villa.html" class="nav-link hover:text-brand-black transition duration-300">一棟貸しについて</a>
         <a href="stay.html" class="nav-link hover:text-brand-black transition duration-300">客室・設備</a>
         <a href="food.html" class="nav-link hover:text-brand-black transition duration-300">お食事</a>
         <a href="access.html" class="nav-link hover:text-brand-black transition duration-300">アクセス</a>
@@ -528,6 +529,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     <div class="fixed inset-0 bg-brand-gray z-[55] transform translate-x-full transition-transform duration-700 ease-elegant flex flex-col justify-start items-center pt-24 pb-16 px-6 space-y-6 overflow-y-auto" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="ナビゲーションメニュー">
       <a href="#concept" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">コンセプト</a>
+      <a href="villa.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">一棟貸しについて</a>
       <a href="stay.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">客室・設備</a>
       <a href="food.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">お食事</a>
       <a href="access.html" class="font-serif text-lg tracking-widest text-brand-black hover:text-brand-accent transition duration-300 mobile-link">アクセス</a>
@@ -828,6 +830,48 @@ document.addEventListener('DOMContentLoaded', function(){
     </div>
   </section>
 
+  <!-- Villa -- 一棟貸し・貸別荘をお探しの方への導線（宿泊KWの受け皿 villa.html へ） -->
+  <section class="py-16 md:py-28 bg-white border-t border-brand-line/30">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-brand-gray rounded-sm border-t-2 border-brand-accent/50 p-8 md:p-14 fade-in">
+        <div class="text-center">
+          <span class="font-en italic text-sm md:text-base text-brand-accent block mb-3">Private Villa</span>
+          <h2 class="font-serif text-xl md:text-3xl tracking-widest text-brand-dark mb-6 leading-relaxed">
+            大山で一棟貸し・貸別荘を<br class="md:hidden">お探しの方へ
+          </h2>
+          <div class="w-12 h-px bg-brand-accent mx-auto mb-7"></div>
+          <p class="font-sans text-sm text-gray-600 leading-8 md:leading-loose tracking-wide max-w-2xl mx-auto text-justify md:text-center">
+            1日1組限定で建物をまるごと貸し切る宿です。最大12名・全5室・約200㎡、BBQのできる庭付き。大山スキー場まで車で約5分。ホテルやコテージとの違い、料金の目安、よくあるご質問をまとめました。
+          </p>
+        </div>
+        <div class="mt-8 md:mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-2xl mx-auto">
+          <div class="bg-white rounded-sm py-3 md:py-4 text-center border border-brand-line/20">
+            <span class="block font-serif text-base md:text-lg text-brand-black">12名</span>
+            <span class="block font-sans text-[10px] text-gray-500 tracking-wider mt-1">最大定員</span>
+          </div>
+          <div class="bg-white rounded-sm py-3 md:py-4 text-center border border-brand-line/20">
+            <span class="block font-serif text-base md:text-lg text-brand-black">全5室</span>
+            <span class="block font-sans text-[10px] text-gray-500 tracking-wider mt-1">洋室3・和室2</span>
+          </div>
+          <div class="bg-white rounded-sm py-3 md:py-4 text-center border border-brand-line/20">
+            <span class="block font-serif text-base md:text-lg text-brand-black">約200㎡</span>
+            <span class="block font-sans text-[10px] text-gray-500 tracking-wider mt-1">1日1組貸切</span>
+          </div>
+          <div class="bg-white rounded-sm py-3 md:py-4 text-center border border-brand-line/20">
+            <span class="block font-serif text-base md:text-lg text-brand-black">約5分</span>
+            <span class="block font-sans text-[10px] text-gray-500 tracking-wider mt-1">大山スキー場</span>
+          </div>
+        </div>
+        <div class="text-center mt-9 md:mt-11">
+          <a href="villa.html" class="inline-flex items-center gap-3 bg-brand-black text-white px-10 md:px-12 py-4 rounded-sm font-serif text-sm tracking-widest hover:bg-gray-800 transition shadow-md">
+            <span>一棟貸しについて詳しく</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Area Guides -- 周辺観光ガイド（3記事への内部導線） -->
   <section id="guides" class="py-20 md:py-32 bg-brand-gray border-t border-white">
     <div class="max-w-6xl mx-auto px-6 lg:px-12">
@@ -1021,7 +1065,7 @@ document.addEventListener('DOMContentLoaded', function(){
           </dt>
           <dd class="md:col-span-7 md:pl-10 md:border-l border-brand-line/60">
             <p class="font-sans text-[13px] md:text-sm leading-loose text-gray-600">
-              無料の専用駐車場を完備しています。普通車3〜4台分のスペースをご用意しています。大山観光や周辺スポットへのドライブ旅行にも最適です。大型SUV・バンでお越しの際は事前にお問い合わせください。
+              無料の専用駐車場を完備しています。普通車6台分のスペースをご用意しています。大山観光や周辺スポットへのドライブ旅行にも最適です。大型SUV・バンでお越しの際は事前にお問い合わせください。
             </p>
           </dd>
         </div>
@@ -1080,6 +1124,7 @@ document.addEventListener('DOMContentLoaded', function(){
       <div class="text-center md:text-right">
         <h4 class="font-serif text-[10px] mb-6 md:mb-10 text-gray-500 tracking-widest uppercase font-bold">Menu</h4>
         <ul class="space-y-4 md:space-y-6 font-sans text-[11px] text-gray-400 tracking-widest">
+          <li><a href="villa.html" class="hover:text-white transition">一棟貸しについて</a></li>
           <li><a href="stay.html" class="hover:text-white transition">STAY</a></li>
           <li><a href="food.html" class="hover:text-white transition">DINING</a></li>
           <li><a href="access.html" class="hover:text-white transition">ACCESS</a></li>
