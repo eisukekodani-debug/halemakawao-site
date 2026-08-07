@@ -196,6 +196,14 @@
               "@type": "Answer",
               "text": "3つの食事オプションをご用意しています。①特製フルーツ山盛りフレンチトーストのモーニングセット（要事前予約）。②鳥取和牛BBQ手ぶらセット—食材・機材すべて込みで手ぶらでBBQ。③地元名店への送迎プラン。いずれもご予約時または到着3日前までにお申し込みください。"
             }
+          },
+          {
+            "@type": "Question",
+            "name": "滞在中、管理人やオーナーは建物内にいますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい。オーナー夫妻が管理人として同じ建物の一角に暮らしており、ご到着時は対面でお迎えします。鍵をお渡しして無人でお引き渡しする貸別荘ではありません。リビングも庭もご一行だけでお使いいただきますが、設備のことや地元のお店のことなど、何かあればすぐにお手伝いできます。お酒を飲みたい夜の送迎（1往復1,000円・事前申込制）や、地元の食事処・日帰り温泉のご案内も承っています。静かに過ごしたい場合は、ひとことお伝えいただければお声がけを控えます。"
+            }
           }
         ]
       }
@@ -660,12 +668,22 @@ document.addEventListener('DOMContentLoaded', function(){
             1日1組限定・一棟貸切
           </div>
           <h4 class="font-serif text-2xl md:text-3xl mb-6 md:mb-8 leading-relaxed text-brand-black">気兼ねない、<br>あなただけの別荘。</h4>
-          <p class="font-sans text-sm md:text-base text-gray-600 leading-8 md:leading-[2.2] mb-8 md:mb-10 text-justify md:text-left">
+          <p class="font-sans text-sm md:text-base text-gray-600 leading-8 md:leading-[2.2] mb-7 md:mb-8 text-justify md:text-left">
             窓から差し込む朝の光、森を切り取る景色。<br>
-            隣接する建物がないため、小さなお子様が大きな声を出しても、走り回っても大丈夫です。<br><br>
-            敷地内にはオーナー夫妻が常駐しております。程よい距離感で控えておりますので、何かお困りの際はいつでもご相談ください。
+            隣接する建物がないため、小さなお子様が大きな声を出しても、走り回っても大丈夫です。
           </p>
-          
+
+          <div class="border-l-2 border-brand-accent bg-white/70 pl-5 pr-4 py-5 mb-8 md:mb-10">
+            <p class="font-serif text-sm md:text-base text-brand-black tracking-wide mb-3">管理人が同じ建物に暮らしています</p>
+            <p class="font-sans text-[13px] md:text-sm text-gray-600 leading-7 md:leading-8 text-justify md:text-left">
+              リビングも庭もご一行だけでお使いいただきますが、鍵をお渡しして無人でお引き渡しする貸別荘ではありません。同じ建物の一角に、オーナー夫妻が管理人として暮らしています。お酒を飲みたい夜の送迎（1往復1,000円・事前申込制）や、地元の食事処・日帰り温泉のご案内など、滞在中のご相談にお応えします。静かに過ごしたい場合は、ひとことお伝えいただければお声がけを控えます。
+            </p>
+            <a href="villa.html#hosts" class="mt-4 inline-flex items-center gap-2 font-serif text-[11px] md:text-xs tracking-widest text-brand-black border-b border-brand-accent pb-1 hover:text-brand-accent transition">
+              管理人のいる宿について
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+
           <div class="flex flex-wrap gap-x-6 md:gap-x-8 gap-y-3 md:gap-y-4 font-serif text-xs text-gray-500 tracking-wider">
             <span>Wi-Fi完備</span>
             <span>ミニキッチン</span>
@@ -1040,6 +1058,22 @@ document.addEventListener('DOMContentLoaded', function(){
         <div class="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-10 py-10 md:py-14">
           <dt class="md:col-span-5">
             <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.02</span>
+            <p class="font-serif text-base md:text-lg leading-loose text-brand-dark tracking-wide">管理人の常駐について</p>
+          </dt>
+          <dd class="md:col-span-7 md:pl-10 md:border-l border-brand-line/60">
+            <p class="font-sans text-[13px] md:text-sm leading-loose text-gray-600">
+              オーナー夫妻が管理人として同じ建物の一角に暮らしており、ご到着時は対面でお迎えします。鍵をお渡しして無人でお引き渡しする貸別荘ではありません。リビングも庭もご一行だけでお使いいただきますが、設備のことや地元のお店のことなど、何かあればすぐにお手伝いできます。お酒を飲みたい夜の送迎（1往復1,000円・事前申込制）や、地元の食事処・日帰り温泉のご案内も承っています。静かに過ごしたい場合は、ひとことお伝えいただければお声がけを控えます。
+            </p>
+            <a href="villa.html#hosts" class="mt-4 inline-flex items-center gap-2 font-serif text-[11px] md:text-xs tracking-widest text-brand-black border-b border-brand-accent pb-1 hover:text-brand-accent transition">
+              管理人のいる宿について
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </dd>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-10 py-10 md:py-14">
+          <dt class="md:col-span-5">
+            <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.03</span>
             <p class="font-serif text-base md:text-lg leading-loose text-brand-dark tracking-wide">最大宿泊人数とお部屋の構成</p>
           </dt>
           <dd class="md:col-span-7 md:pl-10 md:border-l border-brand-line/60">
@@ -1051,7 +1085,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
         <div class="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-10 py-10 md:py-14">
           <dt class="md:col-span-5">
-            <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.03</span>
+            <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.04</span>
             <p class="font-serif text-base md:text-lg leading-loose text-brand-dark tracking-wide">ペットの同伴について</p>
           </dt>
           <dd class="md:col-span-7 md:pl-10 md:border-l border-brand-line/60">
@@ -1063,7 +1097,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
         <div class="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-10 py-10 md:py-14">
           <dt class="md:col-span-5">
-            <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.04</span>
+            <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.05</span>
             <p class="font-serif text-base md:text-lg leading-loose text-brand-dark tracking-wide">駐車場のご案内</p>
           </dt>
           <dd class="md:col-span-7 md:pl-10 md:border-l border-brand-line/60">
@@ -1075,7 +1109,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
         <div class="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-10 py-10 md:py-14">
           <dt class="md:col-span-5">
-            <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.05</span>
+            <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.06</span>
             <p class="font-serif text-base md:text-lg leading-loose text-brand-dark tracking-wide">米子鬼太郎空港からの<br class="hidden md:inline">アクセス</p>
           </dt>
           <dd class="md:col-span-7 md:pl-10 md:border-l border-brand-line/60">
@@ -1087,7 +1121,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
         <div class="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-10 py-10 md:py-14">
           <dt class="md:col-span-5">
-            <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.06</span>
+            <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.07</span>
             <p class="font-serif text-base md:text-lg leading-loose text-brand-dark tracking-wide">大山スキー場までの距離</p>
           </dt>
           <dd class="md:col-span-7 md:pl-10 md:border-l border-brand-line/60">
@@ -1099,7 +1133,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
         <div class="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-10 py-10 md:py-14">
           <dt class="md:col-span-5">
-            <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.07</span>
+            <span class="block font-en text-[11px] tracking-super text-brand-accent mb-3">Q.08</span>
             <p class="font-serif text-base md:text-lg leading-loose text-brand-dark tracking-wide">お食事オプション</p>
           </dt>
           <dd class="md:col-span-7 md:pl-10 md:border-l border-brand-line/60">
