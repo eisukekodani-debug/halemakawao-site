@@ -88,7 +88,7 @@
     .breadcrumb span{margin:0 6px;}
     h1{font-size:26px;font-weight:500;letter-spacing:.04em;border-bottom:1px solid #D4D4D4;padding-bottom:16px;margin-bottom:8px;line-height:1.4;}
     .meta{font-size:13px;color:#8a8a8a;margin-bottom:32px;}
-    .lead{background:#f3f0eb;border-left:3px solid #c8b88a;padding:18px 20px;margin-bottom:36px;font-size:15px;line-height:1.9;}
+    .lead{margin-bottom:32px;font-size:16px;line-height:1.9;}
     h2{font-size:19px;font-weight:500;margin-top:48px;margin-bottom:14px;color:#1A1A1A;border-bottom:1px solid #e8e8e8;padding-bottom:8px;}
     h3{font-size:16px;font-weight:500;margin-top:28px;margin-bottom:10px;color:#2a2a2a;}
     p,li{font-size:15px;color:#3a3a3a;}
@@ -98,17 +98,17 @@
     .spot-card{border:1px solid #e0dbd3;border-radius:4px;padding:20px 22px;margin:20px 0;background:#fff;}
     .spot-card .spot-title{font-size:16px;font-weight:500;color:#1A1A1A;margin-bottom:8px;}
     .spot-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
-    .badge{background:#f3f0eb;color:#5a4a3a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .badge-accent{background:#c8b88a;color:#1a1a1a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .timeline{border-left:3px solid #c8b88a;padding-left:20px;margin:24px 0;}
-    .timeline-item{margin-bottom:24px;position:relative;}
+    .badge{border:1px solid #d4d4d4;color:#5a5a5a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .badge-accent{border:1px solid #1a1a1a;color:#1a1a1a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .timeline{padding-left:20px;margin:24px 0;}
+    .timeline-item{margin-bottom:28px;padding-left:20px;border-left:1px solid #d4d4d4;}
     .timeline-item::before{content:'';position:absolute;left:-27px;top:6px;width:10px;height:10px;border-radius:50%;background:#c8b88a;}
     .timeline-time{font-size:13px;font-weight:500;color:#9A8060;margin-bottom:4px;}
     .timeline-title{font-size:15px;font-weight:500;color:#1A1A1A;margin-bottom:4px;}
     .timeline-desc{font-size:14px;color:#5a5a5a;}
-    .info-box{background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:18px 20px;margin:24px 0;}
+    .info-box{margin:20px 0 24px;}
     /* 拠点宿カード（P3-1: 観光ガイド→宿泊への導線） */
-    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-left:3px solid #c8b88a;border-radius:4px;padding:16px 18px;margin:28px 0;}
+    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:16px 18px;margin:28px 0;}
     .stay-card img{width:104px;height:78px;object-fit:cover;border-radius:3px;flex-shrink:0;}
     .stay-card-body{flex:1;min-width:0;}
     .stay-card-label{font-size:11px;color:#9a8a7a;letter-spacing:.08em;margin-bottom:3px;}
@@ -125,12 +125,12 @@
       .stay-card-cta{width:100%;}
       .stay-card-cta a{display:block;text-align:center;}
     }
-    .cta-box{background:#1a1a1a;color:#fff;padding:32px 28px;margin-top:56px;border-radius:4px;text-align:center;}
-    .cta-box p{color:#ccc;margin-bottom:20px;font-size:15px;}
-    .cta-btn{display:inline-block;background:#c8b88a;color:#1a1a1a;text-decoration:none;padding:12px 32px;font-size:15px;letter-spacing:.05em;border-radius:2px;font-weight:500;}
-    .cta-btn:hover{background:#b8a87a;}
-    .home-link{display:inline-block;margin-top:40px;padding:10px 24px;border:1px solid #1F2421;color:#1F2421;text-decoration:none;font-size:14px;letter-spacing:.05em;}
-    .home-link:hover{background:#1F2421;color:#fff;}
+    .cta-box{border-top:1px solid #d4d4d4;padding-top:32px;margin-top:56px;}
+    .cta-box p{margin-bottom:16px;}
+    .cta-btn{display:inline-block;background:#1a1a1a;color:#fff;text-decoration:none;padding:12px 28px;font-size:15px;border-radius:2px;}
+    .cta-btn:hover{background:#3a3a3a;}
+    .home-link{display:inline-block;margin-top:40px;font-size:14px;color:#9A8060;}
+    
     footer{background:#1a1a1a;color:#aaa;text-align:center;padding:32px 24px;font-size:13px;margin-top:80px;}
     footer a{color:#c8b88a;text-decoration:none;margin:0 8px;}
     @media(max-width:600px){
@@ -153,24 +153,23 @@
     </div>
 
     <nav class="breadcrumb">
-      <a href="/">ホーム</a><span>›</span><a href="/#guides">観光ガイド</a><span>›</span>水木しげるロード完全ガイド
+      <a href="/">ホーム</a><span>›</span><a href="/#guides">観光ガイド</a><span>›</span>水木しげるロードガイド
     </nav>
 
-    <h1>水木しげるロード完全ガイド ― 大山の一棟貸しを拠点に日帰り観光<br><small style="font-size:.6em;font-weight:400;color:#666;">178体の妖怪ブロンズ像 × 記念館 × 海産物グルメ｜ハレ・マカワオから車約50分</small></h1>
-    <img src="../images/mizuki-road.jpg" alt="水木しげるロード" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin:8px 0 28px;" loading="lazy">
+    <h1>水木しげるロードガイド</h1>
+    <img src="../images/mizuki-road.jpg" alt="水木しげるロード" style="width:100%;height:300px;object-fit:cover;border-radius:2px;margin:8px 0 28px;" loading="lazy">
     <p class="meta">更新日: 2026年5月 ｜ カテゴリ: 周辺観光ガイド</p>
 
     <div class="lead">
-      妖怪漫画の第一人者・水木しげる氏の出身地、境港。JR境港駅前から続く<strong>水木しげるロード</strong>には、鬼太郎やねずみ男、目玉おやじら<strong>178体の妖怪ブロンズ像</strong>が並び、年間200万人以上が訪れる山陰有数の観光地です。記念館の展示に、食べ歩き、境港産の新鮮な海の幸。丸一日たっぷり楽しめます。<strong>ハレ・マカワオから車で約50分（目安）</strong>。大山の登山やハイキングとあわせて、宿を拠点に足を延ばしてみてください。
+      境港は、漫画家・水木しげる氏の出身地です。JR境港駅前から続く水木しげるロードには、鬼太郎やねずみ男、目玉おやじなど178体の妖怪ブロンズ像が並び、年間200万人以上が訪れます。周辺には水木しげる記念館や食べ歩きの店、境港産の海産物を出す飲食店があります。ハレ・マカワオからは車で約50分（目安）です。
     </div>
 
     <!-- 拠点宿カード（上部） -->
     <div class="stay-card" data-stay-card="top">
       <img src="../images/Exterior.webp" alt="森のなかに建つハレ・マカワオの外観" loading="lazy">
       <div class="stay-card-body">
-        <div class="stay-card-label">この記事の拠点宿</div>
         <div class="stay-card-name"><a href="/villa.html">ハレ・マカワオ｜大山の一棟貸し・貸別荘</a></div>
-        <div class="stay-card-meta">1日1組・最大16名・全5室　／　水木しげるロードまで車で約50分<br>境港で遊んだ日の夜は、大山の森の一棟貸しへ。</div>
+        <div class="stay-card-meta">1日1組・最大16名・全5室　／　水木しげるロードまで車で約50分</div>
       </div>
       <div class="stay-card-cta"><a href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">空室を見る</a></div>
     </div>
@@ -178,9 +177,9 @@
     <h2>境港の基本情報</h2>
     <ul>
       <li>正式名称: 境港市（鳥取県西部）</li>
-      <li>HALE MAKAWAOからの距離: <strong>車で約50分（約35km）</strong></li>
+      <li>HALE MAKAWAOからの距離: 車で約50分（約35km）</li>
       <li>駐車場: 水木しげるロード周辺に複数あり（無料・有料）</li>
-      <li>最寄り駅: JR境港駅（境線の終点。「鬼太郎列車」が走ることでも有名）</li>
+      <li>最寄り駅: JR境港駅（境線の終点。「鬼太郎列車」が走る）</li>
       <li>観光エリアの広さ: 水木しげるロードの全長は約800m。徒歩で充分まわれる</li>
     </ul>
 
@@ -189,22 +188,22 @@
       <div class="timeline-item">
         <div class="timeline-time">9:00</div>
         <div class="timeline-title">HALE MAKAWAOを出発</div>
-        <div class="timeline-desc">車で境港へ。国道9号・431号経由で約50分。駐車場は「水木しげるロード第3駐車場」が広くておすすめ。</div>
+        <div class="timeline-desc">車で境港へ。国道9号・431号経由で約50分。駐車場は「水木しげるロード第3駐車場」が広く、停めやすい。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">9:45〜12:00</div>
         <div class="timeline-title">水木しげるロードを散策</div>
-        <div class="timeline-desc">全長約800mのロードを端から端まで歩く。鬼太郎・ねずみ男・目玉おやじなどの178体のブロンズ像と写真を撮りながら散策。お土産ショップも充実。</div>
+        <div class="timeline-desc">全長約800mのロードを端から端まで歩く。鬼太郎・ねずみ男・目玉おやじなど178体のブロンズ像が並ぶ。沿道にはお土産店が多い。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">10:30〜12:00</div>
-        <div class="timeline-title">水木しげる記念館（訪問推奨）</div>
-        <div class="timeline-desc">入館料・最新の営業情報は公式サイトでご確認ください。妖怪の世界観が凝縮した展示空間で子どもが大喜びのスポット。所要時間は約1〜1.5時間。</div>
+        <div class="timeline-title">水木しげる記念館</div>
+        <div class="timeline-desc">入館料・最新の営業情報は公式サイトでご確認ください。妖怪をテーマにした展示施設。所要時間は約1〜1.5時間。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">12:00〜13:30</div>
         <div class="timeline-title">港周辺で海産物ランチ</div>
-        <div class="timeline-desc">境港はベニズワイガニ・白イカ・境港サバが有名。「境港さかいこ食堂」や港直送の海鮮丼が味わえる店が多数。</div>
+        <div class="timeline-desc">境港はベニズワイガニ・白イカ・境港サバが有名。「境港さかいこ食堂」など、港直送の海鮮丼を出す店が多い。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">13:30〜15:00</div>
@@ -214,7 +213,7 @@
       <div class="timeline-item">
         <div class="timeline-time">15:30〜</div>
         <div class="timeline-title">HALE MAKAWAOへ帰宅</div>
-        <div class="timeline-desc">帰り道に皆生温泉（車で10〜20分）に立ち寄るのもおすすめ。</div>
+        <div class="timeline-desc">帰り道に皆生温泉（車で10〜20分）に立ち寄ることもできる。</div>
       </div>
     </div>
 
@@ -227,9 +226,9 @@
         <span class="badge">入場無料</span>
         <span class="badge">年中無休</span>
       </div>
-      <p>JR境港駅前から本町アーケードまで続く全長約800mの商店街。<strong>178体の妖怪ブロンズ像</strong>が点在しており、鬼太郎・ねずみ男・目玉おやじ・砂かけばばあ・子泣きじじいなど、水木しげる作品に登場するキャラクターを探しながら歩けます。「全キャラ制覇」を目標に歩くのが子連れ観光の定番スタイルです。</p>
+      <p>JR境港駅前から本町アーケードまで続く全長約800mの商店街。178体の妖怪ブロンズ像が点在しており、鬼太郎・ねずみ男・目玉おやじ・砂かけばばあ・子泣きじじいなど、水木しげる作品に登場するキャラクターを探しながら歩けます。</p>
       <h3 style="font-size:14px;margin-top:14px;margin-bottom:6px;">食べ歩き・お土産</h3>
-      <p style="margin-top:0;">ロード沿いには妖怪モチーフのスイーツ・グッズショップが立ち並んでいます。鬼太郎まんじゅう・目玉おやじサイダー・妖怪せんべいなど、ここでしか買えない限定品が充実。帰り際に立ち寄れる大型土産店「鬼太郎の店」では、文具・Tシャツ・フィギュアまで幅広く揃っています。夜はライトアップされ、昼とは異なる幻想的な雰囲気に。</p>
+      <p style="margin-top:0;">ロード沿いには妖怪をモチーフにしたスイーツやグッズの店が並んでいます。鬼太郎まんじゅう・目玉おやじサイダー・妖怪せんべいなどの限定品があります。大型土産店「鬼太郎の店」では、文具・Tシャツ・フィギュアなどを扱っています。夜はライトアップされます。</p>
     </div>
 
     <div class="spot-card">
@@ -238,7 +237,7 @@
         <span class="badge">料金は公式で確認</span>
         <span class="badge">所要1〜1.5時間</span>
       </div>
-      <p>水木しげる氏の生涯と作品世界を紹介する常設展示館。妖怪の精巧な模型・原画・自筆漫画が展示され、終盤にある「妖怪洞窟」は子どもたちに人気です。グッズショップも充実していて、お土産選びについ時間がかかります。<br>開館: 9:30〜17:00（入館は16:30まで）。</p>
+      <p>水木しげる氏の生涯と作品を紹介する常設展示館です。妖怪の模型・原画・自筆漫画を展示しており、終盤にある「妖怪洞窟」は子どもに人気です。館内にはグッズショップもあります。<br>開館: 9:30〜17:00（入館は16:30まで）。</p>
     </div>
 
     <div class="spot-card">
@@ -248,7 +247,7 @@
         <span class="badge">白イカ</span>
         <span class="badge">境港サバ</span>
       </div>
-      <p>境港は<strong>ベニズワイガニ水揚げ量日本一</strong>の漁港で、全国の約5〜6割を占めます。港周辺には新鮮な海鮮丼・カニ料理・白イカの刺身を提供する飲食店が多数あります。「なかうら」「かろいち」など地元民に愛される店舗をぜひ訪れてみてください。カニのシーズン（10月〜5月）は特に混雑するため、早めの訪問をおすすめします。</p>
+      <p>境港はベニズワイガニ水揚げ量日本一の漁港で、全国の約5〜6割を占めます。港周辺には海鮮丼・カニ料理・白イカの刺身を出す飲食店が多くあります。店舗には「なかうら」「かろいち」などがあります。カニのシーズン（10月〜5月）は特に混雑するため、早めの時間に訪れてください。</p>
     </div>
 
     <div class="spot-card">
@@ -258,36 +257,35 @@
         <span class="badge">所要約2時間30分</span>
         <span class="badge">隠岐汽船</span>
       </div>
-      <p>境港は<strong>隠岐島へのフェリー発着地</strong>でもあります。隠岐汽船のフェリー（境港〜西ノ島〜海士〜隠岐の島町）が就航。片道2時間30分〜3時間30分（島により異なる）。隠岐の島は世界ジオパークに認定されており、雄大な断崖や手つかずの自然、独自の文化が魅力です。ハレ・マカワオに連泊する場合は、隠岐島への一泊旅行を旅程に組み込むこともできます。<br>※フェリーの時刻・料金は隠岐汽船公式サイトで事前に確認を。</p>
+      <p>境港は隠岐島へのフェリー発着地でもあります。隠岐汽船のフェリー（境港〜西ノ島〜海士〜隠岐の島町）が就航。片道2時間30分〜3時間30分（島により異なる）。隠岐の島は世界ジオパークに認定されており、断崖の海岸や独自の文化で知られています。ハレ・マカワオに連泊する場合は、隠岐島への一泊旅行を旅程に組み込むこともできます。<br>※フェリーの時刻・料金は隠岐汽船公式サイトで事前に確認を。</p>
     </div>
 
-    <h2>子連れ観光のポイント</h2>
+    <h2>子連れで訪れる場合</h2>
     <ul>
       <li>水木しげるロードは比較的歩きやすく、ベビーカーでも回りやすいエリアです</li>
-      <li>キャラクターのブロンズ像を子どもと「全部探そう！」と楽しむのが定番スタイル</li>
-      <li>水木しげる記念館の「妖怪洞窟」は小さい子が怖がることもあるため事前確認を</li>
-      <li>港付近の海鮮ランチは順番待ちになることも。平日・開店直後（11:00〜11:30）が狙い目</li>
-      <li>お土産の「鬼太郎グッズ」「境港産の鯖缶・イカの一夜干し」は子ども・大人ともに喜ばれる</li>
+      <li>水木しげる記念館の「妖怪洞窟」は小さい子が怖がることもあるため、事前に確認してください</li>
+      <li>港付近の海鮮ランチは順番待ちになることがあります。平日や開店直後（11:00〜11:30）は比較的入りやすい時間帯です</li>
+      <li>お土産には「鬼太郎グッズ」や「境港産の鯖缶・イカの一夜干し」があります</li>
     </ul>
 
-    <h2>境港のおすすめ食材・お土産</h2>
+    <h2>境港の食材・お土産</h2>
     <ul>
-      <li><strong>ベニズワイガニ</strong>: 10月〜5月が旬。ゆでガニ・カニ汁・カニ丼どれも絶品</li>
-      <li><strong>白イカ（ケンサキイカ）</strong>: 甘みが強く、刺身・一夜干しが人気</li>
-      <li><strong>境港サバ</strong>: 「関サバ」に並ぶブランドサバ。しめ鯖・塩焼きが定番</li>
-      <li><strong>鬼太郎グッズ</strong>: 水木しげるロード沿いのショップに多種多様</li>
+      <li>ベニズワイガニ: 10月〜5月が旬。ゆでガニ・カニ汁・カニ丼など</li>
+      <li>白イカ（ケンサキイカ）: 甘みが強く、刺身・一夜干しが人気</li>
+      <li>境港サバ: 境港のブランドサバ。しめ鯖・塩焼きなど</li>
+      <li>鬼太郎グッズ: 水木しげるロード沿いのショップで販売</li>
     </ul>
 
     <h2>アクセス情報</h2>
     <ul>
-      <li>HALE MAKAWAOから境港（水木しげるロード）まで: <strong>車で約50分（約35km）</strong></li>
+      <li>HALE MAKAWAOから境港（水木しげるロード）まで: 車で約50分（約35km）</li>
       <li>駐車場: 水木しげるロード周辺に有料駐車場多数（普通車500〜600円/日）</li>
-      <li>電車: 米子駅からJR境線で約45分（鬼太郎列車が人気）</li>
+      <li>電車: 米子駅からJR境線で約45分（鬼太郎列車が走る）</li>
       <li>米子駅から境港まで無料シャトルバス運行日あり（観光シーズン）</li>
     </ul>
 
     <h2>夜景スポット</h2>
-    <p>境港の夜は水木しげるロードがライトアップされ、ブロンズ像が幻想的な雰囲気に。港の漁船の光と海に映る反射が美しい「港の夜景」も見どころ。HALE MAKAWAOへ帰る前に夕暮れ時〜夜の境港も楽しんでみてください。</p>
+    <p>夜は水木しげるロードがライトアップされます。港では漁船の明かりが海面に映る夜景も見られます。</p>
 
     <h2>関連する観光ガイド</h2>
     <ul>
@@ -299,12 +297,12 @@
     </ul>
 
     <div class="cta-box" data-stay-card="bottom">
-      <p>大山の登山も、境港の妖怪ロードも。<br>ハレ・マカワオは、その両方にちょうどいい拠点です。登山口まで車で10分、境港まで50分。1日1組の貸切で、鳥取西部を気ままにめぐってください。</p>
+      <p>ハレ・マカワオは、大山の登山口まで車で10分、境港まで50分。1日1組の一棟貸しです。</p>
       <a class="cta-btn" href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">宿泊を予約する</a>
-      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html" style="color:#c8b88a;">一棟貸し（貸別荘）について詳しく見る</a></p>
+      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html">一棟貸し（貸別荘）について詳しく見る</a></p>
     </div>
 
-    <a class="home-link" href="/">&#8592; トップページへ戻る</a>
+    <a class="home-link" href="/">トップページへ戻る</a>
   </div>
 
   <footer>
@@ -430,7 +428,7 @@ document.addEventListener('DOMContentLoaded', function(){
     gtag('event', 'click_stay_card', {
       'article': (location.pathname.split('/').pop() || '').replace('.html',''),
       'position': card.getAttribute('data-stay-card'),
-      'link_type': (a.getAttribute('href') || '').indexOf('airbnb') > -1 ? 'booking' : 'villa'
+      'link_type': /tabichat\.jp|airbnb/.test(a.getAttribute('href') || '') ? 'booking' : 'villa'
     });
   });
 </script>

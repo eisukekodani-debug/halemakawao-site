@@ -84,7 +84,7 @@
     .breadcrumb span{margin:0 6px;}
     h1{font-size:26px;font-weight:500;letter-spacing:.04em;border-bottom:1px solid #D4D4D4;padding-bottom:16px;margin-bottom:8px;line-height:1.4;}
     .meta{font-size:13px;color:#8a8a8a;margin-bottom:32px;}
-    .lead{background:#f3f0eb;border-left:3px solid #c8b88a;padding:18px 20px;margin-bottom:36px;font-size:15px;line-height:1.9;}
+    .lead{margin-bottom:32px;font-size:16px;line-height:1.9;}
     h2{font-size:19px;font-weight:500;margin-top:48px;margin-bottom:14px;color:#1A1A1A;border-bottom:1px solid #e8e8e8;padding-bottom:8px;}
     h3{font-size:16px;font-weight:500;margin-top:28px;margin-bottom:10px;color:#2a2a2a;}
     p,li{font-size:15px;color:#3a3a3a;}
@@ -94,12 +94,12 @@
     .route-card{border:1px solid #e0dbd3;border-radius:4px;padding:20px 22px;margin:20px 0;background:#fff;}
     .route-card .route-title{font-size:16px;font-weight:500;color:#1A1A1A;margin-bottom:10px;}
     .route-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
-    .badge{background:#f3f0eb;color:#5a4a3a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .badge-accent{background:#c8b88a;color:#1a1a1a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .info-box{background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:18px 20px;margin:24px 0;}
+    .badge{border:1px solid #d4d4d4;color:#5a5a5a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .badge-accent{border:1px solid #1a1a1a;color:#1a1a1a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .info-box{margin:20px 0 24px;}
     .info-box h3{margin-top:0;margin-bottom:12px;}
     /* 拠点宿カード（P3-1: 観光ガイド→宿泊への導線） */
-    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-left:3px solid #c8b88a;border-radius:4px;padding:16px 18px;margin:28px 0;}
+    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:16px 18px;margin:28px 0;}
     .stay-card img{width:104px;height:78px;object-fit:cover;border-radius:3px;flex-shrink:0;}
     .stay-card-body{flex:1;min-width:0;}
     .stay-card-label{font-size:11px;color:#9a8a7a;letter-spacing:.08em;margin-bottom:3px;}
@@ -116,15 +116,15 @@
       .stay-card-cta{width:100%;}
       .stay-card-cta a{display:block;text-align:center;}
     }
-    .cta-box{background:#1a1a1a;color:#fff;padding:32px 28px;margin-top:56px;border-radius:4px;text-align:center;}
-    .cta-box p{color:#ccc;margin-bottom:20px;font-size:15px;}
-    .cta-btn{display:inline-block;background:#c8b88a;color:#1a1a1a;text-decoration:none;padding:12px 32px;font-size:15px;letter-spacing:.05em;border-radius:2px;font-weight:500;}
-    .cta-btn:hover{background:#b8a87a;}
-    .home-link{display:inline-block;margin-top:40px;padding:10px 24px;border:1px solid #1F2421;color:#1F2421;text-decoration:none;font-size:14px;letter-spacing:.05em;}
-    .home-link:hover{background:#1F2421;color:#fff;}
+    .cta-box{border-top:1px solid #d4d4d4;padding-top:32px;margin-top:56px;}
+    .cta-box p{margin-bottom:16px;}
+    .cta-btn{display:inline-block;background:#1a1a1a;color:#fff;text-decoration:none;padding:12px 28px;font-size:15px;border-radius:2px;}
+    .cta-btn:hover{background:#3a3a3a;}
+    .home-link{display:inline-block;margin-top:40px;font-size:14px;color:#9A8060;}
+    
     footer{background:#1a1a1a;color:#aaa;text-align:center;padding:32px 24px;font-size:13px;margin-top:80px;}
     footer a{color:#c8b88a;text-decoration:none;margin:0 8px;}
-    .timeline-item{margin-bottom:28px;padding-left:20px;border-left:2px solid #c8b88a;}
+    .timeline-item{margin-bottom:28px;padding-left:20px;border-left:1px solid #d4d4d4;}
     .timeline-time{font-size:13px;color:#9A8060;margin-bottom:4px;}
     .timeline-title{font-size:15px;font-weight:500;color:#1A1A1A;margin-bottom:6px;}
     .timeline-desc{font-size:14px;color:#4a4a4a;line-height:1.8;}
@@ -146,28 +146,27 @@
       <a href="/">ホーム</a><span>›</span><a href="/#guides">観光ガイド</a><span>›</span>松江城・小泉八雲ゆかりの松江観光
     </nav>
 
-    <h1>松江城・小泉八雲ゆかりの松江観光 ― 大山から日帰りで行く城下町<br><small style="font-size:.65em;font-weight:400;color:#666;">国宝天守と朝ドラ「ばけばけ」の舞台｜ハレ・マカワオから車約50分</small></h1>
-    <img src="../images/matsue-castle.jpg" alt="松江城の天守と着物姿の観光客" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin:8px 0 28px;" loading="lazy">
+    <h1>松江城・小泉八雲ゆかりの松江観光</h1>
+    <img src="../images/matsue-castle.jpg" alt="松江城の天守と着物姿の観光客" style="width:100%;height:300px;object-fit:cover;border-radius:2px;margin:8px 0 28px;" loading="lazy">
     <p class="meta">更新日: 2026年6月 ｜ カテゴリ: 観光ガイド</p>
 
     <div class="lead">
-      <strong>ハレ・マカワオ</strong>から車で約50分（山陰道経由・目安）、島根県松江市には<strong>国宝の現存天守「松江城」</strong>があります。2025年度後期の朝ドラ「ばけばけ」の舞台として注目を集める城下町で、堀川をめぐる遊覧船、明治の文豪・小泉八雲ゆかりの旧居、武家屋敷が連なる塩見縄手など、半日でもたっぷり楽しめる見どころが集まっています。大山での一泊とあわせて、日帰りの松江観光もおすすめです。
+      ハレ・マカワオから車で約50分（山陰道経由・目安）の島根県松江市には、国宝の現存天守「松江城」があります。2025年度後期の朝ドラ「ばけばけ」の舞台となった城下町で、堀川をめぐる遊覧船、明治の文豪・小泉八雲ゆかりの旧居、武家屋敷が連なる塩見縄手などの見どころがあります。
     </div>
 
     <!-- 拠点宿カード（上部） -->
     <div class="stay-card" data-stay-card="top">
       <img src="../images/Exterior.webp" alt="森のなかに建つハレ・マカワオの外観" loading="lazy">
       <div class="stay-card-body">
-        <div class="stay-card-label">この記事の拠点宿</div>
         <div class="stay-card-name"><a href="/villa.html">ハレ・マカワオ｜大山の一棟貸し・貸別荘</a></div>
-        <div class="stay-card-meta">1日1組・最大16名・全5室　／　松江城まで車で約50分<br>松江からの帰り道に、大山の森で過ごす一夜を。</div>
+        <div class="stay-card-meta">1日1組・最大16名・全5室　／　松江城まで車で約50分</div>
       </div>
       <div class="stay-card-cta"><a href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">空室を見る</a></div>
     </div>
 
-    <h2>松江城 ― 国宝の現存天守</h2>
-    <p>松江城は、全国に現存する12天守のうち<strong>国宝に指定された5城の一つ</strong>。堀川に囲まれた城郭の中心に天守がそびえ、江戸時代の姿をそのまま伝える貴重な木造建築として高く評価されています。天守の内部を見学でき、最上階からは宍道湖や城下町を一望できます。晴れた日には、遠く<strong>大山（だいせん）</strong>の姿も望めます——かつての城主たちも、この天守から大山を眺めていたのかもしれません。そのハレ・マカワオが建つのも、同じ大山の麓です。</p>
-    <p>城内をゆったり歩くなら午前中がおすすめです。見学のあと城の北側へ向かうと、堀川沿いの塩見縄手通りへとつながります。</p>
+    <h2>松江城</h2>
+    <p>松江城は、全国に現存する12天守のうち、国宝に指定された5城の一つです。堀川に囲まれた城郭の中心に天守があり、江戸時代の姿を伝える木造建築です。天守の内部を見学でき、最上階からは宍道湖や城下町を一望できます。晴れた日には大山（だいせん）も見えます。ハレ・マカワオは、その大山の麓にあります。</p>
+    <p>天守を見学したあと城の北側へ向かうと、堀川沿いの塩見縄手通りに出ます。</p>
 
     <div class="info-box">
       <h3>松江城 基本情報</h3>
@@ -180,23 +179,23 @@
     </div>
 
     <h3>堀川めぐり</h3>
-    <p>松江城を囲む堀川を小舟でめぐる遊覧船「<strong>堀川めぐり</strong>」は、松江観光の定番中の定番。屋根の低い橋をくぐるときに船の屋根が下がる仕掛けが名物で、乗客みんなで頭を下げる瞬間はなんとも楽しい体験です。船頭さんの案内を聞きながら、約50分かけて堀を一周します。松江城を水面から眺める視点は、地上からとはまた違った趣があります。乗船券・時刻表の詳細は最新の公式情報をご確認ください。</p>
+    <p>「堀川めぐり」は、松江城を囲む堀川を小舟でめぐる遊覧船です。屋根の低い橋をくぐるときに船の屋根が下がる仕掛けが名物で、乗客も頭を下げて橋をくぐります。船頭さんの案内を聞きながら、約50分かけて堀を一周します。乗船券・時刻表の詳細は最新の公式情報をご確認ください。</p>
 
-    <h2>朝ドラ「ばけばけ」と小泉八雲 ― 今なぜ松江が熱いのか</h2>
-    <p>2025年度後期のNHK連続テレビ小説「ばけばけ」（2025年9月29日〜2026年3月27日放送、全125回）は、<strong>小泉セツと、夫で文豪の小泉八雲（ラフカディオ・ハーン）</strong>をモデルにした物語。ヒロインの松野トキ（セツのモデル）を髙石あかりが、夫ヘブン役をトミー・バストウが演じ、明治の松江を舞台にした物語が話題を呼びました。</p>
-    <p>小泉八雲は明治時代に来日し、松江で英語教師を務めながら、日本の怪談や風俗を世界に伝えた文豪です。代表作「知られぬ日本の面影」には、松江の自然と人々への愛情があふれています。ドラマをきっかけに、ゆかりの地として松江を訪れる方も増えそうで、観光地としての注目も高まっています。</p>
+    <h2>朝ドラ「ばけばけ」と小泉八雲</h2>
+    <p>2025年度後期のNHK連続テレビ小説「ばけばけ」（2025年9月29日〜2026年3月27日放送、全125回）は、小泉セツと、夫で文豪の小泉八雲（ラフカディオ・ハーン）をモデルにした物語です。ヒロインの松野トキ（セツのモデル）を髙石あかりが、夫ヘブン役をトミー・バストウが演じました。舞台は明治の松江です。</p>
+    <p>小泉八雲は明治時代に来日し、松江で英語教師を務めながら、日本の怪談や風俗を世界に伝えた文豪です。代表作「知られぬ日本の面影」には、松江の自然と人々が描かれています。</p>
 
     <h2>塩見縄手・小泉八雲旧居と記念館</h2>
-    <p>松江城北側の堀沿いに続く<strong>塩見縄手（しおみなわて）</strong>は、江戸時代の武家屋敷が今も残る城下町の風情ある通り。松並木と石畳の景観が美しく、歩いているだけで気持ちがゆったりとしてきます。</p>
-    <p>通りの西端には、<strong>小泉八雲旧居</strong>と<strong>小泉八雲記念館</strong>が隣り合って建っています。旧居は八雲が松江滞在中に実際に暮らした武家屋敷で、八雲が愛した日本庭園がほぼ当時のまま残されています。隣の記念館では、自筆原稿や遺愛品など八雲の生涯にまつわる資料を展示。「知られぬ日本の面影」をはじめとする著作への理解が深まります。</p>
+    <p>塩見縄手（しおみなわて）は、松江城北側の堀沿いに続く通りで、江戸時代の武家屋敷が今も残っています。通りには松並木と石畳が続きます。</p>
+    <p>通りの西端には、小泉八雲旧居と小泉八雲記念館が隣り合って建っています。旧居は八雲が松江滞在中に実際に暮らした武家屋敷で、八雲が愛した日本庭園がほぼ当時のまま残されています。隣の記念館では、自筆原稿や遺愛品など八雲の生涯にまつわる資料を展示しています。</p>
     <p>旧居・記念館の開館時間・入場料は最新情報をご確認ください。</p>
 
-    <h2>塩見縄手で出雲そばを食べる ― 八雲庵</h2>
-    <p>塩見縄手を歩いたら、通り沿いの出雲そば処<strong>八雲庵（やくもあん）</strong>にもぜひ。元・松江藩武家「大石源内」の屋敷を改装したお店で、日本庭園を眺めながらそばをいただける趣のある空間です。名物は<strong>割子そば</strong>と<strong>鴨南蛮</strong>。</p>
-    <p>割子そばは出雲地方の伝統的な食べ方で、丸い漆器の重ね椀に盛った冷たいそばに、だしをかけていただきます。薬味は好みで調整できます。松江・出雲そばの文化を味わうのにちょうどよい一店です。営業時間・定休日は最新の公式情報でご確認ください。</p>
+    <h2>出雲そば処 八雲庵</h2>
+    <p>塩見縄手の通り沿いに、出雲そば処八雲庵（やくもあん）があります。元・松江藩武家「大石源内」の屋敷を改装した店で、日本庭園を眺めながらそばを食べられます。名物は割子そばと鴨南蛮です。</p>
+    <p>割子そばは出雲地方の伝統的な食べ方で、丸い漆器の重ね椀に盛った冷たいそばに、だしをかけていただきます。薬味は好みで調整できます。営業時間・定休日は最新の公式情報でご確認ください。</p>
 
-    <h2>モデルコース ― 松江日帰り観光プラン</h2>
-    <p>ハレ・マカワオを朝8時に出発すれば、松江の主要スポットをゆとりをもってめぐって、夕方には宿へ戻ってこられます。</p>
+    <h2>モデルコース</h2>
+    <p>ハレ・マカワオを朝8時に出発し、松江の主要スポットをめぐって夕方に宿へ戻る日帰りの行程です。</p>
 
     <div class="timeline" style="margin-top:24px;">
       <div class="timeline-item">
@@ -207,57 +206,57 @@
       <div class="timeline-item">
         <div class="timeline-time">9:00〜10:30 目安</div>
         <div class="timeline-title">松江城を見学</div>
-        <div class="timeline-desc">開城直後は比較的すいています。天守最上階からの眺めを楽しみ、城郭内をゆっくり散策します。</div>
+        <div class="timeline-desc">開城直後は比較的すいています。天守の最上階まで上がり、城郭内を散策します。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">10:30〜11:30 目安</div>
         <div class="timeline-title">堀川めぐりに乗船</div>
-        <div class="timeline-desc">約50分の遊覧で松江城と堀川沿いの街並みを水上から堪能。屋根が下がる橋をくぐる体験は子どもにも大人にも人気。</div>
+        <div class="timeline-desc">約50分の遊覧で、松江城と堀川沿いの街並みを水上から見て回ります。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">12:00〜13:30 目安</div>
-        <div class="timeline-title">塩見縄手へ ― 八雲庵でランチ</div>
-        <div class="timeline-desc">堀川めぐりの乗船場から塩見縄手は徒歩圏内。八雲庵で割子そばをいただきながら、日本庭園の緑を眺めてゆっくり過ごします。</div>
+        <div class="timeline-title">塩見縄手の八雲庵で昼食</div>
+        <div class="timeline-desc">堀川めぐりの乗船場から塩見縄手までは徒歩圏内です。八雲庵で割子そばの昼食をとります。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">13:30〜15:00 目安</div>
         <div class="timeline-title">小泉八雲旧居・記念館を見学</div>
-        <div class="timeline-desc">ランチ後に徒歩すぐの旧居と記念館を見学。「ばけばけ」を見ていた方なら、ドラマの場面と重ね合わせながら展示を楽しめます。</div>
+        <div class="timeline-desc">昼食後、徒歩すぐの旧居と記念館を見学します。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">15:30〜</div>
-        <div class="timeline-title">ハレ・マカワオへ帰還</div>
-        <div class="timeline-desc">松江市街を出発し、約50分（目安）でハレ・マカワオへ。夕方の大山の景色を眺めながら、宿でゆっくり過ごします。</div>
+        <div class="timeline-title">ハレ・マカワオへ戻る</div>
+        <div class="timeline-desc">松江市街を出発し、約50分（目安）でハレ・マカワオに戻ります。</div>
       </div>
     </div>
 
     <p style="margin-top:8px;font-size:14px;color:#666;">※ 上記の時刻はすべて目安です。施設の開館時間・混雑状況によって前後します。</p>
 
-    <h2>アクセス ― ハレ・マカワオから松江へ</h2>
+    <h2>アクセス</h2>
     <ul>
-      <li>移動手段: <strong>自家用車またはレンタカー</strong>が便利（山陰道経由）</li>
-      <li>所要時間の目安: <strong>車で約50分</strong>（大山町から松江市中心部まで。道路状況により前後します）</li>
+      <li>移動手段: 自家用車またはレンタカーが便利（山陰道経由）</li>
+      <li>所要時間の目安: 車で約50分（大山町から松江市中心部まで。道路状況により前後します）</li>
       <li>松江城周辺の駐車場: 城山公園内に複数あり（有料）。週末・連休は混雑するため早め到着を推奨</li>
       <li>電車の場合: 米子駅からJR山陰本線で松江駅まで約40分、松江駅から城まではバスまたはタクシー</li>
     </ul>
-    <p>松江市内の観光には、松江城・塩見縄手・宍道湖などを結ぶ路線バス「ぐるっと松江レイクライン」が便利。1日乗車券も販売されている（料金は最新情報を確認）。</p>
+    <p>松江市内の観光には、松江城・塩見縄手・宍道湖などを結ぶ路線バス「ぐるっと松江レイクライン」が便利です。1日乗車券も販売されています（料金は最新情報をご確認ください）。</p>
 
     <div style="margin-top:56px;padding-top:32px;border-top:1px solid #e0dbd3;">
       <h2 style="margin-top:0;">関連する観光ガイド</h2>
       <ul style="list-style:none;padding:0;margin:0;">
         <li style="margin-bottom:12px;"><a href="daisen-hiking.html">大山登山・ハイキングガイド</a></li>
         <li style="margin-bottom:12px;"><a href="izumo-taisha.html">出雲大社参拝ガイド</a></li>
-        <li style="margin-bottom:12px;"><a href="sakaiminato-day-trip.html">水木しげるロード完全ガイド</a></li>
+        <li style="margin-bottom:12px;"><a href="sakaiminato-day-trip.html">水木しげるロードガイド</a></li>
       </ul>
     </div>
 
     <div class="cta-box" data-stay-card="bottom">
-      <p>松江観光の拠点に、大山の一棟貸しを。<br>ハレ・マカワオから松江市街まで車で約50分。1日1組貸切の宿で、大山と松江、山陰の二つの表情を楽しむ旅へ。</p>
+      <p>ハレ・マカワオは、松江市街まで車で約50分。1日1組の一棟貸しです。</p>
       <a class="cta-btn" href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">宿泊を予約する</a>
-      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html" style="color:#c8b88a;">一棟貸し（貸別荘）について詳しく見る</a></p>
+      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html">一棟貸し（貸別荘）について詳しく見る</a></p>
     </div>
 
-    <a class="home-link" href="/">&#8592; トップページへ戻る</a>
+    <a class="home-link" href="/">トップページへ戻る</a>
   </div>
 
   <footer>
@@ -380,7 +379,7 @@ document.addEventListener('DOMContentLoaded', function(){
     gtag('event', 'click_stay_card', {
       'article': (location.pathname.split('/').pop() || '').replace('.html',''),
       'position': card.getAttribute('data-stay-card'),
-      'link_type': (a.getAttribute('href') || '').indexOf('airbnb') > -1 ? 'booking' : 'villa'
+      'link_type': /tabichat\.jp|airbnb/.test(a.getAttribute('href') || '') ? 'booking' : 'villa'
     });
   });
 </script>

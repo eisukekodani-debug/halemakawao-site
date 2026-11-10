@@ -100,7 +100,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://halemakawao.com/en/guides/daisen-ski-2026.html" />
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://halemakawao.com/zh/guides/daisen-ski-2026.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://halemakawao.com/guides/daisen-ski-2026.html" />
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -254,6 +254,41 @@
   <url>
     <loc>https://halemakawao.com/guides/forest-wildlife.html</loc>
     <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/ski-group.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/guides/daisen-ski-lift-ticket.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/guides/daisen-ski-group-trip.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/guides/daisen-ski-access.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://halemakawao.com/guides/daisen-ski-beginner-family.html</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

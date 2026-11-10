@@ -87,7 +87,7 @@
     .breadcrumb span{margin:0 6px;}
     h1{font-size:26px;font-weight:500;letter-spacing:.04em;border-bottom:1px solid #D4D4D4;padding-bottom:16px;margin-bottom:8px;line-height:1.4;}
     .meta{font-size:13px;color:#8a8a8a;margin-bottom:32px;}
-    .lead{background:#f3f0eb;border-left:3px solid #c8b88a;padding:18px 20px;margin-bottom:36px;font-size:15px;line-height:1.9;}
+    .lead{margin-bottom:32px;font-size:16px;line-height:1.9;}
     h2{font-size:19px;font-weight:500;margin-top:48px;margin-bottom:14px;color:#1A1A1A;border-bottom:1px solid #e8e8e8;padding-bottom:8px;}
     h3{font-size:16px;font-weight:500;margin-top:28px;margin-bottom:10px;color:#2a2a2a;}
     p,li{font-size:15px;color:#3a3a3a;}
@@ -97,15 +97,15 @@
     .route-card{border:1px solid #e0dbd3;border-radius:4px;padding:20px 22px;margin:20px 0;background:#fff;}
     .route-card .route-title{font-size:16px;font-weight:500;color:#1A1A1A;margin-bottom:10px;}
     .route-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
-    .badge{background:#f3f0eb;color:#5a4a3a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .badge-accent{background:#c8b88a;color:#1a1a1a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .info-box{background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:18px 20px;margin:24px 0;}
+    .badge{border:1px solid #d4d4d4;color:#5a5a5a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .badge-accent{border:1px solid #1a1a1a;color:#1a1a1a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .info-box{margin:20px 0 24px;}
     .info-box h3{margin-top:0;margin-bottom:12px;}
     .season-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0;}
     .season-item{background:#f9f8f6;border:1px solid #e8e4de;border-radius:4px;padding:14px 16px;}
     .season-item .season-name{font-size:13px;font-weight:500;color:#5a4a3a;margin-bottom:6px;}
     /* 拠点宿カード（P3-1: 観光ガイド→宿泊への導線） */
-    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-left:3px solid #c8b88a;border-radius:4px;padding:16px 18px;margin:28px 0;}
+    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:16px 18px;margin:28px 0;}
     .stay-card img{width:104px;height:78px;object-fit:cover;border-radius:3px;flex-shrink:0;}
     .stay-card-body{flex:1;min-width:0;}
     .stay-card-label{font-size:11px;color:#9a8a7a;letter-spacing:.08em;margin-bottom:3px;}
@@ -122,12 +122,12 @@
       .stay-card-cta{width:100%;}
       .stay-card-cta a{display:block;text-align:center;}
     }
-    .cta-box{background:#1a1a1a;color:#fff;padding:32px 28px;margin-top:56px;border-radius:4px;text-align:center;}
-    .cta-box p{color:#ccc;margin-bottom:20px;font-size:15px;}
-    .cta-btn{display:inline-block;background:#c8b88a;color:#1a1a1a;text-decoration:none;padding:12px 32px;font-size:15px;letter-spacing:.05em;border-radius:2px;font-weight:500;}
-    .cta-btn:hover{background:#b8a87a;}
-    .home-link{display:inline-block;margin-top:40px;padding:10px 24px;border:1px solid #1F2421;color:#1F2421;text-decoration:none;font-size:14px;letter-spacing:.05em;}
-    .home-link:hover{background:#1F2421;color:#fff;}
+    .cta-box{border-top:1px solid #d4d4d4;padding-top:32px;margin-top:56px;}
+    .cta-box p{margin-bottom:16px;}
+    .cta-btn{display:inline-block;background:#1a1a1a;color:#fff;text-decoration:none;padding:12px 28px;font-size:15px;border-radius:2px;}
+    .cta-btn:hover{background:#3a3a3a;}
+    .home-link{display:inline-block;margin-top:40px;font-size:14px;color:#9A8060;}
+    
     footer{background:#1a1a1a;color:#aaa;text-align:center;padding:32px 24px;font-size:13px;margin-top:80px;}
     footer a{color:#c8b88a;text-decoration:none;margin:0 8px;}
     @media(max-width:600px){
@@ -152,38 +152,37 @@
       <a href="/">ホーム</a><span>›</span><a href="/#guides">観光ガイド</a><span>›</span>出雲大社参拝ガイド
     </nav>
 
-    <h1>出雲大社参拝ガイド ― 大山の一棟貸しを拠点に日帰り参拝<br><small style="font-size:.65em;font-weight:400;color:#666;">縁結びの大社｜参拝作法・見どころ・アクセス完全ガイド</small></h1>
-    <img src="../images/izumo-taisha.jpg" alt="出雲大社" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin:8px 0 28px;" loading="lazy">
+    <h1>出雲大社参拝ガイド</h1>
+    <img src="../images/izumo-taisha.jpg" alt="出雲大社" style="width:100%;height:300px;object-fit:cover;border-radius:2px;margin:8px 0 28px;" loading="lazy">
     <p class="meta">更新日: 2026年6月 ｜ カテゴリ: 観光ガイド</p>
 
     <div class="lead">
-      島根県出雲市の<strong>出雲大社</strong>は、縁結びの神・大国主大神をまつる日本屈指の古社です。<strong>ハレ・マカワオ</strong>からは<strong>車で約1時間30分（目安・要確認）</strong>と、日帰り参拝にちょうどよい距離。参拝のあとは神門通りで出雲そばを味わい、夕方には大山の宿へ帰る ― そんな一日を過ごせます。縁結び祈願はもちろん、歴史ある社殿や神話の世界にふれたい方にも、山陰旅行で外せない目的地です。
+      島根県出雲市の出雲大社は、縁結びの神・大国主大神をまつる古社です。ハレ・マカワオからは車で約1時間30分（目安・要確認）で、日帰りで参拝できます。参拝のあとに神門通りで出雲そばを食べ、夕方に大山の宿へ戻る行程も組めます。
     </div>
 
     <!-- 拠点宿カード（上部） -->
     <div class="stay-card" data-stay-card="top">
       <img src="../images/Exterior.webp" alt="森のなかに建つハレ・マカワオの外観" loading="lazy">
       <div class="stay-card-body">
-        <div class="stay-card-label">この記事の拠点宿</div>
         <div class="stay-card-name"><a href="/villa.html">ハレ・マカワオ｜大山の一棟貸し・貸別荘</a></div>
-        <div class="stay-card-meta">1日1組・最大16名・全5室　／　出雲大社まで車で約1時間30分<br>参拝の前後は、大山の森の一棟貸しを拠点に。</div>
+        <div class="stay-card-meta">1日1組・最大16名・全5室　／　出雲大社まで車で約1時間30分</div>
       </div>
       <div class="stay-card-cta"><a href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">空室を見る</a></div>
     </div>
 
     <h2>出雲大社の基本情報</h2>
     <ul>
-      <li>正式名称: <strong>出雲大社（いづもおおやしろ）</strong></li>
+      <li>正式名称: 出雲大社（いづもおおやしろ）</li>
       <li>所在地: 島根県出雲市大社町杵築東195</li>
-      <li>主祭神: 大国主大神（おおくにぬしのおおかみ）― 縁結び・福の神として信仰されています</li>
+      <li>主祭神: 大国主大神（おおくにぬしのおおかみ）。縁結び・福の神として信仰されています</li>
       <li>参拝時間: 境内は24時間開放（御本殿は参拝時間あり。最新は公式サイト要確認）</li>
       <li>拝観料: 境内は無料（宝物殿などは有料。最新情報は公式サイト要確認）</li>
       <li>公式サイト: <a href="https://izumooyashiro.or.jp/" target="_blank" rel="noopener">izumooyashiro.or.jp</a></li>
-      <li>HALE MAKAWAOから出雲大社まで: <strong>車で約1時間30分（目安）</strong>。山陰道（国道9号線）経由</li>
+      <li>HALE MAKAWAOから出雲大社まで: 車で約1時間30分（目安）。山陰道（国道9号線）経由</li>
     </ul>
 
-    <h2>参拝作法 ― 出雲大社では「二礼四拍手一礼」</h2>
-    <p>出雲大社は全国の多くの神社とは異なり、拍手の数が「二礼<strong>四拍手</strong>一礼」が正式な参拝作法とされています（一般的な神社は二礼二拍手一礼）。</p>
+    <h2>参拝作法</h2>
+    <p>出雲大社では「二礼四拍手一礼」が正式な参拝作法とされています（一般的な神社は二礼二拍手一礼）。</p>
 
     <div class="info-box">
       <h3>参拝の手順</h3>
@@ -191,7 +190,7 @@
         <li>手水舎で手と口を清める</li>
         <li>拝殿前に進み、深いお辞儀を2回（二礼）</li>
         <li>両手を合わせて4回拍手を打つ（四拍手）</li>
-        <li>手を合わせたまま祈願します</li>
+        <li>手を合わせたまま祈願する</li>
         <li>最後に深いお辞儀を1回（一礼）</li>
       </ol>
       <p style="margin-bottom:0;font-size:14px;color:#666;">※ 参拝作法については諸説あります。訪問前に公式情報をご確認ください。</p>
@@ -204,7 +203,7 @@
       <div class="route-meta">
         <span class="badge">国宝</span>
       </div>
-      <p>高さ24mを誇る御本殿は「大社造り」と呼ばれる日本最古の神社建築様式。現在の社殿は1744年に造営されたもので、国宝に指定されています。御本殿の内部には入れませんが、八足門の前から参拝できます。</p>
+      <p>御本殿は高さ24mで、「大社造り」と呼ばれる日本最古の神社建築様式です。現在の社殿は1744年に造営されたもので、国宝に指定されています。御本殿の内部には入れませんが、八足門の前から参拝できます。</p>
     </div>
 
     <div class="route-card">
@@ -212,7 +211,7 @@
       <div class="route-meta">
         <span class="badge">全長約13.6m・重さ約5.2t（目安）</span>
       </div>
-      <p>神楽殿正面に掲げられた巨大な注連縄は、長さ・重さともに日本最大級とされます。ワラを大量に束ねて作られたスケールは、写真や映像で見るより実物のほうがずっと迫力があります。出雲大社を訪れる際に、あわせて見ておきたい場所です。</p>
+      <p>神楽殿正面に掲げられた注連縄は、長さ・重さともに日本最大級とされます。ワラを大量に束ねて作られています。</p>
     </div>
 
     <div class="route-card">
@@ -221,46 +220,46 @@
         <span class="badge">有料施設</span>
         <span class="badge">大社から徒歩圏内</span>
       </div>
-      <p>境内の宝物殿では出雲大社に関わる神宝類を展示。また、大社から徒歩約5分の場所にある<strong>島根県立古代出雲歴史博物館</strong>では、出雲大社の歴史や古代の出雲文化を深く学べます。国宝・重要文化財の出土品も多数。</p>
+      <p>境内の宝物殿では、出雲大社に関わる神宝類を展示しています。大社から徒歩約5分の島根県立古代出雲歴史博物館では、出雲大社の歴史や古代の出雲文化について学べます。国宝・重要文化財の出土品も多数あります。</p>
     </div>
 
-    <h2>参道・周辺の楽しみ方</h2>
+    <h2>参道・周辺</h2>
 
     <h3>神門通り</h3>
-    <p>出雲大社の一の鳥居（宇迦橋の大鳥居）から大社入口まで約700mにわたって続く参道「神門通り」は、土産物店・飲食店・カフェが並ぶ散策路。出雲そば、縁結びをテーマにしたスイーツや雑貨など、ここでしか買えない品も多く、参拝前後のひと時を楽しめます。</p>
+    <p>出雲大社の一の鳥居（宇迦橋の大鳥居）から大社入口まで約700m続く参道「神門通り」には、土産物店・飲食店・カフェが並びます。出雲そばのほか、縁結びをテーマにしたスイーツや雑貨を扱う店もあります。</p>
 
     <h3>出雲そば</h3>
-    <p>出雲大社参拝後の定番は<strong>出雲そば</strong>。割子そば（丸い漆器の段重ねに入ったそば）や釜揚げそばが代表的な食べ方で、黒くてコシのある麺が特徴。神門通り沿いに複数の老舗店があり、昼時は混雑するため早めの訪問がおすすめです（料金は要確認）。</p>
+    <p>出雲そばは、割子そば（丸い漆器の段重ねに入ったそば）や釜揚げそばが代表的な食べ方で、黒くてコシのある麺が特徴です。神門通り沿いに複数の老舗店があります。昼時は混雑するため、早めの時間に入るのがおすすめです（料金は要確認）。</p>
 
     <h3>ぜんざい発祥の地</h3>
-    <p>出雲は「ぜんざい発祥の地」ともいわれています。旧暦10月の「神在月」に出雲で催される「神在祭」で振る舞われた「神在餅（じんざいもち）」がぜんざいの語源になったとされる説があります。神門通りのぜんざいの店で一杯味わうのもおすすめです。</p>
+    <p>出雲は「ぜんざい発祥の地」ともいわれています。旧暦10月の「神在月」に出雲で催される「神在祭」で振る舞われた「神在餅（じんざいもち）」がぜんざいの語源になったとされる説があります。神門通りにはぜんざいの店もあります。</p>
 
-    <h2>ベストシーズン・訪問タイミング</h2>
+    <h2>季節と訪問時期</h2>
     <div class="season-grid">
       <div class="season-item">
         <div class="season-name">春（3月〜5月）</div>
-        <p style="font-size:14px;margin:0;">桜の季節は境内も美しく、比較的落ち着いて参拝できる時期。ゴールデンウィーク期間は混雑が予想されます。</p>
+        <p style="font-size:14px;margin:0;">比較的落ち着いて参拝できる時期です。ゴールデンウィーク期間は混雑が予想されます。</p>
       </div>
       <div class="season-item">
         <div class="season-name">夏（6月〜8月）</div>
-        <p style="font-size:14px;margin:0;">緑豊かな境内を楽しめますが、夏の日差しは強く蒸し暑い時期です。早朝参拝（6〜8時台）がおすすめ。境内には木陰も多くあります。</p>
+        <p style="font-size:14px;margin:0;">日差しが強く、蒸し暑い時期です。境内には木陰も多くあります。暑さを避けるなら早朝（6〜8時台）の参拝が向いています。</p>
       </div>
       <div class="season-item">
         <div class="season-name">神在月（旧暦10月）</div>
-        <p style="font-size:14px;margin:0;">全国から八百万の神が集まるとされる「神在祭」の期間です。特別な雰囲気を感じられる時期ですが、期間中は参拝制限や立入禁止エリアが設けられる場合があります。事前にご確認ください。</p>
+        <p style="font-size:14px;margin:0;">全国から八百万の神が集まるとされる「神在祭」の期間です。期間中は参拝制限や立入禁止エリアが設けられる場合があります。事前にご確認ください。</p>
       </div>
       <div class="season-item">
         <div class="season-name">冬（12月〜2月）</div>
-        <p style="font-size:14px;margin:0;">比較的空いており、落ち着いて参拝しやすい時期です。山陰地方の冬は天候が崩れやすいため、出発前に天気をご確認ください。路面凍結にもご注意を。</p>
+        <p style="font-size:14px;margin:0;">比較的空いており、落ち着いて参拝しやすい時期です。山陰地方の冬は天候が崩れやすいため、出発前に天気をご確認ください。路面凍結にもご注意ください。</p>
       </div>
     </div>
 
     <h2>アクセス情報</h2>
     <ul>
-      <li>HALE MAKAWAOから出雲大社まで: <strong>車で約1時間30分（目安）</strong></li>
+      <li>HALE MAKAWAOから出雲大社まで: 車で約1時間30分（目安）</li>
       <li>主なルート: 国道9号線（山陰道）を西進し、出雲市内から出雲大社方面へ</li>
       <li>駐車場: 出雲大社周辺に複数の駐車場あり（有料・無料。台数・料金は要確認）</li>
-      <li>繁忙期（年始・連休・神在月）は周辺が大渋滞になる場合があります。早めの出発を推奨</li>
+      <li>繁忙期（年始・連休・神在月）は周辺が渋滞する場合があります。早めの出発をおすすめします</li>
       <li>公共交通機関: 米子駅から特急やくも・バスなどで約1時間30分〜2時間（乗り換えあり。最新は要確認）</li>
     </ul>
 
@@ -277,9 +276,9 @@
       <p style="margin-bottom:0;font-size:14px;color:#666;">※ 上記は目安です。交通状況や混雑により所要時間は変わります。</p>
     </div>
 
-    <h2>便利リンク</h2>
+    <h2>参考リンク</h2>
     <ul>
-      <li><a href="https://izumooyashiro.or.jp/" target="_blank" rel="noopener">出雲大社 公式サイト</a> ― 参拝時間・行事情報</li>
+      <li><a href="https://izumooyashiro.or.jp/" target="_blank" rel="noopener">出雲大社 公式サイト</a>（参拝時間・行事情報）</li>
       <li><a href="https://www.shimane-kodai.jp/" target="_blank" rel="noopener">島根県立古代出雲歴史博物館</a></li>
     </ul>
 
@@ -288,19 +287,19 @@
       <ul style="list-style:none;padding:0;margin:0;">
         <li style="margin-bottom:12px;"><a href="daisen-hiking.html">大山登山・ハイキングガイド</a></li>
         <li style="margin-bottom:12px;"><a href="daisen-ski-2026.html">大山スキー場のご案内</a></li>
-        <li style="margin-bottom:12px;"><a href="sakaiminato-day-trip.html">水木しげるロード完全ガイド</a></li>
+        <li style="margin-bottom:12px;"><a href="sakaiminato-day-trip.html">水木しげるロードガイド</a></li>
         <li style="margin-bottom:12px;"><a href="tottori-sakyu.html">鳥取砂丘観光ガイド</a></li>
         <li style="margin-bottom:12px;"><a href="matsue-castle.html">松江城・小泉八雲の松江観光</a></li>
       </ul>
     </div>
 
     <div class="cta-box" data-stay-card="bottom">
-      <p>宿を拠点に、出雲大社へ日帰り参拝を。<br>ハレ・マカワオは大山のふもとの一棟貸し、1日1組の貸切です。ご縁を結ぶ一日の、帰る場所に。</p>
+      <p>ハレ・マカワオは、出雲大社まで車で約1時間30分。大山のふもとにある1日1組の一棟貸しです。</p>
       <a class="cta-btn" href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">宿泊を予約する</a>
-      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html" style="color:#c8b88a;">一棟貸し（貸別荘）について詳しく見る</a></p>
+      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html">一棟貸し（貸別荘）について詳しく見る</a></p>
     </div>
 
-    <a class="home-link" href="/">&#8592; トップページへ戻る</a>
+    <a class="home-link" href="/">トップページへ戻る</a>
   </div>
 
   <footer>
@@ -426,7 +425,7 @@ document.addEventListener('DOMContentLoaded', function(){
     gtag('event', 'click_stay_card', {
       'article': (location.pathname.split('/').pop() || '').replace('.html',''),
       'position': card.getAttribute('data-stay-card'),
-      'link_type': (a.getAttribute('href') || '').indexOf('airbnb') > -1 ? 'booking' : 'villa'
+      'link_type': /tabichat\.jp|airbnb/.test(a.getAttribute('href') || '') ? 'booking' : 'villa'
     });
   });
 </script>

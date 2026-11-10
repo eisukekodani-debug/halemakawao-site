@@ -87,7 +87,7 @@
     .breadcrumb span{margin:0 6px;}
     h1{font-size:26px;font-weight:500;letter-spacing:.04em;border-bottom:1px solid #D4D4D4;padding-bottom:16px;margin-bottom:8px;line-height:1.4;}
     .meta{font-size:13px;color:#8a8a8a;margin-bottom:32px;}
-    .lead{background:#f3f0eb;border-left:3px solid #c8b88a;padding:18px 20px;margin-bottom:36px;font-size:15px;line-height:1.9;}
+    .lead{margin-bottom:32px;font-size:16px;line-height:1.9;}
     h2{font-size:19px;font-weight:500;margin-top:48px;margin-bottom:14px;color:#1A1A1A;border-bottom:1px solid #e8e8e8;padding-bottom:8px;}
     h3{font-size:16px;font-weight:500;margin-top:28px;margin-bottom:10px;color:#2a2a2a;}
     p,li{font-size:15px;color:#3a3a3a;}
@@ -97,15 +97,15 @@
     .route-card{border:1px solid #e0dbd3;border-radius:4px;padding:20px 22px;margin:20px 0;background:#fff;}
     .route-card .route-title{font-size:16px;font-weight:500;color:#1A1A1A;margin-bottom:10px;}
     .route-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
-    .badge{background:#f3f0eb;color:#5a4a3a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .badge-accent{background:#c8b88a;color:#1a1a1a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .info-box{background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:18px 20px;margin:24px 0;}
+    .badge{border:1px solid #d4d4d4;color:#5a5a5a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .badge-accent{border:1px solid #1a1a1a;color:#1a1a1a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .info-box{margin:20px 0 24px;}
     .info-box h3{margin-top:0;margin-bottom:12px;}
     .season-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:16px 0;}
     .season-item{background:#f9f8f6;border:1px solid #e8e4de;border-radius:4px;padding:14px 16px;}
     .season-item .season-name{font-size:13px;font-weight:500;color:#5a4a3a;margin-bottom:6px;}
     /* 拠点宿カード（P3-1: 観光ガイド→宿泊への導線） */
-    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-left:3px solid #c8b88a;border-radius:4px;padding:16px 18px;margin:28px 0;}
+    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:16px 18px;margin:28px 0;}
     .stay-card img{width:104px;height:78px;object-fit:cover;border-radius:3px;flex-shrink:0;}
     .stay-card-body{flex:1;min-width:0;}
     .stay-card-label{font-size:11px;color:#9a8a7a;letter-spacing:.08em;margin-bottom:3px;}
@@ -122,12 +122,12 @@
       .stay-card-cta{width:100%;}
       .stay-card-cta a{display:block;text-align:center;}
     }
-    .cta-box{background:#1a1a1a;color:#fff;padding:32px 28px;margin-top:56px;border-radius:4px;text-align:center;}
-    .cta-box p{color:#ccc;margin-bottom:20px;font-size:15px;}
-    .cta-btn{display:inline-block;background:#c8b88a;color:#1a1a1a;text-decoration:none;padding:12px 32px;font-size:15px;letter-spacing:.05em;border-radius:2px;font-weight:500;}
-    .cta-btn:hover{background:#b8a87a;}
-    .home-link{display:inline-block;margin-top:40px;padding:10px 24px;border:1px solid #1F2421;color:#1F2421;text-decoration:none;font-size:14px;letter-spacing:.05em;}
-    .home-link:hover{background:#1F2421;color:#fff;}
+    .cta-box{border-top:1px solid #d4d4d4;padding-top:32px;margin-top:56px;}
+    .cta-box p{margin-bottom:16px;}
+    .cta-btn{display:inline-block;background:#1a1a1a;color:#fff;text-decoration:none;padding:12px 28px;font-size:15px;border-radius:2px;}
+    .cta-btn:hover{background:#3a3a3a;}
+    .home-link{display:inline-block;margin-top:40px;font-size:14px;color:#9A8060;}
+    
     footer{background:#1a1a1a;color:#aaa;text-align:center;padding:32px 24px;font-size:13px;margin-top:80px;}
     footer a{color:#c8b88a;text-decoration:none;margin:0 8px;}
     @media(max-width:600px){
@@ -154,36 +154,35 @@
       <a href="/">ホーム</a><span>›</span><a href="/#guides">観光ガイド</a><span>›</span>大山登山・ハイキングガイド
     </nav>
 
-    <h1>大山登山・ハイキングガイド ― 一棟貸し別荘を拠点に<br><small style="font-size:.65em;font-weight:400;color:#666;">中国地方最高峰1,729m｜ファミリー登山から本格アルペンルートまで</small></h1>
-    <img src="../images/daisen-hiking.jpg" alt="大山の登山道" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin:8px 0 28px;" loading="lazy">
+    <h1>大山登山・ハイキングガイド</h1>
+    <img src="../images/daisen-hiking.jpg" alt="大山の登山道" style="width:100%;height:300px;object-fit:cover;border-radius:2px;margin:8px 0 28px;" loading="lazy">
     <p class="meta">更新日: 2026年5月 ｜ カテゴリ: 観光ガイド</p>
 
     <div class="lead">
-      中国地方の最高峰・<strong>大山（標高1,729m）</strong>は、<strong>ハレ・マカワオ</strong>から登山口まで<strong>車で約10分</strong>。朝早く発つ登山も、下山後にゆっくり体を休める一夜も、1日1組貸切の宿だからこそ気兼ねなく過ごせます。夏山登山道（往復約4〜5時間）は初心者の方にも挑戦しやすく、小学校低学年から楽しめるファミリーコースもあります。下山後は近くの<strong>豪円湯院</strong>で汗を流して宿へ帰るのが、定番の過ごし方です。
+      中国地方の最高峰・大山（標高1,729m）は、ハレ・マカワオから登山口まで車で約10分です。宿は1日1組の貸切です。夏山登山道（往復約4〜5時間）は初心者の方も登りやすいルートで、小学校低学年から歩けるファミリーコースもあります。下山後は近くの豪円湯院で汗を流してから宿へ戻れます。
     </div>
 
     <!-- 拠点宿カード（上部） -->
     <div class="stay-card" data-stay-card="top">
       <img src="../images/Exterior.webp" alt="森のなかに建つハレ・マカワオの外観" loading="lazy">
       <div class="stay-card-body">
-        <div class="stay-card-label">この記事の拠点宿</div>
         <div class="stay-card-name"><a href="/villa.html">ハレ・マカワオ｜大山の一棟貸し・貸別荘</a></div>
-        <div class="stay-card-meta">1日1組・最大16名・全5室　／　登山口（夏山登山道）まで車で約10分<br>下山後は、車で10分の森の一棟へ。汗を流して、そのまま眠れます。</div>
+        <div class="stay-card-meta">1日1組・最大16名・全5室　／　登山口（夏山登山道）まで車で約10分</div>
       </div>
       <div class="stay-card-cta"><a href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">空室を見る</a></div>
     </div>
 
     <h2>大山の基本情報</h2>
     <ul>
-      <li>標高: 最高峰の<strong>剣ヶ峰1,729m</strong>（立入禁止）／登山者が立てる山頂<strong>弥山1,709m</strong></li>
+      <li>標高: 最高峰の剣ヶ峰1,729m（立入禁止）／登山者が立てる山頂弥山1,709m</li>
       <li>位置: 鳥取県大山町・伯耆町・江府町にまたがる大山隠岐国立公園内</li>
       <li>山名の読み方: だいせん（地元ではよく「おおせん」とも呼ばれる）</li>
-      <li>登山適期: <strong>5月〜11月</strong>（積雪期の入山は冬山装備が必須）</li>
+      <li>登山適期: 5月〜11月（積雪期の入山は冬山装備が必須）</li>
       <li>登山口最寄り駐車場: 大山寺橋駐車場（夏季は有料・混雑注意）</li>
-      <li>HALE MAKAWAOから登山口（夏山登山道入口）まで: <strong>車で約10分</strong></li>
+      <li>HALE MAKAWAOから登山口（夏山登山道入口）まで: 車で約10分</li>
     </ul>
 
-    <h2>メインルート詳細</h2>
+    <h2>主なルート</h2>
 
     <div class="route-card">
       <div class="route-title">&#9312; 夏山登山道（往復）</div>
@@ -193,7 +192,7 @@
         <span class="badge">所要 4〜5時間（往復）</span>
         <span class="badge">難易度 ★★★☆☆</span>
       </div>
-      <p>大山寺参道から始まる、いちばんよく歩かれているルートです。整備された木道階段が続き、初心者の方にも挑戦しやすいコースです。標高差は約900m。6合目避難小屋（標高約1,350m）でひと休みするのがおすすめです。山頂（弥山）には広い木道デッキがあり、晴れた日には日本海や隠岐島、島根半島まで一望できます。</p>
+      <p>大山寺参道から始まる、最も多く歩かれているルートです。整備された木道の階段が続き、初心者の方も登りやすいコースです。標高差は約900m。途中の6合目避難小屋（標高約1,350m）で休憩できます。山頂（弥山）には広い木道デッキがあり、晴れた日には日本海や隠岐島、島根半島まで見渡せます。</p>
       <ul>
         <li>登山口: 大山夏山登山道入口（大山寺参道沿い）</li>
         <li>登り: 約2時間30分〜3時間</li>
@@ -210,22 +209,22 @@
         <span class="badge">難易度 ★★★★☆</span>
         <span class="badge-accent">花の名所</span>
       </div>
-      <p>夏（7〜8月）には高山植物が咲く、「ユートピア」と呼ばれるお花畑が広がります。三鈷峰（1,516m）から望む大山北壁は迫力のある景色です。岩場が多いため、体力と登山経験のある方向けのルートです。</p>
+      <p>夏（7〜8月）には、「ユートピア」と呼ばれる高山植物のお花畑が広がります。三鈷峰（1,516m）からは大山北壁を望めます。岩場が多いため、体力と登山経験のある方向けのルートです。</p>
     </div>
 
-    <h2>四季別おすすめシーズン</h2>
+    <h2>季節ごとの特徴</h2>
     <div class="season-grid">
       <div class="season-item">
         <div class="season-name">春（4月〜5月）</div>
-        <p style="font-size:14px;margin:0;">山麓にカタクリやスミレが咲く。雪解け直後の5月初旬〜は残雪あり、アイゼン必要な場合も。ブナ林の新緑が美しい5月末がおすすめ。気温 山頂0〜10℃。</p>
+        <p style="font-size:14px;margin:0;">山麓にカタクリやスミレが咲く。雪解け直後の5月初旬〜は残雪あり、アイゼンが必要な場合もある。ブナ林の新緑は5月末ごろ。気温 山頂0〜10℃。</p>
       </div>
       <div class="season-item">
         <div class="season-name">夏（6月〜8月）</div>
-        <p style="font-size:14px;margin:0;">最も人気のシーズン。7〜8月はユートピアのお花畑が見頃。早朝スタートで雲海に出会えることも。山頂気温15〜20℃。麓との気温差約10℃。</p>
+        <p style="font-size:14px;margin:0;">最も人気のシーズン。7〜8月はユートピアのお花畑が見頃。早朝は雲海が見られることもある。山頂気温15〜20℃。麓との気温差約10℃。</p>
       </div>
       <div class="season-item">
         <div class="season-name">秋（9月〜11月）</div>
-        <p style="font-size:14px;margin:0;">ブナ林の紅葉は10月中旬〜下旬が見頃。空気が澄んで遠望が利き、写真映えする季節。11月以降は積雪の可能性。山頂気温5〜15℃。</p>
+        <p style="font-size:14px;margin:0;">ブナ林の紅葉は10月中旬〜下旬が見頃。空気が澄み、遠くまで見渡せる。11月以降は積雪の可能性。山頂気温5〜15℃。</p>
       </div>
       <div class="season-item">
         <div class="season-name">冬（12月〜3月）</div>
@@ -233,16 +232,16 @@
       </div>
     </div>
 
-    <h2>子連れ・ファミリーハイキングのポイント</h2>
-    <p>HALE MAKAWAOに泊まる子連れゲストに特に人気なのが、<strong>大山の森ウォーク</strong>と<strong>鍵掛峠散策</strong>の組み合わせ。本格登山をせずとも、ブナ林の中の遊歩道を1〜2時間散策するだけで大山の自然を満喫できます。</p>
+    <h2>子ども連れのハイキング</h2>
+    <p>HALE MAKAWAOに泊まる子ども連れのお客様には、大山の森ウォークと鍵掛峠散策の組み合わせがよく選ばれています。本格的な登山をしなくても、ブナ林の中の遊歩道を1〜2時間散策できます。</p>
     <ul>
       <li>未就学児〜小学校低学年: 鍵掛峠遊歩道（車でアクセス、平坦な散策路）</li>
       <li>小学校中〜高学年: 夏山登山道 6合目まで（往復約2〜3時間、標高差450m）</li>
       <li>中学生以上・体力のある方: 夏山登山道 山頂まで（往復4〜5時間）</li>
     </ul>
-    <p>小学生と大山山頂を目指す場合は<strong>早朝6時スタート</strong>を強くおすすめします。午後は雲が出やすく、雷の危険もあるため。</p>
+    <p>小学生と大山山頂を目指す場合は、早朝6時の出発をおすすめします。午後は雲が出やすく、雷の危険もあるためです。</p>
 
-    <h2>持ち物・装備チェックリスト</h2>
+    <h2>持ち物と装備</h2>
     <div class="info-box">
       <h3 style="font-size:15px;">最低限の装備</h3>
       <ul>
@@ -254,61 +253,61 @@
         <li>トレッキングポール（特に下山時に膝への負担を軽減）</li>
       </ul>
     </div>
-    <p>なお、HALE MAKAWAOではコンビニ・スーパー最寄り情報もご案内しています。前日に行動食・飲料水の準備をしておくとスムーズです。</p>
+    <p>HALE MAKAWAOでは、最寄りのコンビニ・スーパーの情報もご案内しています。行動食と飲料水は前日に用意しておいてください。</p>
 
     <h2>登山後の温泉</h2>
     <p>大山周辺には登山後に立ち寄れる温泉施設が複数あります。</p>
     <ul>
-      <li><strong>豪円湯院</strong>（大山寺エリア）: 登山口から最も近く、登山者に人気。車でHALE MAKAWAOから約20分。</li>
-      <li><strong>皆生温泉</strong>（米子市）: 日本海を望む温泉街。車で約20分。夕食つきの日帰り入浴プランも充実。</li>
-      <li><strong>黄金泉</strong>（溝口エリア）: 大山南麓の静かな温泉。日帰り入浴可。</li>
+      <li>豪円湯院（大山寺エリア）: 登山口から最も近く、登山者に人気。車でHALE MAKAWAOから約20分。</li>
+      <li>皆生温泉（米子市）: 日本海を望む温泉街。車で約20分。夕食つきの日帰り入浴プランもある。</li>
+      <li>黄金泉（溝口エリア）: 大山南麓の温泉。日帰り入浴可。</li>
     </ul>
 
     <h2>アクセス・駐車場情報</h2>
     <ul>
-      <li>HALE MAKAWAOから夏山登山道入口まで: <strong>車で約10分</strong></li>
+      <li>HALE MAKAWAOから夏山登山道入口まで: 車で約10分</li>
       <li>登山口近くの駐車場: 大山寺橋駐車場（普通車 1日500円、夏季）</li>
       <li>登山口近くの無料駐車場: 大山環境ホテル付近の路肩スペースあり（早朝は空きあり）</li>
-      <li>登山シーズン（7〜8月）の週末は駐車場が満車になるため、<strong>6時前の到着を推奨</strong></li>
+      <li>登山シーズン（7〜8月）の週末は駐車場が満車になるため、6時前の到着を推奨</li>
       <li>大山寺バス停まで米子駅から日ノ丸バス「大山寺行き」で約50分</li>
     </ul>
 
-    <h2>登山後の過ごし方 ― 1日モデルプラン</h2>
-    <p>ハレ・マカワオを拠点にした「登山の日」の標準的な流れを時系列でご紹介します。登山 → 温泉 → チェックイン → 夕食というサイクルを組むと、体をしっかり動かしながらも夜はゆっくり過ごせます。</p>
+    <h2>登山の日のモデルプラン</h2>
+    <p>ハレ・マカワオを拠点にした登山の日の流れを、時刻順にまとめました。登山、温泉、チェックイン、夕食の順に組むと、夜は宿で休めます。</p>
 
     <div class="timeline" style="margin-top:24px;">
       <div class="timeline-item">
         <div class="timeline-time">早朝 6:00〜</div>
-        <div class="timeline-title">大山へ出発・登山スタート</div>
-        <div class="timeline-desc">ハレ・マカワオから夏山登山道入口まで車で約10分（目安）。夏季週末は駐車場が満車になりやすいため、6時前到着を強く推奨。早朝の澄んだ空気と雲海に出会えることも。</div>
+        <div class="timeline-title">大山へ出発</div>
+        <div class="timeline-desc">ハレ・マカワオから夏山登山道入口まで車で約10分（目安）。夏季週末は駐車場が満車になりやすいため、6時前の到着を推奨。早朝は雲海が見られることもある。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">午前〜午後（6:00〜13:00 目安）</div>
         <div class="timeline-title">大山登山・ハイキング</div>
-        <div class="timeline-desc">夏山登山道（往復4〜5時間）を中心に、各自のペースで楽しむ。6合目避難小屋で行動食を補給し、山頂（弥山）からの眺望をたっぷり味わって。子連れなら鍵掛峠（車でアクセスできる展望スポット）の遊歩道散策（1〜2時間）もおすすめです。</div>
+        <div class="timeline-desc">夏山登山道（往復4〜5時間）を各自のペースで歩く。6合目避難小屋で行動食を補給し、山頂（弥山）へ。子ども連れの場合は、鍵掛峠（車で行ける展望スポット）の遊歩道散策（1〜2時間）も可。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">下山後 13:00〜14:30 目安</div>
         <div class="timeline-title">豪円湯院で汗を流す</div>
-        <div class="timeline-desc">大山寺エリアにある日帰り温泉施設「豪円湯院（ごうえんゆいん）」。登山口から最も近く、下山した登山者が集まる定番スポット。登山の疲れを筋肉ごとほぐしてからハレ・マカワオへ向かうのがおすすめの順番。ハレ・マカワオからは車で約20分（目安）。</div>
+        <div class="timeline-desc">大山寺エリアにある日帰り温泉施設「豪円湯院（ごうえんゆいん）」。登山口から最も近く、下山後の登山者の利用が多い。ここで汗を流してからハレ・マカワオへ向かう。ハレ・マカワオからは車で約20分（目安）。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">15:00〜</div>
         <div class="timeline-title">ハレ・マカワオにチェックイン</div>
-        <div class="timeline-desc">チェックインは15:00〜。1日1組限定のプライベート空間で、着替えてゆっくり休憩。リビングのソファでぼんやり過ごすもよし、シャワーをもう一度浴びてすっきりするもよし。夕食までの時間を存分に使ってください。</div>
+        <div class="timeline-desc">チェックインは15:00〜。1日1組の貸切。着替えて夕食まで休憩。</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">夜</div>
         <div class="timeline-title">「郷の鮨たむら」へ送迎付きで夕食</div>
-        <div class="timeline-desc">ハレ・マカワオのオプションプランでは、地魚の「デカネタ寿司」が名物の「郷の鮨たむら」への送迎をご用意しています。新鮮な地魚を大きなネタで味わえる地元で人気の店。飲んでも帰りの心配なし。事前にご相談ください。</div>
+        <div class="timeline-desc">ハレ・マカワオのオプションプランでは、地魚の「デカネタ寿司」が名物の「郷の鮨たむら」への送迎をご用意しています。送迎付きのため、お酒を飲んでも帰りの運転は不要です。事前にご相談ください。</div>
       </div>
     </div>
 
     <p style="margin-top:8px;font-size:14px;color:#666;">※ 上記の時刻はすべて目安です。ルート・体力・混雑状況により前後します。</p>
 
-    <h2>便利リンク</h2>
+    <h2>関連リンク</h2>
     <ul>
-      <li><a href="https://www.daisen.in/" target="_blank" rel="noopener">大山観光局（公式）</a> — 登山情報・最新ルート状況</li>
+      <li><a href="https://www.daisen.in/" target="_blank" rel="noopener">大山観光局（公式）</a>：登山情報・最新ルート状況</li>
       <li><a href="https://www.pref.tottori.lg.jp/dd.aspx?menuid=189680" target="_blank" rel="noopener">鳥取県大山登山情報</a></li>
     </ul>
 
@@ -316,7 +315,7 @@
       <h2 style="margin-top:0;">関連する観光ガイド</h2>
       <ul style="list-style:none;padding:0;margin:0;">
         <li style="margin-bottom:12px;"><a href="daisen-ski-2026.html">大山スキー場のご案内</a></li>
-        <li style="margin-bottom:12px;"><a href="sakaiminato-day-trip.html">水木しげるロード完全ガイド</a></li>
+        <li style="margin-bottom:12px;"><a href="sakaiminato-day-trip.html">水木しげるロードガイド</a></li>
         <li style="margin-bottom:12px;"><a href="izumo-taisha.html">出雲大社参拝ガイド</a></li>
         <li style="margin-bottom:12px;"><a href="tottori-sakyu.html">鳥取砂丘観光ガイド</a></li>
         <li style="margin-bottom:12px;"><a href="onsen.html">大山・皆生の日帰り温泉ガイド</a></li>
@@ -324,12 +323,12 @@
     </div>
 
     <div class="cta-box" data-stay-card="bottom">
-      <p>夏山登山の前泊・後泊の拠点に。<br>ハレ・マカワオは登山口まで車で約10分、1日1組限定の<a href="/villa.html" style="color:inherit;text-decoration:underline;">大山の一棟貸し別荘</a>です。早朝発の登山も、下山後にゆっくり休む一夜も、ここを起点に。</p>
+      <p>ハレ・マカワオは、登山口まで車で約10分。1日1組の<a href="/villa.html" style="color:inherit;text-decoration:underline;">大山の一棟貸し別荘</a>です。</p>
       <a class="cta-btn" href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">宿泊を予約する</a>
-      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html" style="color:#c8b88a;">一棟貸し（貸別荘）について詳しく見る</a></p>
+      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html">一棟貸し（貸別荘）について詳しく見る</a></p>
     </div>
 
-    <a class="home-link" href="/">&#8592; トップページへ戻る</a>
+    <a class="home-link" href="/">トップページへ戻る</a>
   </div>
 
   <footer>
@@ -457,7 +456,7 @@ document.addEventListener('DOMContentLoaded', function(){
     gtag('event', 'click_stay_card', {
       'article': (location.pathname.split('/').pop() || '').replace('.html',''),
       'position': card.getAttribute('data-stay-card'),
-      'link_type': (a.getAttribute('href') || '').indexOf('airbnb') > -1 ? 'booking' : 'villa'
+      'link_type': /tabichat\.jp|airbnb/.test(a.getAttribute('href') || '') ? 'booking' : 'villa'
     });
   });
 </script>

@@ -79,7 +79,7 @@
     .breadcrumb span{margin:0 6px;}
     h1{font-size:26px;font-weight:500;letter-spacing:.04em;border-bottom:1px solid #D4D4D4;padding-bottom:16px;margin-bottom:8px;line-height:1.4;}
     .meta{font-size:13px;color:#8a8a8a;margin-bottom:32px;}
-    .lead{background:#f3f0eb;border-left:3px solid #c8b88a;padding:18px 20px;margin-bottom:36px;font-size:15px;line-height:1.9;}
+    .lead{margin-bottom:32px;font-size:16px;line-height:1.9;}
     h2{font-size:19px;font-weight:500;margin-top:48px;margin-bottom:14px;color:#1A1A1A;border-bottom:1px solid #e8e8e8;padding-bottom:8px;}
     h3{font-size:16px;font-weight:500;margin-top:28px;margin-bottom:10px;color:#2a2a2a;}
     p,li{font-size:15px;color:#3a3a3a;}
@@ -89,13 +89,13 @@
     .card{border:1px solid #e0dbd3;border-radius:4px;padding:20px 22px;margin:20px 0;background:#fff;}
     .card .card-name{font-size:17px;font-weight:500;color:#1A1A1A;margin-bottom:10px;}
     .card-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
-    .badge{background:#f3f0eb;color:#5a4a3a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .badge-accent{background:#c8b88a;color:#1a1a1a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
+    .badge{border:1px solid #d4d4d4;color:#5a5a5a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .badge-accent{border:1px solid #1a1a1a;color:#1a1a1a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
     .note{font-size:13px;color:#6a6a6a;margin-top:10px;padding-top:10px;border-top:1px solid #f0ece5;}
-    .info-box{background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:18px 20px;margin:24px 0;}
+    .info-box{margin:20px 0 24px;}
     .info-box h3{margin-top:0;margin-bottom:12px;}
     /* 拠点宿カード（P3-1: 観光ガイド→宿泊への導線） */
-    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-left:3px solid #c8b88a;border-radius:4px;padding:16px 18px;margin:28px 0;}
+    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:16px 18px;margin:28px 0;}
     .stay-card img{width:104px;height:78px;object-fit:cover;border-radius:3px;flex-shrink:0;}
     .stay-card-body{flex:1;min-width:0;}
     .stay-card-label{font-size:11px;color:#9a8a7a;letter-spacing:.08em;margin-bottom:3px;}
@@ -112,12 +112,12 @@
       .stay-card-cta{width:100%;}
       .stay-card-cta a{display:block;text-align:center;}
     }
-    .cta-box{background:#1a1a1a;color:#fff;padding:32px 28px;margin-top:56px;border-radius:4px;text-align:center;}
-    .cta-box p{color:#ccc;margin-bottom:20px;font-size:15px;}
-    .cta-btn{display:inline-block;background:#c8b88a;color:#1a1a1a;text-decoration:none;padding:12px 32px;font-size:15px;letter-spacing:.05em;border-radius:2px;font-weight:500;}
-    .cta-btn:hover{background:#b8a87a;}
-    .home-link{display:inline-block;margin-top:40px;padding:10px 24px;border:1px solid #1F2421;color:#1F2421;text-decoration:none;font-size:14px;letter-spacing:.05em;}
-    .home-link:hover{background:#1F2421;color:#fff;}
+    .cta-box{border-top:1px solid #d4d4d4;padding-top:32px;margin-top:56px;}
+    .cta-box p{margin-bottom:16px;}
+    .cta-btn{display:inline-block;background:#1a1a1a;color:#fff;text-decoration:none;padding:12px 28px;font-size:15px;border-radius:2px;}
+    .cta-btn:hover{background:#3a3a3a;}
+    .home-link{display:inline-block;margin-top:40px;font-size:14px;color:#9A8060;}
+    
     footer{background:#1a1a1a;color:#aaa;text-align:center;padding:32px 24px;font-size:13px;margin-top:80px;}
     footer a{color:#c8b88a;text-decoration:none;margin:0 8px;}
     .area-section{margin-top:56px;}
@@ -139,21 +139,20 @@
       <a href="/">ホーム</a><span>›</span><a href="/#guides">観光ガイド</a><span>›</span>大山の森の生きものごよみ
     </nav>
 
-    <h1>大山の森の生きものごよみ<br><small style="font-size:.65em;font-weight:400;color:#666;">アカショウビンが鳴く、一棟貸しの宿から</small></h1>
-    <img src="../images/Exterior.webp" alt="木々と庭に囲まれたハレ・マカワオの敷地" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin:8px 0 28px;" loading="lazy">
+    <h1>大山の森の生きものごよみ</h1>
+    <img src="../images/Exterior.webp" alt="木々と庭に囲まれたハレ・マカワオの敷地" style="width:100%;height:300px;object-fit:cover;border-radius:2px;margin:8px 0 28px;" loading="lazy">
     <p class="meta">更新日: 2026年7月 ｜ カテゴリ: 観光ガイド</p>
 
     <div class="lead">
-      鳥取・大山のふもと、森に囲まれた一棟貸しの宿 <strong>ハレ・マカワオ</strong>。その敷地とまわりの森では、季節ごとにいろいろな生きものに出会えます。初夏はアカショウビンの声、夏の夜はホタル、一年を通してタヌキやキツネ。晩夏には水辺に鳥が集まり、秋には栗が実ります。長年この森で見てきた生きものたちを、季節のごよみとしてまとめました。連泊でゆっくり過ごしながら、探してみてください。
+      ハレ・マカワオは、鳥取・大山のふもとの森に囲まれた一棟貸しの宿です。敷地とまわりの森では、季節ごとにさまざまな生きものが見られます。初夏はアカショウビンの声、夏の夜はホタル、一年を通してタヌキやキツネ。晩夏には水辺に鳥が集まり、秋には栗が実ります。長年この森で見てきた生きものを、季節ごとにまとめました。
     </div>
 
     <!-- 拠点宿カード（上部） -->
     <div class="stay-card" data-stay-card="top">
       <img src="../images/Exterior.webp" alt="森のなかに建つハレ・マカワオの外観" loading="lazy">
       <div class="stay-card-body">
-        <div class="stay-card-label">この記事の拠点宿</div>
         <div class="stay-card-name"><a href="/villa.html">ハレ・マカワオ｜大山の一棟貸し・貸別荘</a></div>
-        <div class="stay-card-meta">1日1組・最大16名・全5室　／　この森のなかに建つ宿<br>ここに書いた生きものたちは、宿の敷地とまわりの森で見られます。</div>
+        <div class="stay-card-meta">1日1組・最大16名・全5室　／　この森のなかに建つ宿</div>
       </div>
       <div class="stay-card-cta"><a href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">空室を見る</a></div>
     </div>
@@ -161,100 +160,100 @@
     <div class="info-box">
       <h3 style="font-size:15px;margin-top:0;">季節の生きものごよみ（目安）</h3>
       <ul>
-        <li><strong>6月〜7月上旬</strong>: アカショウビンの声</li>
-        <li><strong>6月〜7月ごろの夜</strong>: ホタル</li>
-        <li><strong>通年</strong>: タヌキ・キツネ（ときおり姿を見せます）</li>
-        <li><strong>8月末〜9月</strong>: 水辺に集まる鳥たち</li>
-        <li><strong>夏〜秋</strong>: 敷地のブルーベリー、10月ごろの栗</li>
+        <li>6月〜7月上旬: アカショウビンの声</li>
+        <li>6月〜7月ごろの夜: ホタル</li>
+        <li>通年: タヌキ・キツネ（ときおり姿を見せます）</li>
+        <li>8月末〜9月: 水辺に集まる鳥</li>
+        <li>夏〜秋: 敷地のブルーベリー、10月ごろの栗</li>
       </ul>
-      <p style="font-size:13px;color:#6a6a6a;margin-top:12px;margin-bottom:0;">※ 相手は野生の生きものです。その年の天気や時期、運によって、会えることも会えないこともあります。「必ず会える」ものではなく、そのときどきの巡り合わせをお楽しみください。</p>
+      <p style="font-size:13px;color:#6a6a6a;margin-top:12px;margin-bottom:0;">※ いずれも野生の生きものです。その年の天気や時期によって、見られない場合もあります。</p>
     </div>
 
     <!-- ===== 初夏: アカショウビン ===== -->
     <div class="area-section">
-      <h2>初夏（6月〜7月上旬）― アカショウビンの声</h2>
-      <p>ハレ・マカワオの初夏を代表するのが、アカショウビンです。夏に日本へ渡ってくる赤い羽の鳥で、姿を見られることはめったにありませんが、森の奥から響く声はよく通ります。</p>
+      <h2>アカショウビン（6月〜7月上旬）</h2>
+      <p>初夏のハレ・マカワオでは、アカショウビンの声が聞こえます。夏に日本へ渡ってくる赤い羽の鳥です。姿を見られることはめったにありませんが、声はよく通ります。</p>
 
       <div class="card">
         <div class="card-meta">
           <span class="badge-accent">初夏</span>
         </div>
-        <p>2026年は、6月のあいだから7月の初めごろまでよく鳴いていました。オーナーも姿を見たのは数えるほどで、たいていは声だけの鳥です。毎年この時期になると、「今年はもう来ましたか」と問い合わせの電話が入るほど、楽しみにしている常連の方もいます。姿を追わず、森のどこかで響く声にただ耳をすませる。そんな時間を楽しみに訪れる人もいます。</p>
-        <p class="note">鳴く時期や時間帯はその年によって前後します。滞在中に聞こえるかどうかは、そのときの巡り合わせ次第です。</p>
+        <p>2026年は、6月から7月の初めごろまでよく鳴いていました。オーナーも姿を見たのは数えるほどで、たいていは声だけです。毎年この時期には、常連の方から「今年はもう来ましたか」と問い合わせの電話が入ります。</p>
+        <p class="note">鳴く時期や時間帯はその年によって前後します。滞在中に聞こえない場合もあります。</p>
       </div>
     </div>
 
     <!-- ===== 夏の夜: ホタル ===== -->
     <div class="area-section">
-      <h2>夏の夜（6月〜7月ごろ）― ホタルの光</h2>
+      <h2>ホタル（6月〜7月ごろの夜）</h2>
       <p>初夏の夜には、敷地のまわりでホタルが見られることがあります。近くに池や沢があるためか、蒸し暑く風のない晩によく光るようです。ときには、建物のガラスにとまっていることもあります。</p>
       <div class="card">
         <div class="card-meta">
           <span class="badge-accent">夏の夜</span>
         </div>
-        <p>その年によって数の増減はありますが、灯りを落とした森の夜に、ふっと光がまたたくことがあります。ここの夜は静かで暗いため、都会では見えにくい小さな光もよく見えます。夕食のあと、少しだけ外に出て、夜の森に目を慣らしてみてください。</p>
+        <p>数はその年によって増減します。夜は周囲が暗いため、小さな光もよく見えます。</p>
         <p class="note">見られる時期や場所はその年の気候によって変わります。夜に歩くときは、足元にご注意ください。</p>
       </div>
     </div>
 
     <!-- ===== 通年: タヌキとキツネ ===== -->
     <div class="area-section">
-      <h2>通年 ― タヌキとキツネ</h2>
-      <p>森に暮らす獣たちも、この宿の日常です。朝食の窓の外にキツネが現れたり、昼間にタヌキが姿を見せたり。人の暮らしのすぐそばに、彼らの暮らしがあります。</p>
+      <h2>タヌキとキツネ（通年）</h2>
+      <p>宿のまわりでは、タヌキやキツネも見られます。朝食中の窓の外にキツネが現れたり、昼間にタヌキが姿を見せたりします。</p>
 
       <div class="card">
         <div class="card-meta">
           <span class="badge-accent">キツネ</span>
         </div>
-        <p>朝食をとっているお客様が、「キツネがこっちを見てる」と気づくことがあります。すぐに逃げるでもなく、じっとこちらをうかがっている。窓ガラス越しに、しばらく目が合うこともあります。</p>
+        <p>朝食中のお客様が、窓の外からこちらを見ているキツネに気づくことがあります。すぐには逃げず、窓ガラス越しにしばらくこちらを見ていることもあります。</p>
       </div>
 
       <div class="card">
         <div class="card-meta">
           <span class="badge-accent">タヌキ</span>
         </div>
-        <p>畑の肥料にまいた米ぬかを目当てに、タヌキの夫婦が姿を見せることがあります。夜行性のイメージがありますが、ここでは昼間からのんびり食べていることも。人の気配に慣れているのか、あわてて逃げることもありません。</p>
-        <p class="note">相手は野生の生きものです。餌やりや無理に近づくことはご遠慮ください。そっと見守るのが、結局いちばん長く付き合える方法です。</p>
+        <p>畑の肥料にまいた米ぬかを目当てに、タヌキの夫婦が姿を見せることがあります。夜行性とされますが、ここでは昼間に食べていることもあります。人が近くにいても、あわてて逃げることはありません。</p>
+        <p class="note">野生の生きものです。餌やりや、無理に近づくことはご遠慮ください。</p>
       </div>
     </div>
 
     <!-- ===== 晩夏〜初秋: 水辺の鳥 ===== -->
     <div class="area-section">
-      <h2>晩夏〜初秋（8月末〜9月）― 水辺に集まる鳥たち</h2>
-      <p>夏の終わりから初秋にかけて、近くの水辺にいろいろな鳥が集まる時期があります。時期が合うと、水辺がにぎやかになることがあります。</p>
+      <h2>水辺の鳥（8月末〜9月）</h2>
+      <p>夏の終わりから初秋にかけて、近くの水辺にさまざまな鳥が集まる時期があります。</p>
       <div class="card">
         <div class="card-meta">
           <span class="badge-accent">晩夏〜初秋</span>
         </div>
-        <p>この時期、水辺に鳥が集まります。ただ、具体的な場所や種類は、そっとしておきたいのでここには記しません。気になる方は、滞在中にオーナーにお尋ねください。</p>
-        <p class="note">会えるかどうかは時期と運次第です。見つけても、静かに、遠くから見守っていただけますようお願いします。</p>
+        <p>具体的な場所や種類は、鳥への影響を避けるためここには記していません。詳しくは滞在中にオーナーへお尋ねください。</p>
+        <p class="note">時期によっては見られないこともあります。見つけた場合は、遠くから静かにご覧ください。</p>
       </div>
     </div>
 
     <!-- ===== 夏〜秋: ブルーベリーと栗 ===== -->
     <div class="area-section">
-      <h2>夏〜秋 ― 敷地のブルーベリーと栗</h2>
-      <p>生きものだけでなく、実りもこの森の楽しみです。敷地の中で、季節の恵みを少しだけ味わえます。</p>
+      <h2>敷地のブルーベリーと栗（夏〜秋）</h2>
+      <p>敷地にはブルーベリーと栗の木があります。</p>
 
       <div class="card">
         <div class="card-meta">
           <span class="badge-accent">夏 ｜ ブルーベリー</span>
         </div>
-        <p>敷地には、毎年たくさん実をつけるブルーベリーがあります。時期が合えば、お帰りの前に摘んでいただくこともあります。オーナーがジャムにすることもあり、収穫したてをその場で味わえます。</p>
+        <p>敷地のブルーベリーは毎年よく実をつけます。時期が合えば、お帰りの前に摘んで、その場で味わっていただけることもあります。オーナーがジャムにすることもあります。</p>
       </div>
 
       <div class="card">
         <div class="card-meta">
           <span class="badge-accent">秋 ｜ 栗</span>
         </div>
-        <p>敷地には栗の木が4本あり、10月ごろが拾いどきです。庭の中で、のんびりと栗拾いを楽しめます。紅葉や温泉めぐりにもちょうどよい季節です。</p>
+        <p>敷地には栗の木が4本あり、10月ごろが拾いどきです。庭の中で栗拾いができます。</p>
       </div>
     </div>
 
     <!-- ===== 連泊のすすめ ===== -->
     <div class="area-section">
-      <h2>一晩では、なかなか揃いません</h2>
-      <p>アカショウビンの声も、ホタルの光も、キツネと目が合う朝も、そのときの天気と巡り合わせ次第です。だからこそ、慌ただしい一泊よりも、連泊でゆっくり過ごすほうが、出会える機会は増えます。朝は鳥の声で目を覚まし、昼は敷地を散歩し、夜は静かな暗闇に目を慣らす。急がない時間のなかで、ふとした出会いを待ってみてください。</p>
+      <h2>連泊について</h2>
+      <p>ここで紹介した生きものが見られるかどうかは、その日の天気や時期によって変わります。一泊よりも連泊のほうが、見られる機会は増えます。</p>
     </div>
 
     <!-- ===== 関連ガイド ===== -->
@@ -268,12 +267,12 @@
     </div>
 
     <div class="cta-box" data-stay-card="bottom">
-      <p>森の時間を、ゆっくりと。<br>ハレ・マカワオは大山の一棟貸し別荘、1日1組限定です。</p>
+      <p>ハレ・マカワオは、大山の森に建つ1日1組の一棟貸し別荘です。</p>
       <a class="cta-btn" href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">宿泊を予約する</a>
-      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html" style="color:#c8b88a;">一棟貸し（貸別荘）について詳しく見る</a></p>
+      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html">一棟貸し（貸別荘）について詳しく見る</a></p>
     </div>
 
-    <a class="home-link" href="/">&#8592; トップページへ戻る</a>
+    <a class="home-link" href="/">トップページへ戻る</a>
   </div>
 
   <footer>
@@ -396,7 +395,7 @@ document.addEventListener('DOMContentLoaded', function(){
     gtag('event', 'click_stay_card', {
       'article': (location.pathname.split('/').pop() || '').replace('.html',''),
       'position': card.getAttribute('data-stay-card'),
-      'link_type': (a.getAttribute('href') || '').indexOf('airbnb') > -1 ? 'booking' : 'villa'
+      'link_type': /tabichat\.jp|airbnb/.test(a.getAttribute('href') || '') ? 'booking' : 'villa'
     });
   });
 </script>

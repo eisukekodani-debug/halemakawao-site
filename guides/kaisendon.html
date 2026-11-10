@@ -90,7 +90,7 @@
     .breadcrumb span{margin:0 6px;}
     h1{font-size:26px;font-weight:500;letter-spacing:.04em;border-bottom:1px solid #D4D4D4;padding-bottom:16px;margin-bottom:8px;line-height:1.4;}
     .meta{font-size:13px;color:#8a8a8a;margin-bottom:32px;}
-    .lead{background:#f3f0eb;border-left:3px solid #c8b88a;padding:18px 20px;margin-bottom:36px;font-size:15px;line-height:1.9;}
+    .lead{margin-bottom:32px;font-size:16px;line-height:1.9;}
     h2{font-size:19px;font-weight:500;margin-top:48px;margin-bottom:14px;color:#1A1A1A;border-bottom:1px solid #e8e8e8;padding-bottom:8px;}
     h3{font-size:16px;font-weight:500;margin-top:28px;margin-bottom:10px;color:#2a2a2a;}
     p,li{font-size:15px;color:#3a3a3a;}
@@ -101,14 +101,14 @@
     .shop-card .shop-title{font-size:17px;font-weight:500;color:#1A1A1A;margin-bottom:6px;}
     .shop-card .shop-sub{font-size:13px;color:#666;margin-bottom:12px;}
     .shop-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
-    .badge{background:#f3f0eb;color:#5a4a3a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .badge-accent{background:#c8b88a;color:#1a1a1a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .info-box{background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:18px 20px;margin:24px 0;}
+    .badge{border:1px solid #d4d4d4;color:#5a5a5a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .badge-accent{border:1px solid #1a1a1a;color:#1a1a1a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .info-box{margin:20px 0 24px;}
     .info-box h3{margin-top:0;margin-bottom:12px;}
     .notice{font-size:13px;color:#666;background:#f9f8f6;border:1px solid #e8e4de;border-radius:4px;padding:12px 16px;margin-top:12px;}
     .hero-placeholder{width:100%;height:300px;background:#ece9e3;border-radius:8px;margin:8px 0 28px;display:flex;align-items:center;justify-content:center;color:#9a8a7a;font-size:14px;letter-spacing:.05em;}
     /* 拠点宿カード（P3-1: 観光ガイド→宿泊への導線） */
-    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-left:3px solid #c8b88a;border-radius:4px;padding:16px 18px;margin:28px 0;}
+    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:16px 18px;margin:28px 0;}
     .stay-card img{width:104px;height:78px;object-fit:cover;border-radius:3px;flex-shrink:0;}
     .stay-card-body{flex:1;min-width:0;}
     .stay-card-label{font-size:11px;color:#9a8a7a;letter-spacing:.08em;margin-bottom:3px;}
@@ -125,12 +125,12 @@
       .stay-card-cta{width:100%;}
       .stay-card-cta a{display:block;text-align:center;}
     }
-    .cta-box{background:#1a1a1a;color:#fff;padding:32px 28px;margin-top:56px;border-radius:4px;text-align:center;}
-    .cta-box p{color:#ccc;margin-bottom:20px;font-size:15px;}
-    .cta-btn{display:inline-block;background:#c8b88a;color:#1a1a1a;text-decoration:none;padding:12px 32px;font-size:15px;letter-spacing:.05em;border-radius:2px;font-weight:500;}
-    .cta-btn:hover{background:#b8a87a;}
-    .home-link{display:inline-block;margin-top:40px;padding:10px 24px;border:1px solid #1F2421;color:#1F2421;text-decoration:none;font-size:14px;letter-spacing:.05em;}
-    .home-link:hover{background:#1F2421;color:#fff;}
+    .cta-box{border-top:1px solid #d4d4d4;padding-top:32px;margin-top:56px;}
+    .cta-box p{margin-bottom:16px;}
+    .cta-btn{display:inline-block;background:#1a1a1a;color:#fff;text-decoration:none;padding:12px 28px;font-size:15px;border-radius:2px;}
+    .cta-btn:hover{background:#3a3a3a;}
+    .home-link{display:inline-block;margin-top:40px;font-size:14px;color:#9A8060;}
+    
     footer{background:#1a1a1a;color:#aaa;text-align:center;padding:32px 24px;font-size:13px;margin-top:80px;}
     footer a{color:#c8b88a;text-decoration:none;margin:0 8px;}
     @media(max-width:600px){
@@ -152,24 +152,23 @@
       <a href="/">ホーム</a><span>›</span><a href="/#guides">観光ガイド</a><span>›</span>大山・米子周辺の海鮮丼ガイド
     </nav>
 
-    <h1>大山・米子周辺の海鮮丼ガイド<br><small style="font-size:.65em;font-weight:400;color:#666;">どこで食べる？ハレ・マカワオを拠点に日吉津・琴浦・境港へ</small></h1>
+    <h1>大山・米子周辺の海鮮丼ガイド</h1>
 
-    <img src="../images/kaisendon.jpg" alt="イカ・カニ・海老と卵黄をのせた海鮮丼" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin:8px 0 28px;" loading="lazy">
+    <img src="../images/kaisendon.jpg" alt="イカ・カニ・海老と卵黄をのせた海鮮丼" style="width:100%;height:300px;object-fit:cover;border-radius:2px;margin:8px 0 28px;" loading="lazy">
 
     <p class="meta">更新日: 2026年6月 ｜ カテゴリ: 観光ガイド</p>
 
     <div class="lead">
-      <strong>「このあたりで海鮮丼はどこで食べられますか？」</strong> — ゲストの皆さまから、よくいただく質問のひとつです。<br>
-      せっかく日本海のそばまで来られたのですから、新鮮な魚介はぜひ味わっていただきたいもの。大山を拠点にするなら、<strong>日吉津・琴浦・境港</strong>の3エリアが選びやすく、いずれもハレ・マカワオから車で20〜50分ほどです。お帰りの日のお昼や、観光の途中に立ち寄りやすい順にまとめました。
+      「このあたりで海鮮丼はどこで食べられますか？」という質問を、ゲストの皆さまからよくいただきます。<br>
+      大山を拠点にするなら、日吉津・琴浦・境港の3エリアが選びやすく、いずれもハレ・マカワオから車で20〜50分ほどです。お帰りの日のお昼や、観光の途中に立ち寄りやすい順にまとめました。
     </div>
 
     <!-- 拠点宿カード（上部） -->
     <div class="stay-card" data-stay-card="top">
       <img src="../images/Exterior.webp" alt="森のなかに建つハレ・マカワオの外観" loading="lazy">
       <div class="stay-card-body">
-        <div class="stay-card-label">この記事の拠点宿</div>
         <div class="stay-card-name"><a href="/villa.html">ハレ・マカワオ｜大山の一棟貸し・貸別荘</a></div>
-        <div class="stay-card-meta">1日1組・最大16名・全5室　／　境港まで車で約50分<br>海鮮丼を食べた帰りは、大山の森の一棟へ。</div>
+        <div class="stay-card-meta">1日1組・最大16名・全5室　／　境港まで車で約50分</div>
       </div>
       <div class="stay-card-cta"><a href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">空室を見る</a></div>
     </div>
@@ -182,7 +181,7 @@
       <div class="shop-meta">
         <span class="badge-accent">車で約20〜30分</span>
       </div>
-      <p>鮮魚店「山芳海産」が運営する海鮮丼専門店。イオンモール日吉津のすぐ隣にある海鮮市場の中に店を構え、鮮魚店直営ならではの新鮮な魚介とコストパフォーマンスが魅力です。境港から直送された旬の魚介を使った丼は、漁港エリアから少し離れた場所でも新鮮な海鮮丼を楽しめると評判です。</p>
+      <p>鮮魚店「山芳海産」が運営する海鮮丼専門店です。イオンモール日吉津のすぐ隣にある海鮮市場の中にあり、境港から直送された旬の魚介を丼に使っています。</p>
       <div class="notice">営業時間・定休日・価格は変動することがあります。最新情報は各店の公式SNS等でご確認ください。</div>
     </div>
 
@@ -194,7 +193,7 @@
       <div class="shop-meta">
         <span class="badge-accent">車で約25〜30分</span>
       </div>
-      <p>道の駅「琴の浦」内の物産館ことうらにある食事処です。「海鮮料理きわみ」の<strong>極海鮮丼</strong>は、日本海の旬の魚介をたっぷりのせたボリューム満点の一杯で、ネタの種類の豊富さも評判。山陰自動車道・琴の浦ICを降りてすぐなので、ドライブ途中に立ち寄りやすいのも魅力です。</p>
+      <p>道の駅「琴の浦」内の物産館ことうらにある食事処です。「海鮮料理きわみ」の極海鮮丼は、日本海の旬の魚介をのせた丼で、ネタの種類が多いと評判です。山陰自動車道・琴の浦ICを降りてすぐの場所にあります。</p>
       <p style="font-size:13px;color:#666;margin-top:8px;">住所: 〒689-2502 鳥取県東伯郡琴浦町別所1030-1 ／ 電話: 0858-55-6566</p>
       <div class="notice">営業時間・定休日・価格は変動することがあります。最新情報は公式でご確認ください。</div>
     </div>
@@ -205,7 +204,7 @@
       <div class="shop-meta">
         <span class="badge-accent">車で約20〜30分・東方向</span>
       </div>
-      <p>琴浦町の海沿いにある海鮮料理店。名物の<strong>「鳴石（なりいし）丼」</strong>は、地元で揚がる幻のエビ「モサエビ」やマグロ・サーモンなどの海鮮を彩りよくのせた一杯です。店内から日本海を眺めながら食事ができるロケーションも魅力で、大山の東方向へのドライブとあわせて立ち寄りやすい場所にあります。</p>
+      <p>琴浦町の海沿いにある海鮮料理店です。名物の「鳴石（なりいし）丼」は、地元で揚がるモサエビやマグロ・サーモンなどの海鮮をのせた丼です。店内から日本海を眺めながら食事ができます。大山から東方向へのドライブの途中に立ち寄れます。</p>
       <p style="font-size:13px;color:#666;margin-top:8px;">住所: 〒689-2502 鳥取県東伯郡琴浦町別所267-1 ／ 電話: 0858-55-0889</p>
       <div class="notice">営業時間・定休日・価格は変動することがあります。最新情報は各店の公式SNS等でご確認ください。</div>
     </div>
@@ -218,19 +217,18 @@
       <div class="shop-meta">
         <span class="badge-accent">車で約50分</span>
       </div>
-      <p>鬼太郎でおなじみの<strong>水木しげるロード</strong>内にある海鮮料理店です。彩りのよい<strong>「海鮮三色丼」</strong>などの海鮮メニューがあり、水木しげるロードの散策とあわせて立ち寄ると、観光と食事を一度に楽しめます。境港は日本海有数の漁港として知られ、港町の食文化を体感できるエリアです。</p>
+      <p>水木しげるロード内にある海鮮料理店です。「海鮮三色丼」などの海鮮メニューがあり、水木しげるロードの散策とあわせて立ち寄れます。</p>
       <div class="notice">営業時間・定休日・価格は変動することがあります。最新情報は各店の公式SNS等でご確認ください。</div>
     </div>
 
-    <h2>大山周辺の海鮮を支える境港について</h2>
-    <p>境港は日本海有数の漁港で、<strong>ベニズワイガニの水揚げ量日本一</strong>とも言われています。ここで水揚げされた新鮮な魚介は、大山や米子、琴浦、日吉津といった周辺エリアにも届きます。そのため、ハレ・マカワオを拠点としながら、少し足を伸ばすだけで本格的な海鮮丼に出会えるのがこのエリアの魅力です。</p>
-    <p>「海鮮を食べるためだけに境港まで行く」のはもちろん、水木しげるロードの観光とセットで訪れるコースも人気です。</p>
+    <h2>境港について</h2>
+    <p>境港は日本海有数の漁港で、ベニズワイガニの水揚げ量日本一とも言われています。ここで水揚げされた魚介は、大山や米子、琴浦、日吉津といった周辺エリアにも届きます。</p>
 
     <div class="info-box">
       <h3>ドライブルートの参考</h3>
       <ul>
-        <li><strong>西方向</strong>: ハレ・マカワオ → 日吉津（山芳亭）→ 境港（海鮮処 空島・水木しげるロード）</li>
-        <li><strong>東方向</strong>: ハレ・マカワオ → 琴浦（道の駅 琴の浦・魚料理 海）</li>
+        <li>西方向: ハレ・マカワオ → 日吉津（山芳亭）→ 境港（海鮮処 空島・水木しげるロード）</li>
+        <li>東方向: ハレ・マカワオ → 琴浦（道の駅 琴の浦・魚料理 海）</li>
         <li>※ 所要時間はいずれも目安です。道路状況・季節・時間帯により前後します</li>
       </ul>
     </div>
@@ -238,19 +236,19 @@
     <div style="margin-top:56px;padding-top:32px;border-top:1px solid #e0dbd3;">
       <h2 style="margin-top:0;">関連する観光ガイド</h2>
       <ul style="list-style:none;padding:0;margin:0;">
-        <li style="margin-bottom:12px;"><a href="sakaiminato-day-trip.html">水木しげるロード完全ガイド</a></li>
+        <li style="margin-bottom:12px;"><a href="sakaiminato-day-trip.html">水木しげるロードガイド</a></li>
         <li style="margin-bottom:12px;"><a href="daisen-hiking.html">大山登山・ハイキングガイド</a></li>
         <li style="margin-bottom:12px;"><a href="tottori-sakyu.html">鳥取砂丘観光ガイド</a></li>
       </ul>
     </div>
 
     <div class="cta-box" data-stay-card="bottom">
-      <p>海鮮丼を目当ての小さな旅も、大山観光のついでの一杯も。<br>ハレ・マカワオは、その拠点にちょうどいい一棟貸しの宿です。1日1組の貸切で、気兼ねなくお過ごしいただけます。</p>
+      <p>ハレ・マカワオは、境港まで車で約50分。1日1組の一棟貸しです。</p>
       <a class="cta-btn" href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">宿泊を予約する</a>
-      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html" style="color:#c8b88a;">一棟貸し（貸別荘）について詳しく見る</a></p>
+      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html">一棟貸し（貸別荘）について詳しく見る</a></p>
     </div>
 
-    <a class="home-link" href="/">&#8592; トップページへ戻る</a>
+    <a class="home-link" href="/">トップページへ戻る</a>
   </div>
 
   <footer>
@@ -373,7 +371,7 @@ document.addEventListener('DOMContentLoaded', function(){
     gtag('event', 'click_stay_card', {
       'article': (location.pathname.split('/').pop() || '').replace('.html',''),
       'position': card.getAttribute('data-stay-card'),
-      'link_type': (a.getAttribute('href') || '').indexOf('airbnb') > -1 ? 'booking' : 'villa'
+      'link_type': /tabichat\.jp|airbnb/.test(a.getAttribute('href') || '') ? 'booking' : 'villa'
     });
   });
 </script>

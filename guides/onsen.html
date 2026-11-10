@@ -79,7 +79,7 @@
     .breadcrumb span{margin:0 6px;}
     h1{font-size:26px;font-weight:500;letter-spacing:.04em;border-bottom:1px solid #D4D4D4;padding-bottom:16px;margin-bottom:8px;line-height:1.4;}
     .meta{font-size:13px;color:#8a8a8a;margin-bottom:32px;}
-    .lead{background:#f3f0eb;border-left:3px solid #c8b88a;padding:18px 20px;margin-bottom:36px;font-size:15px;line-height:1.9;}
+    .lead{margin-bottom:32px;font-size:16px;line-height:1.9;}
     h2{font-size:19px;font-weight:500;margin-top:48px;margin-bottom:14px;color:#1A1A1A;border-bottom:1px solid #e8e8e8;padding-bottom:8px;}
     h3{font-size:16px;font-weight:500;margin-top:28px;margin-bottom:10px;color:#2a2a2a;}
     p,li{font-size:15px;color:#3a3a3a;}
@@ -89,14 +89,14 @@
     .onsen-card{border:1px solid #e0dbd3;border-radius:4px;padding:20px 22px;margin:20px 0;background:#fff;}
     .onsen-card .onsen-name{font-size:17px;font-weight:500;color:#1A1A1A;margin-bottom:10px;}
     .onsen-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
-    .badge{background:#f3f0eb;color:#5a4a3a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
-    .badge-accent{background:#c8b88a;color:#1a1a1a;font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;}
+    .badge{border:1px solid #d4d4d4;color:#5a5a5a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
+    .badge-accent{border:1px solid #1a1a1a;color:#1a1a1a;font-size:12px;padding:2px 8px;border-radius:2px;white-space:nowrap;}
     .note{font-size:13px;color:#6a6a6a;margin-top:10px;padding-top:10px;border-top:1px solid #f0ece5;}
     .hero-placeholder{width:100%;height:300px;background:#ece9e3;border-radius:8px;display:flex;align-items:center;justify-content:center;margin:8px 0 28px;color:#9a8a7a;font-size:14px;letter-spacing:.05em;}
-    .info-box{background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:18px 20px;margin:24px 0;}
+    .info-box{margin:20px 0 24px;}
     .info-box h3{margin-top:0;margin-bottom:12px;}
     /* 拠点宿カード（P3-1: 観光ガイド→宿泊への導線） */
-    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-left:3px solid #c8b88a;border-radius:4px;padding:16px 18px;margin:28px 0;}
+    .stay-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e0dbd3;border-radius:4px;padding:16px 18px;margin:28px 0;}
     .stay-card img{width:104px;height:78px;object-fit:cover;border-radius:3px;flex-shrink:0;}
     .stay-card-body{flex:1;min-width:0;}
     .stay-card-label{font-size:11px;color:#9a8a7a;letter-spacing:.08em;margin-bottom:3px;}
@@ -113,12 +113,12 @@
       .stay-card-cta{width:100%;}
       .stay-card-cta a{display:block;text-align:center;}
     }
-    .cta-box{background:#1a1a1a;color:#fff;padding:32px 28px;margin-top:56px;border-radius:4px;text-align:center;}
-    .cta-box p{color:#ccc;margin-bottom:20px;font-size:15px;}
-    .cta-btn{display:inline-block;background:#c8b88a;color:#1a1a1a;text-decoration:none;padding:12px 32px;font-size:15px;letter-spacing:.05em;border-radius:2px;font-weight:500;}
-    .cta-btn:hover{background:#b8a87a;}
-    .home-link{display:inline-block;margin-top:40px;padding:10px 24px;border:1px solid #1F2421;color:#1F2421;text-decoration:none;font-size:14px;letter-spacing:.05em;}
-    .home-link:hover{background:#1F2421;color:#fff;}
+    .cta-box{border-top:1px solid #d4d4d4;padding-top:32px;margin-top:56px;}
+    .cta-box p{margin-bottom:16px;}
+    .cta-btn{display:inline-block;background:#1a1a1a;color:#fff;text-decoration:none;padding:12px 28px;font-size:15px;border-radius:2px;}
+    .cta-btn:hover{background:#3a3a3a;}
+    .home-link{display:inline-block;margin-top:40px;font-size:14px;color:#9A8060;}
+    
     footer{background:#1a1a1a;color:#aaa;text-align:center;padding:32px 24px;font-size:13px;margin-top:80px;}
     footer a{color:#c8b88a;text-decoration:none;margin:0 8px;}
     .area-section{margin-top:56px;}
@@ -141,48 +141,47 @@
       <a href="/">ホーム</a><span>›</span><a href="/#guides">観光ガイド</a><span>›</span>大山・米子・皆生の日帰り温泉ガイド
     </nav>
 
-    <h1>大山・米子・皆生の日帰り温泉ガイド<br><small style="font-size:.65em;font-weight:400;color:#666;">登山・観光後に立ち寄れる近隣温泉スポット</small></h1>
-    <img src="../images/onsen.jpg" alt="日本海を望む海沿いの露天風呂" style="width:100%;height:300px;object-fit:cover;border-radius:8px;margin:8px 0 28px;" loading="lazy">
+    <h1>大山・米子・皆生の日帰り温泉ガイド</h1>
+    <img src="../images/onsen.jpg" alt="日本海を望む海沿いの露天風呂" style="width:100%;height:300px;object-fit:cover;border-radius:2px;margin:8px 0 28px;" loading="lazy">
     <p class="meta">更新日: 2026年6月 ｜ カテゴリ: 観光ガイド</p>
 
     <div class="lead">
-      登山や観光でたっぷり歩いた日は、宿に帰る前にひと風呂いかがでしょうか。<strong>ハレ・マカワオ</strong>の周りには、車で約5分の<strong>豪円湯院</strong>から、日本海を望む<strong>皆生温泉</strong>まで、いずれも20分ほどで行ける日帰り温泉が揃っています。距離やタイプ別にまとめました。料金・営業時間は変わることがあるので、最新は各施設の公式サイトでご確認ください。
+      ハレ・マカワオから車で20分ほどの範囲にある日帰り温泉を、距離やタイプ別にまとめました。最も近い豪円湯院は車で約5分、日本海に面した皆生温泉は約20分です。料金・営業時間は変わることがあるため、最新は各施設の公式サイトでご確認ください。
     </div>
 
     <!-- 拠点宿カード（上部） -->
     <div class="stay-card" data-stay-card="top">
       <img src="../images/Exterior.webp" alt="森のなかに建つハレ・マカワオの外観" loading="lazy">
       <div class="stay-card-body">
-        <div class="stay-card-label">この記事の拠点宿</div>
         <div class="stay-card-name"><a href="/villa.html">ハレ・マカワオ｜大山の一棟貸し・貸別荘</a></div>
-        <div class="stay-card-meta">1日1組・最大16名・全5室　／　豪円湯院まで車で約5分<br>湯上がりに帰る先は、車で5分の貸切の一棟。</div>
+        <div class="stay-card-meta">1日1組・最大16名・全5室　／　豪円湯院まで車で約5分</div>
       </div>
       <div class="stay-card-cta"><a href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">空室を見る</a></div>
     </div>
 
     <!-- ===== 大山エリア ===== -->
     <div class="area-section">
-      <h2>大山エリア ― 登山・スキー後すぐに立ち寄れる</h2>
-      <p>大山寺参道エリアにある温泉施設。下山後・ゲレンデ帰りにそのまま立ち寄れる距離感が最大の魅力です。ハレ・マカワオから最も近く、宿へ戻る途中に組み込みやすいのが特徴です。</p>
+      <h2>大山エリア</h2>
+      <p>大山寺参道エリアにある温泉施設です。下山後やスキー場の帰りに、そのまま立ち寄れます。ハレ・マカワオから最も近い日帰り温泉です。</p>
 
       <div class="onsen-card">
         <div class="onsen-name">豪円湯院（ごうえんゆいん）／大山火の神岳温泉</div>
         <div class="onsen-meta">
           <span class="badge-accent">車で約5分</span>
         </div>
-        <p>大山寺参道に位置する、大山の頂上に最も近い日帰り温泉施設。大山の地下から汲み上げた酸化還元水を使用しており、「大山火の神岳温泉」の名でも知られています。露天風呂からは大山の山並みを望め、豆乳を使ったメニューでも知られています（提供内容は変わることがあるため最新は公式でご確認ください）。登山・スキーの後に立ち寄る人が多い人気のスポットです。</p>
+        <p>大山寺参道にある、大山の頂上に最も近い日帰り温泉施設です。大山の地下から汲み上げた酸化還元水を使用しており、「大山火の神岳温泉」の名でも知られています。露天風呂からは大山の山並みが見えます。豆乳を使ったメニューもあります（提供内容は変わることがあるため最新は公式でご確認ください）。登山・スキーの後に立ち寄る人が多い施設です。</p>
         <ul>
           <li>住所: 〒689-3318 鳥取県西伯郡大山町大山25</li>
           <li>電話: 0859-48-6801</li>
           <li>入浴料・営業時間・定休日: 最新は公式でご確認ください</li>
         </ul>
-        <p class="note">当宿から車で約5分。大山登山記事でも紹介しており、登山・スキー → 豪円湯院 → ハレ・マカワオという流れが組み立てやすい、最も近い温泉です。</p>
+        <p class="note">当宿から車で約5分です。大山登山の記事でも紹介しています。登山やスキーの後に豪円湯院へ寄り、そのままハレ・マカワオへ戻る行程が組めます。</p>
       </div>
     </div>
 
     <!-- ===== 米子・淀江エリア ===== -->
     <div class="area-section">
-      <h2>米子・淀江エリア ― 天然温泉かけ流しと美肌の湯</h2>
+      <h2>米子・淀江エリア</h2>
       <p>米子市・淀江町エリアには、天然温泉の2施設があります。大山観光の帰路や、米子・境港方面の観光（水木しげるロードなど）と組み合わせやすいエリアです。</p>
 
       <div class="onsen-card">
@@ -190,7 +189,7 @@
         <div class="onsen-meta">
           <span class="badge-accent">車で約15分</span>
         </div>
-        <p>100%かけ流しの天然温泉が楽しめる施設。温泉プールやロウリュサウナも備えており、ゆっくりと時間をかけてリフレッシュしたい方に向いています。当宿から車で約15分と立ち寄りやすい距離です。</p>
+        <p>100%かけ流しの天然温泉の施設です。温泉プールやロウリュサウナも備えています。当宿から車で約15分です。</p>
         <ul>
           <li>住所: 〒689-3402 鳥取県米子市淀江町淀江2-38</li>
           <li>電話: 0859-56-1111</li>
@@ -203,7 +202,7 @@
         <div class="onsen-meta">
           <span class="badge-accent">車で約15分</span>
         </div>
-        <p>露天風呂が好評で、弱アルカリ性の泉質は「美肌の湯」として知られています（浴槽の管理方法など詳細は公式でご確認ください）。併設の食堂の食事も美味しいと評判で、入浴とあわせて楽しめます。</p>
+        <p>露天風呂があり、弱アルカリ性の泉質は「美肌の湯」として知られています（浴槽の管理方法など詳細は公式でご確認ください）。食堂を併設しています。</p>
         <ul>
           <li>住所: 〒689-3411 鳥取県米子市淀江町福岡1547</li>
           <li>電話: 0859-56-6798</li>
@@ -214,15 +213,15 @@
 
     <!-- ===== 皆生温泉エリア ===== -->
     <div class="area-section">
-      <h2>皆生温泉エリア ― 日本海を望む温泉街で3施設</h2>
-      <p>米子市の皆生（かいけ）温泉は、日本海に面した温泉街です。ハレ・マカワオから車で約20分（目安）。大山観光や米子市内散策の締めくくりに、日本海の眺望を楽しみながら入浴するのもおすすめです。</p>
+      <h2>皆生温泉エリア</h2>
+      <p>米子市の皆生（かいけ）温泉は、日本海に面した温泉街です。ハレ・マカワオから車で約20分（目安）です。日帰りで入浴できる3施設を紹介します。</p>
 
       <div class="onsen-card">
         <div class="onsen-name">おーゆ・ランド</div>
         <div class="onsen-meta">
           <span class="badge-accent">車で約20分</span>
         </div>
-        <p>皆生温泉の湯元に位置する日帰り温泉施設（おーゆホテル併設）。丸い形が特徴の「おー風呂」とU字型の「ゆー風呂」、露天風呂、サウナを備えています。韓国式あかすりやマッサージなどボディケアメニューが充実しているのも魅力で、湯上がりに体をしっかりほぐせます。</p>
+        <p>皆生温泉の湯元に位置する日帰り温泉施設（おーゆホテル併設）。丸い形が特徴の「おー風呂」とU字型の「ゆー風呂」、露天風呂、サウナを備えています。韓国式あかすりやマッサージなどのボディケアメニューもあります。</p>
         <ul>
           <li>住所: 〒683-0001 鳥取県米子市皆生温泉1-18-1</li>
           <li>電話: 0859-31-2666</li>
@@ -235,7 +234,7 @@
         <div class="onsen-meta">
           <span class="badge-accent">車で約20分</span>
         </div>
-        <p>ベイサイドスクエア皆生ホテル内にある日帰り温泉施設。露天風呂から日本海を一望でき、海沿いらしい開放感が魅力です。早朝風呂の利用も可能で、旅のスタートに温泉を取り入れたい方にも向いています。</p>
+        <p>ベイサイドスクエア皆生ホテル内にある日帰り温泉施設。露天風呂から日本海を一望できます。早朝風呂も利用できます。</p>
         <ul>
           <li>住所: 〒683-0001 鳥取県米子市皆生温泉4-21-1（ベイサイドスクエア皆生ホテル内）</li>
           <li>電話: 0859-35-0006（ベイサイドスクエア皆生ホテル）</li>
@@ -248,7 +247,7 @@
         <div class="onsen-meta">
           <span class="badge-accent">車で約20分</span>
         </div>
-        <p>中国地方最大級ともいわれる露天風呂が自慢の日帰り温泉施設。海を望む大浴場やリラクゼーション、海を眺めるレストランも備え、観光の疲れを取りながらゆったりと過ごせます。皆生温泉に隣接する米子市新開にあります。</p>
+        <p>中国地方最大級ともいわれる露天風呂がある日帰り温泉施設です。海を望む大浴場、リラクゼーション、海を眺めるレストランも備えています。皆生温泉に隣接する米子市新開にあります。</p>
         <ul>
           <li>住所: 〒683-0801 鳥取県米子市新開3-2-46</li>
           <li>電話: 0859-23-0303</li>
@@ -263,10 +262,10 @@
       <div class="info-box">
         <h3 style="font-size:15px;margin-top:0;">HALE MAKAWAOからの目安距離</h3>
         <ul>
-          <li><strong>豪円湯院</strong>（大山エリア）: 車で約5分 ― 登山・スキー後にすぐ立ち寄れる最近接</li>
-          <li><strong>湧くわく天然温泉 ラピスパ</strong>（米子・淀江エリア）: 車で約15分 ― かけ流し＋温泉プール・ロウリュサウナ</li>
-          <li><strong>淀江ゆめ温泉 白鳳の里</strong>（米子・淀江エリア）: 車で約15分 ― 露天風呂が好評・美肌の湯</li>
-          <li><strong>おーゆ・ランド / 汐の湯 / オーシャン</strong>（皆生温泉エリア）: 車で約20分 ― 日本海の温泉街、3施設から選べる</li>
+          <li>豪円湯院（大山エリア）: 車で約5分。最も近く、登山・スキーの後に立ち寄れる</li>
+          <li>湧くわく天然温泉 ラピスパ（米子・淀江エリア）: 車で約15分。かけ流し、温泉プール、ロウリュサウナ</li>
+          <li>淀江ゆめ温泉 白鳳の里（米子・淀江エリア）: 車で約15分。露天風呂、美肌の湯</li>
+          <li>おーゆ・ランド / 汐の湯 / オーシャン（皆生温泉エリア）: 車で約20分。日本海に面した温泉街の3施設</li>
         </ul>
         <p style="font-size:13px;color:#6a6a6a;margin-top:12px;margin-bottom:0;">※ いずれも所要時間は目安です。道路状況・時間帯により変動します。</p>
       </div>
@@ -283,12 +282,12 @@
     </div>
 
     <div class="cta-box" data-stay-card="bottom">
-      <p>歩いて、浸かって、静かな森の宿へ帰る。<br>ハレ・マカワオは大山エリアの一棟貸しの宿、1日1組の貸切です。</p>
+      <p>ハレ・マカワオは大山エリアにある、1日1組貸切の一棟貸しです。</p>
       <a class="cta-btn" href="https://tabichat.jp/engine/hotels/halemakawao" target="_blank" rel="noopener">宿泊を予約する</a>
-      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html" style="color:#c8b88a;">一棟貸し（貸別荘）について詳しく見る</a></p>
+      <p style="margin:16px 0 0;font-size:13px;"><a href="/villa.html">一棟貸し（貸別荘）について詳しく見る</a></p>
     </div>
 
-    <a class="home-link" href="/">&#8592; トップページへ戻る</a>
+    <a class="home-link" href="/">トップページへ戻る</a>
   </div>
 
   <footer>
@@ -411,7 +410,7 @@ document.addEventListener('DOMContentLoaded', function(){
     gtag('event', 'click_stay_card', {
       'article': (location.pathname.split('/').pop() || '').replace('.html',''),
       'position': card.getAttribute('data-stay-card'),
-      'link_type': (a.getAttribute('href') || '').indexOf('airbnb') > -1 ? 'booking' : 'villa'
+      'link_type': /tabichat\.jp|airbnb/.test(a.getAttribute('href') || '') ? 'booking' : 'villa'
     });
   });
 </script>
