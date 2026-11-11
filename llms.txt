@@ -5,12 +5,13 @@
 ## Quick facts
 
 - **Location**: 鈑戸 1542-91, Daisen-cho, Tottori, Japan (postal 689-3317)
-- **Coordinates**: 35.3833 N, 133.5333 E
+- **Coordinates**: 35.41803 N, 133.50205 E
 - **Type**: Entire-house vacation rental (一棟貸し / 貸別荘 / 包棟別墅), one booking per day
 - **Capacity**: Up to 16 guests in 5 rooms — 3 western-style (2 double, 1 twin) + 2 Japanese-style
 - **Size**: About 200 sqm
 - **On-site host**: Owner couple live in the same building and greet guests in person at check-in (not a self check-in / unattended rental)
-- **Price**: ¥40,000 – ¥60,000 per night
+- **Price**: ¥67,000 – ¥111,000 per night for the whole house (up to 8 guests, varies by date). From the 9th guest, ¥5,000 per additional guest.
+- **Official booking (Japanese)**: https://tabichat.jp/engine/hotels/halemakawao
 - **Check-in / Check-out**: 15:00 / 10:00
 - **Pets**: Not allowed
 - **Smoking**: Not allowed
@@ -28,7 +29,7 @@
 
 ## Nearby attractions
 
-- Mt. Daisen / Daisen White Resort ski area — 5 min by car
+- Daisen Mountain Resort (Mt. Daisen ski area, formerly Daisen White Resort) — 5 min by car. 2026–27 season opens December 18 (scheduled)
 - Mt. Daisen trailhead (Natsuyama trail) — about 10 min by car
 - Sakaiminato (Mizuki Shigeru Road, GeGeGe no Kitaro) — about 50 min
 - Izumo Taisha Grand Shrine — about 90 min
@@ -47,15 +48,33 @@
 - [English version](https://halemakawao.com/en/) — Optimized for English-speaking travelers
 - [Traditional Chinese version](https://halemakawao.com/zh/) — Optimized for Taiwanese family travelers
 - [Private Villa (一棟貸し・貸別荘)](https://halemakawao.com/villa.html) — Entire-house rental: capacity, use cases, rates, FAQ (Japanese)
+- [Ski & Snowboard Group Stays (スキー・スノーボードのグループ宿泊)](https://halemakawao.com/ski-group.html) — Rates for 8–16 guests, FAQ (Japanese)
 - [Rooms & Facilities](https://halemakawao.com/stay.html) — 5 rooms, layout, amenities
 - [Dining](https://halemakawao.com/food.html) — Breakfast / BBQ / restaurant shuttle
 - [Access](https://halemakawao.com/access.html) — From Yonago Airport / Yonago Station / Taipei
 - [News](https://halemakawao.com/news.html) — Updates and seasonal info
+
+## Area guides (Japanese)
+
+- [Daisen ski resort 2026–27 season](https://halemakawao.com/guides/daisen-ski-2026.html)
+- [Daisen lift tickets](https://halemakawao.com/guides/daisen-ski-lift-ticket.html)
+- [Group ski trips to Daisen](https://halemakawao.com/guides/daisen-ski-group-trip.html)
+- [Access to Daisen ski resort](https://halemakawao.com/guides/daisen-ski-access.html)
+- [Daisen for beginners and families](https://halemakawao.com/guides/daisen-ski-beginner-family.html)
+- [Mt. Daisen hiking](https://halemakawao.com/guides/daisen-hiking.html)
+- [Day-trip hot springs](https://halemakawao.com/guides/onsen.html)
+- [Seafood bowls near Yonago and Daisen](https://halemakawao.com/guides/kaisendon.html)
+- [Mizuki Shigeru Road, Sakaiminato](https://halemakawao.com/guides/sakaiminato-day-trip.html)
+- [Izumo Taisha](https://halemakawao.com/guides/izumo-taisha.html)
+- [Matsue Castle](https://halemakawao.com/guides/matsue-castle.html)
+- [Tottori Sand Dunes](https://halemakawao.com/guides/tottori-sakyu.html)
+- [Wildlife around the villa](https://halemakawao.com/guides/forest-wildlife.html)
 - [Privacy Policy](https://halemakawao.com/privacy.html)
 
 ## External listings
 
-- Airbnb: https://www.airbnb.jp/rooms/1628763154330235389
+- Official booking: https://tabichat.jp/engine/hotels/halemakawao
+- Airbnb (up to 14 guests): https://www.airbnb.jp/rooms/1628763154330235389
 
 ## Sitemap
 
